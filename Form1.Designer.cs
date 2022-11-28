@@ -34,6 +34,7 @@
             this.yonetimpng = new System.Windows.Forms.ImageList(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.ogrenci = new System.Windows.Forms.ImageList(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -81,12 +82,20 @@
             this.ogrenci.TransparentColor = System.Drawing.Color.Transparent;
             this.ogrenci.Images.SetKeyName(0, "stock-vector-family-avatar-characters-vector-line-icons-2041700969.png");
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(150, 232);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(614, 231);
+            this.ClientSize = new System.Drawing.Size(743, 414);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -103,6 +112,7 @@
         private System.Windows.Forms.ImageList yonetimpng;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ImageList ogrenci;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

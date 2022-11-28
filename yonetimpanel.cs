@@ -16,5 +16,16 @@ namespace Login_Ekranı
         {
             InitializeComponent();
         }
+
+        private void button_kapat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void yonetimpanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,5 +50,11 @@ namespace Login_Ekranı
         {
             txt_sifre.UseSystemPasswordChar = true;
         }
+
+        private void button_kapat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
     }
 }

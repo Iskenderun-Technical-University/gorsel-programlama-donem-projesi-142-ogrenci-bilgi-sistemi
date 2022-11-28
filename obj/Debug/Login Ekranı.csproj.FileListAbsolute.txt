@@ -1,0 +1,12 @@
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\bin\Debug\Login Ekranı.exe.config
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\bin\Debug\Login Ekranı.exe
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\bin\Debug\Login Ekranı.pdb
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.csproj.AssemblyReference.cache
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login_Ekranı.Form1.resources
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login_Ekranı.Properties.Resources.resources
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.csproj.GenerateResource.cache
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.csproj.CoreCompileInputs.cache
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.exe
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login Ekranı.pdb
+C:\Users\Ramazan\Desktop\C#\Formogrenme1\Login Ekranı\obj\Debug\Login_Ekranı.yonetimbilgigiris.resources

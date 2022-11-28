@@ -49,6 +49,7 @@
             this.label2.Size = new System.Drawing.Size(400, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Yönetim Bilgi Giriş Paneli";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -81,6 +82,7 @@
             this.label3.Size = new System.Drawing.Size(56, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Şifre";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txt_id
             // 
@@ -121,7 +123,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(424, 334);
+            this.ClientSize = new System.Drawing.Size(431, 334);
             this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_id);

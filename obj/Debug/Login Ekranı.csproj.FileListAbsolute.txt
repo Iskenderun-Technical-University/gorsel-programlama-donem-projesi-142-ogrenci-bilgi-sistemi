@@ -23,3 +23,5 @@ C:\Users\Ramazan\Desktop\proje\obj\Debug\Login Ekranı.csproj.CoreCompileInputs.
 C:\Users\Ramazan\Desktop\proje\obj\Debug\Login Ekranı.exe
 C:\Users\Ramazan\Desktop\proje\obj\Debug\Login Ekranı.pdb
 C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.yonetimpanel.resources
+C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.ogrencibilgigiris.resources
+C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.ogrencibilgiekran.resources

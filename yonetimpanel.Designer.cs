@@ -30,21 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(yonetimpanel));
-            this.button_kapat = new System.Windows.Forms.Button();
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.page_notgiris = new System.Windows.Forms.TabPage();
+            this.page_devamsizlikgiris = new System.Windows.Forms.TabPage();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button_kapat
-            // 
-            this.button_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_kapat.ImageKey = "458594.png";
-            this.button_kapat.ImageList = this.kapat_ico;
-            this.button_kapat.Location = new System.Drawing.Point(786, 12);
-            this.button_kapat.Name = "button_kapat";
-            this.button_kapat.Size = new System.Drawing.Size(34, 33);
-            this.button_kapat.TabIndex = 7;
-            this.button_kapat.UseVisualStyleBackColor = false;
-            this.button_kapat.Click += new System.EventHandler(this.button_kapat_Click);
             // 
             // kapat_ico
             // 
@@ -52,24 +43,62 @@
             this.kapat_ico.TransparentColor = System.Drawing.Color.Transparent;
             this.kapat_ico.Images.SetKeyName(0, "458594.png");
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.tabControl1.Controls.Add(this.page_notgiris);
+            this.tabControl1.Controls.Add(this.page_devamsizlikgiris);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.ItemSize = new System.Drawing.Size(50, 130);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(832, 482);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 1;
+            // 
+            // page_notgiris
+            // 
+            this.page_notgiris.Location = new System.Drawing.Point(134, 4);
+            this.page_notgiris.Name = "page_notgiris";
+            this.page_notgiris.Padding = new System.Windows.Forms.Padding(3);
+            this.page_notgiris.Size = new System.Drawing.Size(694, 474);
+            this.page_notgiris.TabIndex = 0;
+            this.page_notgiris.Text = "Not Giriş Ekranı";
+            this.page_notgiris.UseVisualStyleBackColor = true;
+            // 
+            // page_devamsizlikgiris
+            // 
+            this.page_devamsizlikgiris.Location = new System.Drawing.Point(134, 4);
+            this.page_devamsizlikgiris.Name = "page_devamsizlikgiris";
+            this.page_devamsizlikgiris.Padding = new System.Windows.Forms.Padding(3);
+            this.page_devamsizlikgiris.Size = new System.Drawing.Size(694, 474);
+            this.page_devamsizlikgiris.TabIndex = 1;
+            this.page_devamsizlikgiris.Text = "Devamsızlık Girişi";
+            this.page_devamsizlikgiris.UseVisualStyleBackColor = true;
+            // 
             // yonetimpanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 482);
-            this.Controls.Add(this.button_kapat);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "yonetimpanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "yonetimpanel";
             this.Load += new System.EventHandler(this.yonetimpanel_Load);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button_kapat;
         private System.Windows.Forms.ImageList kapat_ico;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage page_notgiris;
+        private System.Windows.Forms.TabPage page_devamsizlikgiris;
     }
 }

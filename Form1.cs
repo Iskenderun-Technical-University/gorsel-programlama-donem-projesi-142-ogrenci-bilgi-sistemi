@@ -34,5 +34,12 @@ namespace Login_Ekranı
             this.Close();
             Application.Exit();
         }
+
+        private void ogrenci_buton_Click(object sender, EventArgs e)
+        {
+            ogrencibilgigiris ogrencibilgigiris = new ogrencibilgigiris();
+            ogrencibilgigiris.Show();
+            this.Hide();
+        }
     }
 }

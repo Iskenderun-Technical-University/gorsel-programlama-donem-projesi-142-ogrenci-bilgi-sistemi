@@ -71,5 +71,17 @@ namespace Login_Ekranı
             _stringFlags.LineAlignment = StringAlignment.Center;
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
         }
+
+        private void page_duyurular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void lbl_mat_ort_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

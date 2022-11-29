@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Login_Ekranı
         {
             InitializeComponent();
         }
+        SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -29,7 +31,41 @@ namespace Login_Ekranı
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string id = "Ramazan";
+            string parola = "";
+            try
+            {
+                baglanti.Open();
+                SqlCommand sqlKomut = new SqlCommand("SELECT OgretmenSifre FROM TblOgretmenGirisBilgileri WHERE OgretmenID = @p1 ", baglanti);
+                sqlKomut.Parameters.AddWithValue("@p1", txt_id.Text);
+                SqlDataReader sqlDataReader = sqlKomut.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    parola = sqlDataReader[0].ToString();
+                }
+                //label4.Text = parola;
+
+                if (parola == txt_sifre.Text)
+                {
+                    yonetimpanel yonetimpanel = new yonetimpanel();
+                    yonetimpanel.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bağlantı Hatası!" + ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+
+            /*string id = "Ramazan";
             string sifre = "Ramazan46";
 
             if(txt_id.Text == id && txt_sifre.Text == sifre)
@@ -41,7 +77,7 @@ namespace Login_Ekranı
             else
             {
                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
 
         }

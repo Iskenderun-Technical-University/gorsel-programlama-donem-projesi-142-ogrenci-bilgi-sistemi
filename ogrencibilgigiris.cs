@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Login_Ekranı
 {
@@ -16,10 +17,43 @@ namespace Login_Ekranı
         {
             InitializeComponent();
         }
-
+        SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            string id = "Ramazan";
+            string parola = "";
+            try
+            {
+                baglanti.Open();
+                SqlCommand sqlKomut=new SqlCommand("SELECT OgrSifre FROM TblOgrGirisBilgileri WHERE OgrID = @p1 ", baglanti);
+                sqlKomut.Parameters.AddWithValue("@p1", txt_id.Text);
+                SqlDataReader sqlDataReader = sqlKomut.ExecuteReader();
+
+                while(sqlDataReader.Read())
+                {
+                    parola = sqlDataReader[0].ToString();
+                }
+                //label4.Text = parola;
+
+                if(parola == txt_sifre.Text)
+                {
+                    ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
+                    ogrencibilgiekran.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Bağlantı Hatası!"+ ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+           /* string id = "Ramazan";
             string sifre = "Ramazan46";
 
             if (txt_id.Text == id && txt_sifre.Text == sifre)
@@ -31,7 +65,7 @@ namespace Login_Ekranı
             else
             {
                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
 
         private void button_kapat_Click(object sender, EventArgs e)
@@ -43,6 +77,11 @@ namespace Login_Ekranı
         private void txt_sifre_TextChanged(object sender, EventArgs e)
         {
             txt_sifre.UseSystemPasswordChar = true;
+        }
+
+        private void ogrencibilgigiris_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -108,5 +108,70 @@ namespace Login_Ekranı
         {
 
         }
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
+        private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid); 
+            }
+        }
+
+        private void tableLayoutPanel2_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
+        }
+
+        private void tableLayoutPanel4_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
+        }
+
+        private void label15_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
+        }
     }
 }

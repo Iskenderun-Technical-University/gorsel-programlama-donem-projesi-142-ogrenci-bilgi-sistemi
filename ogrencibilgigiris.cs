@@ -15,6 +15,7 @@ namespace Login_Ekranı
     {
         public ogrencibilgigiris()
         {
+            
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");

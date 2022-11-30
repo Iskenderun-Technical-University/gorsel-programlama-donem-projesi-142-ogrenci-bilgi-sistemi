@@ -135,6 +135,7 @@
             this.Name = "yonetimbilgigiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yönetim Modu";
+            this.Load += new System.EventHandler(this.yonetimbilgigiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

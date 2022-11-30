@@ -32,15 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ogrencibilgiekran));
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.page_notbilgi = new System.Windows.Forms.TabPage();
-            this.page_devamsizlik = new System.Windows.Forms.TabPage();
             this.page_duyurular = new System.Windows.Forms.TabPage();
-            this.page_dersprogram = new System.Windows.Forms.TabPage();
-            this.page_alinanbelgeler = new System.Windows.Forms.TabPage();
-            this.page_yilsonunot = new System.Windows.Forms.TabPage();
-            this.page_subeortalama = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.duyurular = new System.Windows.Forms.ImageList(this.components);
+            this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_ag_1 = new System.Windows.Forms.Label();
             this.lbl_ag_2 = new System.Windows.Forms.Label();
@@ -82,7 +75,6 @@
             this.lbl_biyo_per = new System.Windows.Forms.Label();
             this.lbl_biyo_pro = new System.Windows.Forms.Label();
             this.lbl_biyo_ort = new System.Windows.Forms.Label();
-            this.lbl_mat_1 = new System.Windows.Forms.Label();
             this.lbl_mat_ort = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_mat_Pro = new System.Windows.Forms.Label();
@@ -96,14 +88,83 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbl_mat_1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.page_devamsizlik = new System.Windows.Forms.TabPage();
+            this.page_dersprogram = new System.Windows.Forms.TabPage();
+            this.page_alinanbelgeler = new System.Windows.Forms.TabPage();
+            this.page_yilsonunot = new System.Windows.Forms.TabPage();
+            this.page_subeortalama = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.duyurular = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbl_ozurlu_devamsizlik_top = new System.Windows.Forms.Label();
+            this.lbl_ozurlu_devamsizlik = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbl_ogleden_sonra_yarim = new System.Windows.Forms.Label();
+            this.lbl_tam_gun = new System.Windows.Forms.Label();
+            this.lbl_gec_gelme = new System.Windows.Forms.Label();
+            this.lbl_ozursuz_top = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lbl_faaliyet_devamsizlik = new System.Windows.Forms.Label();
+            this.lbl_faaliyet_toplam = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_pazartesi = new System.Windows.Forms.Label();
+            this.lbl_sali = new System.Windows.Forms.Label();
+            this.lbl_carsamba = new System.Windows.Forms.Label();
+            this.lbl_persembe = new System.Windows.Forms.Label();
+            this.lbl_cuma = new System.Windows.Forms.Label();
+            this.lbl_ders5 = new System.Windows.Forms.Label();
+            this.lbl_ders4 = new System.Windows.Forms.Label();
+            this.lbl_ders3 = new System.Windows.Forms.Label();
+            this.lbl_ders2 = new System.Windows.Forms.Label();
+            this.lbl_ders1 = new System.Windows.Forms.Label();
+            this.lbl_pzt_ders1 = new System.Windows.Forms.Label();
+            this.lbl_sali_ders1 = new System.Windows.Forms.Label();
+            this.lbl_crsmb_ders1 = new System.Windows.Forms.Label();
+            this.lbl_pers_ders1 = new System.Windows.Forms.Label();
+            this.lbl_cuma_ders1 = new System.Windows.Forms.Label();
+            this.lbl_pzt_ders2 = new System.Windows.Forms.Label();
+            this.lbl_sali_ders2 = new System.Windows.Forms.Label();
+            this.lbl_crsmb_ders2 = new System.Windows.Forms.Label();
+            this.lbl_pers_ders2 = new System.Windows.Forms.Label();
+            this.lbl_cuma_ders2 = new System.Windows.Forms.Label();
+            this.lbl_pzt_ders3 = new System.Windows.Forms.Label();
+            this.lbl_sali_ders3 = new System.Windows.Forms.Label();
+            this.lbl_crsmb_ders3 = new System.Windows.Forms.Label();
+            this.lbl_pers_ders3 = new System.Windows.Forms.Label();
+            this.lbl_cuma_ders3 = new System.Windows.Forms.Label();
+            this.lbl_pzt_ders4 = new System.Windows.Forms.Label();
+            this.lbl_sali_ders4 = new System.Windows.Forms.Label();
+            this.lbl_crsmb_ders4 = new System.Windows.Forms.Label();
+            this.lbl_pers_ders4 = new System.Windows.Forms.Label();
+            this.lbl_cuma_ders4 = new System.Windows.Forms.Label();
+            this.lbl_pzt_ders5 = new System.Windows.Forms.Label();
+            this.lbl_sali_ders5 = new System.Windows.Forms.Label();
+            this.lbl_crsmb_ders5 = new System.Windows.Forms.Label();
+            this.lbl_pers_ders5 = new System.Windows.Forms.Label();
+            this.lbl_cuma_ders5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_alinanbelge_bilgi = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1.SuspendLayout();
+            this.page_duyurular.SuspendLayout();
             this.page_notbilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.page_devamsizlik.SuspendLayout();
+            this.page_dersprogram.SuspendLayout();
+            this.page_alinanbelgeler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kapat_ico
@@ -134,94 +195,29 @@
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
-            // page_notbilgi
-            // 
-            this.page_notbilgi.Controls.Add(this.tableLayoutPanel1);
-            this.page_notbilgi.Location = new System.Drawing.Point(134, 4);
-            this.page_notbilgi.Name = "page_notbilgi";
-            this.page_notbilgi.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_notbilgi.Size = new System.Drawing.Size(662, 397);
-            this.page_notbilgi.TabIndex = 0;
-            this.page_notbilgi.Text = "Not Bilgisi";
-            this.page_notbilgi.UseVisualStyleBackColor = true;
-            this.page_notbilgi.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // page_devamsizlik
-            // 
-            this.page_devamsizlik.Location = new System.Drawing.Point(134, 4);
-            this.page_devamsizlik.Name = "page_devamsizlik";
-            this.page_devamsizlik.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_devamsizlik.Size = new System.Drawing.Size(662, 397);
-            this.page_devamsizlik.TabIndex = 1;
-            this.page_devamsizlik.Text = "Devamsızlık Bilgisi";
-            this.page_devamsizlik.UseVisualStyleBackColor = true;
-            // 
             // page_duyurular
             // 
+            this.page_duyurular.Controls.Add(this.pictureBox1);
             this.page_duyurular.Location = new System.Drawing.Point(134, 4);
             this.page_duyurular.Name = "page_duyurular";
-            this.page_duyurular.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.page_duyurular.Padding = new System.Windows.Forms.Padding(3);
             this.page_duyurular.Size = new System.Drawing.Size(662, 397);
             this.page_duyurular.TabIndex = 2;
             this.page_duyurular.Text = "Duyurular";
             this.page_duyurular.UseVisualStyleBackColor = true;
             this.page_duyurular.Click += new System.EventHandler(this.page_duyurular_Click);
             // 
-            // page_dersprogram
+            // page_notbilgi
             // 
-            this.page_dersprogram.Location = new System.Drawing.Point(134, 4);
-            this.page_dersprogram.Name = "page_dersprogram";
-            this.page_dersprogram.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_dersprogram.Size = new System.Drawing.Size(662, 397);
-            this.page_dersprogram.TabIndex = 3;
-            this.page_dersprogram.Text = "Ders Programı";
-            this.page_dersprogram.UseVisualStyleBackColor = true;
-            // 
-            // page_alinanbelgeler
-            // 
-            this.page_alinanbelgeler.Location = new System.Drawing.Point(134, 4);
-            this.page_alinanbelgeler.Name = "page_alinanbelgeler";
-            this.page_alinanbelgeler.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_alinanbelgeler.Size = new System.Drawing.Size(662, 397);
-            this.page_alinanbelgeler.TabIndex = 4;
-            this.page_alinanbelgeler.Text = "Alınan Belgeler";
-            this.page_alinanbelgeler.UseVisualStyleBackColor = true;
-            // 
-            // page_yilsonunot
-            // 
-            this.page_yilsonunot.Location = new System.Drawing.Point(134, 4);
-            this.page_yilsonunot.Name = "page_yilsonunot";
-            this.page_yilsonunot.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_yilsonunot.Size = new System.Drawing.Size(662, 397);
-            this.page_yilsonunot.TabIndex = 5;
-            this.page_yilsonunot.Text = "Yıl Sonu Notları";
-            this.page_yilsonunot.UseVisualStyleBackColor = true;
-            // 
-            // page_subeortalama
-            // 
-            this.page_subeortalama.Location = new System.Drawing.Point(134, 4);
-            this.page_subeortalama.Name = "page_subeortalama";
-            this.page_subeortalama.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.page_subeortalama.Size = new System.Drawing.Size(662, 397);
-            this.page_subeortalama.TabIndex = 6;
-            this.page_subeortalama.Text = "Şube Ortalaması";
-            this.page_subeortalama.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(134, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage6.Size = new System.Drawing.Size(662, 397);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // duyurular
-            // 
-            this.duyurular.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("duyurular.ImageStream")));
-            this.duyurular.TransparentColor = System.Drawing.Color.Transparent;
-            this.duyurular.Images.SetKeyName(0, "megaphone.png");
+            this.page_notbilgi.Controls.Add(this.tableLayoutPanel1);
+            this.page_notbilgi.Location = new System.Drawing.Point(134, 4);
+            this.page_notbilgi.Name = "page_notbilgi";
+            this.page_notbilgi.Padding = new System.Windows.Forms.Padding(3);
+            this.page_notbilgi.Size = new System.Drawing.Size(662, 397);
+            this.page_notbilgi.TabIndex = 0;
+            this.page_notbilgi.Text = "Not Bilgisi";
+            this.page_notbilgi.UseVisualStyleBackColor = true;
+            this.page_notbilgi.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -709,16 +705,6 @@
             this.lbl_biyo_ort.TabIndex = 5;
             this.lbl_biyo_ort.Text = "0";
             // 
-            // lbl_mat_1
-            // 
-            this.lbl_mat_1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_mat_1.AutoSize = true;
-            this.lbl_mat_1.Location = new System.Drawing.Point(286, 34);
-            this.lbl_mat_1.Name = "lbl_mat_1";
-            this.lbl_mat_1.Size = new System.Drawing.Size(13, 13);
-            this.lbl_mat_1.TabIndex = 0;
-            this.lbl_mat_1.Text = "0";
-            // 
             // lbl_mat_ort
             // 
             this.lbl_mat_ort.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -859,6 +845,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "İleri Matematik";
             // 
+            // lbl_mat_1
+            // 
+            this.lbl_mat_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_mat_1.AutoSize = true;
+            this.lbl_mat_1.Location = new System.Drawing.Point(286, 34);
+            this.lbl_mat_1.Name = "lbl_mat_1";
+            this.lbl_mat_1.Size = new System.Drawing.Size(13, 13);
+            this.lbl_mat_1.TabIndex = 0;
+            this.lbl_mat_1.Text = "0";
+            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -910,6 +906,693 @@
             this.label14.Text = "Ortalama";
             this.label14.Click += new System.EventHandler(this.lbl_mat_ort_Click);
             // 
+            // page_devamsizlik
+            // 
+            this.page_devamsizlik.Controls.Add(this.lbl_faaliyet_toplam);
+            this.page_devamsizlik.Controls.Add(this.lbl_faaliyet_devamsizlik);
+            this.page_devamsizlik.Controls.Add(this.pictureBox4);
+            this.page_devamsizlik.Controls.Add(this.lbl_ozursuz_top);
+            this.page_devamsizlik.Controls.Add(this.lbl_gec_gelme);
+            this.page_devamsizlik.Controls.Add(this.lbl_tam_gun);
+            this.page_devamsizlik.Controls.Add(this.lbl_ogleden_sonra_yarim);
+            this.page_devamsizlik.Controls.Add(this.pictureBox3);
+            this.page_devamsizlik.Controls.Add(this.lbl_ozurlu_devamsizlik);
+            this.page_devamsizlik.Controls.Add(this.lbl_ozurlu_devamsizlik_top);
+            this.page_devamsizlik.Controls.Add(this.pictureBox2);
+            this.page_devamsizlik.Location = new System.Drawing.Point(134, 4);
+            this.page_devamsizlik.Name = "page_devamsizlik";
+            this.page_devamsizlik.Padding = new System.Windows.Forms.Padding(3);
+            this.page_devamsizlik.Size = new System.Drawing.Size(662, 397);
+            this.page_devamsizlik.TabIndex = 1;
+            this.page_devamsizlik.Text = "Devamsızlık Bilgisi";
+            this.page_devamsizlik.UseVisualStyleBackColor = true;
+            // 
+            // page_dersprogram
+            // 
+            this.page_dersprogram.Controls.Add(this.tableLayoutPanel2);
+            this.page_dersprogram.Location = new System.Drawing.Point(134, 4);
+            this.page_dersprogram.Name = "page_dersprogram";
+            this.page_dersprogram.Padding = new System.Windows.Forms.Padding(3);
+            this.page_dersprogram.Size = new System.Drawing.Size(662, 397);
+            this.page_dersprogram.TabIndex = 3;
+            this.page_dersprogram.Text = "Ders Programı";
+            this.page_dersprogram.UseVisualStyleBackColor = true;
+            // 
+            // page_alinanbelgeler
+            // 
+            this.page_alinanbelgeler.Controls.Add(this.tableLayoutPanel4);
+            this.page_alinanbelgeler.Controls.Add(this.tableLayoutPanel3);
+            this.page_alinanbelgeler.Location = new System.Drawing.Point(134, 4);
+            this.page_alinanbelgeler.Name = "page_alinanbelgeler";
+            this.page_alinanbelgeler.Padding = new System.Windows.Forms.Padding(3);
+            this.page_alinanbelgeler.Size = new System.Drawing.Size(662, 397);
+            this.page_alinanbelgeler.TabIndex = 4;
+            this.page_alinanbelgeler.Text = "Alınan Belgeler";
+            this.page_alinanbelgeler.UseVisualStyleBackColor = true;
+            // 
+            // page_yilsonunot
+            // 
+            this.page_yilsonunot.Location = new System.Drawing.Point(134, 4);
+            this.page_yilsonunot.Name = "page_yilsonunot";
+            this.page_yilsonunot.Padding = new System.Windows.Forms.Padding(3);
+            this.page_yilsonunot.Size = new System.Drawing.Size(662, 397);
+            this.page_yilsonunot.TabIndex = 5;
+            this.page_yilsonunot.Text = "Yıl Sonu Notları";
+            this.page_yilsonunot.UseVisualStyleBackColor = true;
+            // 
+            // page_subeortalama
+            // 
+            this.page_subeortalama.Location = new System.Drawing.Point(134, 4);
+            this.page_subeortalama.Name = "page_subeortalama";
+            this.page_subeortalama.Padding = new System.Windows.Forms.Padding(3);
+            this.page_subeortalama.Size = new System.Drawing.Size(662, 397);
+            this.page_subeortalama.TabIndex = 6;
+            this.page_subeortalama.Text = "Şube Ortalaması";
+            this.page_subeortalama.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(134, 4);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(662, 397);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // duyurular
+            // 
+            this.duyurular.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("duyurular.ImageStream")));
+            this.duyurular.TransparentColor = System.Drawing.Color.Transparent;
+            this.duyurular.Images.SetKeyName(0, "megaphone.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(60, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(15, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 153);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lbl_ozurlu_devamsizlik_top
+            // 
+            this.lbl_ozurlu_devamsizlik_top.AutoSize = true;
+            this.lbl_ozurlu_devamsizlik_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lbl_ozurlu_devamsizlik_top.ForeColor = System.Drawing.Color.White;
+            this.lbl_ozurlu_devamsizlik_top.Location = new System.Drawing.Point(238, 146);
+            this.lbl_ozurlu_devamsizlik_top.Name = "lbl_ozurlu_devamsizlik_top";
+            this.lbl_ozurlu_devamsizlik_top.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ozurlu_devamsizlik_top.TabIndex = 1;
+            this.lbl_ozurlu_devamsizlik_top.Text = "0";
+            this.lbl_ozurlu_devamsizlik_top.Click += new System.EventHandler(this.label15_Click_1);
+            // 
+            // lbl_ozurlu_devamsizlik
+            // 
+            this.lbl_ozurlu_devamsizlik.AutoSize = true;
+            this.lbl_ozurlu_devamsizlik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(186)))), ((int)(((byte)(87)))));
+            this.lbl_ozurlu_devamsizlik.ForeColor = System.Drawing.Color.White;
+            this.lbl_ozurlu_devamsizlik.Location = new System.Drawing.Point(78, 86);
+            this.lbl_ozurlu_devamsizlik.Name = "lbl_ozurlu_devamsizlik";
+            this.lbl_ozurlu_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ozurlu_devamsizlik.TabIndex = 2;
+            this.lbl_ozurlu_devamsizlik.Text = "0";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(355, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(274, 175);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lbl_ogleden_sonra_yarim
+            // 
+            this.lbl_ogleden_sonra_yarim.AutoSize = true;
+            this.lbl_ogleden_sonra_yarim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lbl_ogleden_sonra_yarim.ForeColor = System.Drawing.Color.White;
+            this.lbl_ogleden_sonra_yarim.Location = new System.Drawing.Point(555, 59);
+            this.lbl_ogleden_sonra_yarim.Name = "lbl_ogleden_sonra_yarim";
+            this.lbl_ogleden_sonra_yarim.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ogleden_sonra_yarim.TabIndex = 4;
+            this.lbl_ogleden_sonra_yarim.Text = "0";
+            // 
+            // lbl_tam_gun
+            // 
+            this.lbl_tam_gun.AutoSize = true;
+            this.lbl_tam_gun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lbl_tam_gun.ForeColor = System.Drawing.Color.White;
+            this.lbl_tam_gun.Location = new System.Drawing.Point(443, 83);
+            this.lbl_tam_gun.Name = "lbl_tam_gun";
+            this.lbl_tam_gun.Size = new System.Drawing.Size(13, 13);
+            this.lbl_tam_gun.TabIndex = 4;
+            this.lbl_tam_gun.Text = "0";
+            // 
+            // lbl_gec_gelme
+            // 
+            this.lbl_gec_gelme.AutoSize = true;
+            this.lbl_gec_gelme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.lbl_gec_gelme.ForeColor = System.Drawing.Color.White;
+            this.lbl_gec_gelme.Location = new System.Drawing.Point(406, 107);
+            this.lbl_gec_gelme.Name = "lbl_gec_gelme";
+            this.lbl_gec_gelme.Size = new System.Drawing.Size(13, 13);
+            this.lbl_gec_gelme.TabIndex = 4;
+            this.lbl_gec_gelme.Text = "0";
+            // 
+            // lbl_ozursuz_top
+            // 
+            this.lbl_ozursuz_top.AutoSize = true;
+            this.lbl_ozursuz_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lbl_ozursuz_top.ForeColor = System.Drawing.Color.White;
+            this.lbl_ozursuz_top.Location = new System.Drawing.Point(555, 159);
+            this.lbl_ozursuz_top.Name = "lbl_ozursuz_top";
+            this.lbl_ozursuz_top.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ozursuz_top.TabIndex = 5;
+            this.lbl_ozursuz_top.Text = "0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(120, 210);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(368, 119);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            // 
+            // lbl_faaliyet_devamsizlik
+            // 
+            this.lbl_faaliyet_devamsizlik.AutoSize = true;
+            this.lbl_faaliyet_devamsizlik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(204)))), ((int)(((byte)(101)))));
+            this.lbl_faaliyet_devamsizlik.ForeColor = System.Drawing.Color.White;
+            this.lbl_faaliyet_devamsizlik.Location = new System.Drawing.Point(194, 259);
+            this.lbl_faaliyet_devamsizlik.Name = "lbl_faaliyet_devamsizlik";
+            this.lbl_faaliyet_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_faaliyet_devamsizlik.TabIndex = 7;
+            this.lbl_faaliyet_devamsizlik.Text = "0";
+            // 
+            // lbl_faaliyet_toplam
+            // 
+            this.lbl_faaliyet_toplam.AutoSize = true;
+            this.lbl_faaliyet_toplam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lbl_faaliyet_toplam.ForeColor = System.Drawing.Color.White;
+            this.lbl_faaliyet_toplam.Location = new System.Drawing.Point(220, 306);
+            this.lbl_faaliyet_toplam.Name = "lbl_faaliyet_toplam";
+            this.lbl_faaliyet_toplam.Size = new System.Drawing.Size(13, 13);
+            this.lbl_faaliyet_toplam.TabIndex = 8;
+            this.lbl_faaliyet_toplam.Text = "0";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma_ders5, 5, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pers_ders5, 4, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_crsmb_ders5, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali_ders5, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pzt_ders5, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma_ders4, 5, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pers_ders4, 4, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_crsmb_ders4, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali_ders4, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pzt_ders4, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma_ders3, 5, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pers_ders3, 4, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_crsmb_ders3, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali_ders3, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pzt_ders3, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma_ders2, 5, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pers_ders2, 4, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_crsmb_ders2, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali_ders2, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pzt_ders2, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma_ders1, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pers_ders1, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_crsmb_ders1, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali_ders1, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_cuma, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_persembe, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_carsamba, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sali, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pazartesi, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_ders5, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_ders4, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_ders3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_ders2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_ders1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_pzt_ders1, 1, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(659, 391);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // lbl_pazartesi
+            // 
+            this.lbl_pazartesi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pazartesi.AutoSize = true;
+            this.lbl_pazartesi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pazartesi.Location = new System.Drawing.Point(128, 23);
+            this.lbl_pazartesi.Name = "lbl_pazartesi";
+            this.lbl_pazartesi.Size = new System.Drawing.Size(70, 19);
+            this.lbl_pazartesi.TabIndex = 0;
+            this.lbl_pazartesi.Text = "Pazartesi";
+            // 
+            // lbl_sali
+            // 
+            this.lbl_sali.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali.AutoSize = true;
+            this.lbl_sali.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali.Location = new System.Drawing.Point(256, 23);
+            this.lbl_sali.Name = "lbl_sali";
+            this.lbl_sali.Size = new System.Drawing.Size(33, 19);
+            this.lbl_sali.TabIndex = 0;
+            this.lbl_sali.Text = "Salı";
+            // 
+            // lbl_carsamba
+            // 
+            this.lbl_carsamba.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_carsamba.AutoSize = true;
+            this.lbl_carsamba.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_carsamba.Location = new System.Drawing.Point(344, 23);
+            this.lbl_carsamba.Name = "lbl_carsamba";
+            this.lbl_carsamba.Size = new System.Drawing.Size(75, 19);
+            this.lbl_carsamba.TabIndex = 0;
+            this.lbl_carsamba.Text = "Çarşamba";
+            // 
+            // lbl_persembe
+            // 
+            this.lbl_persembe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_persembe.AutoSize = true;
+            this.lbl_persembe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_persembe.Location = new System.Drawing.Point(452, 23);
+            this.lbl_persembe.Name = "lbl_persembe";
+            this.lbl_persembe.Size = new System.Drawing.Size(76, 19);
+            this.lbl_persembe.TabIndex = 0;
+            this.lbl_persembe.Text = "Perşembe";
+            // 
+            // lbl_cuma
+            // 
+            this.lbl_cuma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma.AutoSize = true;
+            this.lbl_cuma.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma.Location = new System.Drawing.Point(578, 23);
+            this.lbl_cuma.Name = "lbl_cuma";
+            this.lbl_cuma.Size = new System.Drawing.Size(47, 19);
+            this.lbl_cuma.TabIndex = 0;
+            this.lbl_cuma.Text = "Cuma";
+            // 
+            // lbl_ders5
+            // 
+            this.lbl_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ders5.AutoSize = true;
+            this.lbl_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ders5.Location = new System.Drawing.Point(29, 348);
+            this.lbl_ders5.Name = "lbl_ders5";
+            this.lbl_ders5.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders5.TabIndex = 30;
+            this.lbl_ders5.Text = "Ders 5";
+            // 
+            // lbl_ders4
+            // 
+            this.lbl_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ders4.AutoSize = true;
+            this.lbl_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ders4.Location = new System.Drawing.Point(29, 283);
+            this.lbl_ders4.Name = "lbl_ders4";
+            this.lbl_ders4.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders4.TabIndex = 29;
+            this.lbl_ders4.Text = "Ders 4";
+            // 
+            // lbl_ders3
+            // 
+            this.lbl_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ders3.AutoSize = true;
+            this.lbl_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ders3.Location = new System.Drawing.Point(29, 218);
+            this.lbl_ders3.Name = "lbl_ders3";
+            this.lbl_ders3.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders3.TabIndex = 28;
+            this.lbl_ders3.Text = "Ders 3";
+            // 
+            // lbl_ders2
+            // 
+            this.lbl_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ders2.AutoSize = true;
+            this.lbl_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ders2.Location = new System.Drawing.Point(29, 153);
+            this.lbl_ders2.Name = "lbl_ders2";
+            this.lbl_ders2.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders2.TabIndex = 27;
+            this.lbl_ders2.Text = "Ders 2";
+            // 
+            // lbl_ders1
+            // 
+            this.lbl_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ders1.AutoSize = true;
+            this.lbl_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ders1.Location = new System.Drawing.Point(29, 88);
+            this.lbl_ders1.Name = "lbl_ders1";
+            this.lbl_ders1.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders1.TabIndex = 26;
+            this.lbl_ders1.Text = "Ders 1";
+            // 
+            // lbl_pzt_ders1
+            // 
+            this.lbl_pzt_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pzt_ders1.AutoSize = true;
+            this.lbl_pzt_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pzt_ders1.Location = new System.Drawing.Point(144, 88);
+            this.lbl_pzt_ders1.Name = "lbl_pzt_ders1";
+            this.lbl_pzt_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders1.TabIndex = 26;
+            this.lbl_pzt_ders1.Text = "Ders";
+            // 
+            // lbl_sali_ders1
+            // 
+            this.lbl_sali_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali_ders1.AutoSize = true;
+            this.lbl_sali_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sali_ders1.Location = new System.Drawing.Point(253, 88);
+            this.lbl_sali_ders1.Name = "lbl_sali_ders1";
+            this.lbl_sali_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders1.TabIndex = 32;
+            this.lbl_sali_ders1.Text = "Ders";
+            // 
+            // lbl_crsmb_ders1
+            // 
+            this.lbl_crsmb_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_crsmb_ders1.AutoSize = true;
+            this.lbl_crsmb_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crsmb_ders1.Location = new System.Drawing.Point(362, 88);
+            this.lbl_crsmb_ders1.Name = "lbl_crsmb_ders1";
+            this.lbl_crsmb_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders1.TabIndex = 33;
+            this.lbl_crsmb_ders1.Text = "Ders";
+            // 
+            // lbl_pers_ders1
+            // 
+            this.lbl_pers_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pers_ders1.AutoSize = true;
+            this.lbl_pers_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pers_ders1.Location = new System.Drawing.Point(471, 88);
+            this.lbl_pers_ders1.Name = "lbl_pers_ders1";
+            this.lbl_pers_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders1.TabIndex = 34;
+            this.lbl_pers_ders1.Text = "Ders";
+            // 
+            // lbl_cuma_ders1
+            // 
+            this.lbl_cuma_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma_ders1.AutoSize = true;
+            this.lbl_cuma_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cuma_ders1.Location = new System.Drawing.Point(582, 88);
+            this.lbl_cuma_ders1.Name = "lbl_cuma_ders1";
+            this.lbl_cuma_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders1.TabIndex = 35;
+            this.lbl_cuma_ders1.Text = "Ders";
+            // 
+            // lbl_pzt_ders2
+            // 
+            this.lbl_pzt_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pzt_ders2.AutoSize = true;
+            this.lbl_pzt_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pzt_ders2.Location = new System.Drawing.Point(144, 153);
+            this.lbl_pzt_ders2.Name = "lbl_pzt_ders2";
+            this.lbl_pzt_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders2.TabIndex = 36;
+            this.lbl_pzt_ders2.Text = "Ders";
+            // 
+            // lbl_sali_ders2
+            // 
+            this.lbl_sali_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali_ders2.AutoSize = true;
+            this.lbl_sali_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sali_ders2.Location = new System.Drawing.Point(253, 153);
+            this.lbl_sali_ders2.Name = "lbl_sali_ders2";
+            this.lbl_sali_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders2.TabIndex = 37;
+            this.lbl_sali_ders2.Text = "Ders";
+            // 
+            // lbl_crsmb_ders2
+            // 
+            this.lbl_crsmb_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_crsmb_ders2.AutoSize = true;
+            this.lbl_crsmb_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crsmb_ders2.Location = new System.Drawing.Point(362, 153);
+            this.lbl_crsmb_ders2.Name = "lbl_crsmb_ders2";
+            this.lbl_crsmb_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders2.TabIndex = 38;
+            this.lbl_crsmb_ders2.Text = "Ders";
+            // 
+            // lbl_pers_ders2
+            // 
+            this.lbl_pers_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pers_ders2.AutoSize = true;
+            this.lbl_pers_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pers_ders2.Location = new System.Drawing.Point(471, 153);
+            this.lbl_pers_ders2.Name = "lbl_pers_ders2";
+            this.lbl_pers_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders2.TabIndex = 39;
+            this.lbl_pers_ders2.Text = "Ders";
+            // 
+            // lbl_cuma_ders2
+            // 
+            this.lbl_cuma_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma_ders2.AutoSize = true;
+            this.lbl_cuma_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cuma_ders2.Location = new System.Drawing.Point(582, 153);
+            this.lbl_cuma_ders2.Name = "lbl_cuma_ders2";
+            this.lbl_cuma_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders2.TabIndex = 40;
+            this.lbl_cuma_ders2.Text = "Ders";
+            // 
+            // lbl_pzt_ders3
+            // 
+            this.lbl_pzt_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pzt_ders3.AutoSize = true;
+            this.lbl_pzt_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pzt_ders3.Location = new System.Drawing.Point(144, 218);
+            this.lbl_pzt_ders3.Name = "lbl_pzt_ders3";
+            this.lbl_pzt_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders3.TabIndex = 41;
+            this.lbl_pzt_ders3.Text = "Ders";
+            // 
+            // lbl_sali_ders3
+            // 
+            this.lbl_sali_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali_ders3.AutoSize = true;
+            this.lbl_sali_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sali_ders3.Location = new System.Drawing.Point(253, 218);
+            this.lbl_sali_ders3.Name = "lbl_sali_ders3";
+            this.lbl_sali_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders3.TabIndex = 42;
+            this.lbl_sali_ders3.Text = "Ders";
+            // 
+            // lbl_crsmb_ders3
+            // 
+            this.lbl_crsmb_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_crsmb_ders3.AutoSize = true;
+            this.lbl_crsmb_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crsmb_ders3.Location = new System.Drawing.Point(362, 218);
+            this.lbl_crsmb_ders3.Name = "lbl_crsmb_ders3";
+            this.lbl_crsmb_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders3.TabIndex = 43;
+            this.lbl_crsmb_ders3.Text = "Ders";
+            // 
+            // lbl_pers_ders3
+            // 
+            this.lbl_pers_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pers_ders3.AutoSize = true;
+            this.lbl_pers_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pers_ders3.Location = new System.Drawing.Point(471, 218);
+            this.lbl_pers_ders3.Name = "lbl_pers_ders3";
+            this.lbl_pers_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders3.TabIndex = 44;
+            this.lbl_pers_ders3.Text = "Ders";
+            // 
+            // lbl_cuma_ders3
+            // 
+            this.lbl_cuma_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma_ders3.AutoSize = true;
+            this.lbl_cuma_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cuma_ders3.Location = new System.Drawing.Point(582, 218);
+            this.lbl_cuma_ders3.Name = "lbl_cuma_ders3";
+            this.lbl_cuma_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders3.TabIndex = 45;
+            this.lbl_cuma_ders3.Text = "Ders";
+            // 
+            // lbl_pzt_ders4
+            // 
+            this.lbl_pzt_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pzt_ders4.AutoSize = true;
+            this.lbl_pzt_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pzt_ders4.Location = new System.Drawing.Point(144, 283);
+            this.lbl_pzt_ders4.Name = "lbl_pzt_ders4";
+            this.lbl_pzt_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders4.TabIndex = 46;
+            this.lbl_pzt_ders4.Text = "Ders";
+            // 
+            // lbl_sali_ders4
+            // 
+            this.lbl_sali_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali_ders4.AutoSize = true;
+            this.lbl_sali_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sali_ders4.Location = new System.Drawing.Point(253, 283);
+            this.lbl_sali_ders4.Name = "lbl_sali_ders4";
+            this.lbl_sali_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders4.TabIndex = 47;
+            this.lbl_sali_ders4.Text = "Ders";
+            // 
+            // lbl_crsmb_ders4
+            // 
+            this.lbl_crsmb_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_crsmb_ders4.AutoSize = true;
+            this.lbl_crsmb_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crsmb_ders4.Location = new System.Drawing.Point(362, 283);
+            this.lbl_crsmb_ders4.Name = "lbl_crsmb_ders4";
+            this.lbl_crsmb_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders4.TabIndex = 48;
+            this.lbl_crsmb_ders4.Text = "Ders";
+            // 
+            // lbl_pers_ders4
+            // 
+            this.lbl_pers_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pers_ders4.AutoSize = true;
+            this.lbl_pers_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pers_ders4.Location = new System.Drawing.Point(471, 283);
+            this.lbl_pers_ders4.Name = "lbl_pers_ders4";
+            this.lbl_pers_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders4.TabIndex = 49;
+            this.lbl_pers_ders4.Text = "Ders";
+            // 
+            // lbl_cuma_ders4
+            // 
+            this.lbl_cuma_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma_ders4.AutoSize = true;
+            this.lbl_cuma_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cuma_ders4.Location = new System.Drawing.Point(582, 283);
+            this.lbl_cuma_ders4.Name = "lbl_cuma_ders4";
+            this.lbl_cuma_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders4.TabIndex = 50;
+            this.lbl_cuma_ders4.Text = "Ders";
+            // 
+            // lbl_pzt_ders5
+            // 
+            this.lbl_pzt_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pzt_ders5.AutoSize = true;
+            this.lbl_pzt_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pzt_ders5.Location = new System.Drawing.Point(144, 348);
+            this.lbl_pzt_ders5.Name = "lbl_pzt_ders5";
+            this.lbl_pzt_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders5.TabIndex = 51;
+            this.lbl_pzt_ders5.Text = "Ders";
+            // 
+            // lbl_sali_ders5
+            // 
+            this.lbl_sali_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sali_ders5.AutoSize = true;
+            this.lbl_sali_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sali_ders5.Location = new System.Drawing.Point(253, 348);
+            this.lbl_sali_ders5.Name = "lbl_sali_ders5";
+            this.lbl_sali_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders5.TabIndex = 52;
+            this.lbl_sali_ders5.Text = "Ders";
+            // 
+            // lbl_crsmb_ders5
+            // 
+            this.lbl_crsmb_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_crsmb_ders5.AutoSize = true;
+            this.lbl_crsmb_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crsmb_ders5.Location = new System.Drawing.Point(362, 348);
+            this.lbl_crsmb_ders5.Name = "lbl_crsmb_ders5";
+            this.lbl_crsmb_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders5.TabIndex = 53;
+            this.lbl_crsmb_ders5.Text = "Ders";
+            // 
+            // lbl_pers_ders5
+            // 
+            this.lbl_pers_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_pers_ders5.AutoSize = true;
+            this.lbl_pers_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pers_ders5.Location = new System.Drawing.Point(471, 348);
+            this.lbl_pers_ders5.Name = "lbl_pers_ders5";
+            this.lbl_pers_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders5.TabIndex = 54;
+            this.lbl_pers_ders5.Text = "Ders";
+            // 
+            // lbl_cuma_ders5
+            // 
+            this.lbl_cuma_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_cuma_ders5.AutoSize = true;
+            this.lbl_cuma_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cuma_ders5.Location = new System.Drawing.Point(582, 348);
+            this.lbl_cuma_ders5.Name = "lbl_cuma_ders5";
+            this.lbl_cuma_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders5.TabIndex = 55;
+            this.lbl_cuma_ders5.Text = "Ders";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.lbl_alinanbelge_bilgi, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(94, 8);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(478, 39);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // lbl_alinanbelge_bilgi
+            // 
+            this.lbl_alinanbelge_bilgi.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_alinanbelge_bilgi.AutoSize = true;
+            this.lbl_alinanbelge_bilgi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_alinanbelge_bilgi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_alinanbelge_bilgi.Location = new System.Drawing.Point(3, 9);
+            this.lbl_alinanbelge_bilgi.Name = "lbl_alinanbelge_bilgi";
+            this.lbl_alinanbelge_bilgi.Size = new System.Drawing.Size(283, 20);
+            this.lbl_alinanbelge_bilgi.TabIndex = 0;
+            this.lbl_alinanbelge_bilgi.Text = "Alınan Belgeler Başarıyla Listelenmiştir.\r\n";
+            this.lbl_alinanbelge_bilgi.Click += new System.EventHandler(this.label15_Click_2);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(228, 53);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
             // ogrencibilgiekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -922,9 +1605,22 @@
             this.Text = " ";
             this.Load += new System.EventHandler(this.ogrencibilgiekran_Load);
             this.tabControl1.ResumeLayout(false);
+            this.page_duyurular.ResumeLayout(false);
             this.page_notbilgi.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.page_devamsizlik.ResumeLayout(false);
+            this.page_devamsizlik.PerformLayout();
+            this.page_dersprogram.ResumeLayout(false);
+            this.page_alinanbelgeler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1001,5 +1697,56 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_ozurlu_devamsizlik_top;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl_faaliyet_toplam;
+        private System.Windows.Forms.Label lbl_faaliyet_devamsizlik;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lbl_ozursuz_top;
+        private System.Windows.Forms.Label lbl_gec_gelme;
+        private System.Windows.Forms.Label lbl_tam_gun;
+        private System.Windows.Forms.Label lbl_ogleden_sonra_yarim;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lbl_ozurlu_devamsizlik;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label lbl_cuma;
+        private System.Windows.Forms.Label lbl_persembe;
+        private System.Windows.Forms.Label lbl_carsamba;
+        private System.Windows.Forms.Label lbl_sali;
+        private System.Windows.Forms.Label lbl_pazartesi;
+        private System.Windows.Forms.Label lbl_cuma_ders5;
+        private System.Windows.Forms.Label lbl_pers_ders5;
+        private System.Windows.Forms.Label lbl_crsmb_ders5;
+        private System.Windows.Forms.Label lbl_sali_ders5;
+        private System.Windows.Forms.Label lbl_pzt_ders5;
+        private System.Windows.Forms.Label lbl_cuma_ders4;
+        private System.Windows.Forms.Label lbl_pers_ders4;
+        private System.Windows.Forms.Label lbl_crsmb_ders4;
+        private System.Windows.Forms.Label lbl_sali_ders4;
+        private System.Windows.Forms.Label lbl_pzt_ders4;
+        private System.Windows.Forms.Label lbl_cuma_ders3;
+        private System.Windows.Forms.Label lbl_pers_ders3;
+        private System.Windows.Forms.Label lbl_crsmb_ders3;
+        private System.Windows.Forms.Label lbl_sali_ders3;
+        private System.Windows.Forms.Label lbl_pzt_ders3;
+        private System.Windows.Forms.Label lbl_cuma_ders2;
+        private System.Windows.Forms.Label lbl_pers_ders2;
+        private System.Windows.Forms.Label lbl_crsmb_ders2;
+        private System.Windows.Forms.Label lbl_sali_ders2;
+        private System.Windows.Forms.Label lbl_pzt_ders2;
+        private System.Windows.Forms.Label lbl_cuma_ders1;
+        private System.Windows.Forms.Label lbl_pers_ders1;
+        private System.Windows.Forms.Label lbl_crsmb_ders1;
+        private System.Windows.Forms.Label lbl_sali_ders1;
+        private System.Windows.Forms.Label lbl_ders5;
+        private System.Windows.Forms.Label lbl_ders4;
+        private System.Windows.Forms.Label lbl_ders3;
+        private System.Windows.Forms.Label lbl_ders2;
+        private System.Windows.Forms.Label lbl_ders1;
+        private System.Windows.Forms.Label lbl_pzt_ders1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label lbl_alinanbelge_bilgi;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
     }
 }

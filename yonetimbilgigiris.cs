@@ -102,5 +102,10 @@ namespace Login_Ekranı
         {
 
         }
+
+        private void yonetimbilgigiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

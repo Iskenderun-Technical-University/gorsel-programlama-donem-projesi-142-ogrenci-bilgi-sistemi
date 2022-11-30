@@ -83,5 +83,30 @@ namespace Login_Ekranı
         {
 
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label45_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

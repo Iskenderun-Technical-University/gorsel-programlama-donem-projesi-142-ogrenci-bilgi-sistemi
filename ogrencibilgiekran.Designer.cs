@@ -99,20 +99,7 @@
             this.page_alinanbelgeler = new System.Windows.Forms.TabPage();
             this.page_yilsonunot = new System.Windows.Forms.TabPage();
             this.page_subeortalama = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.duyurular = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lbl_ozurlu_devamsizlik_top = new System.Windows.Forms.Label();
-            this.lbl_ozurlu_devamsizlik = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lbl_ogleden_sonra_yarim = new System.Windows.Forms.Label();
-            this.lbl_tam_gun = new System.Windows.Forms.Label();
-            this.lbl_gec_gelme = new System.Windows.Forms.Label();
-            this.lbl_ozursuz_top = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lbl_faaliyet_devamsizlik = new System.Windows.Forms.Label();
-            this.lbl_faaliyet_toplam = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_pazartesi = new System.Windows.Forms.Label();
             this.lbl_sali = new System.Windows.Forms.Label();
@@ -195,22 +182,52 @@
             this.lbl_sinif12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_turkdili = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_biyo = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_kimya = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_fizik = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_mat = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_beden = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_gorselprog = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_teknolojiokur = new System.Windows.Forms.Label();
+            this.lbl_sınıfort_agveteknoloji = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.lbl_ozursuz_devamsizlik = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.lbl_ozurlu_devamsizlik = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.lbl_faaliyet_devamsizlik = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.lbl_toplam_devamsizlik = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.page_duyurular.SuspendLayout();
             this.page_notbilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.page_devamsizlik.SuspendLayout();
             this.page_dersprogram.SuspendLayout();
             this.page_alinanbelgeler.SuspendLayout();
             this.page_yilsonunot.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.page_subeortalama.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // kapat_ico
@@ -229,7 +246,6 @@
             this.tabControl1.Controls.Add(this.page_alinanbelgeler);
             this.tabControl1.Controls.Add(this.page_yilsonunot);
             this.tabControl1.Controls.Add(this.page_subeortalama);
-            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.ItemSize = new System.Drawing.Size(50, 130);
@@ -243,7 +259,6 @@
             // 
             // page_duyurular
             // 
-            this.page_duyurular.Controls.Add(this.pictureBox1);
             this.page_duyurular.Location = new System.Drawing.Point(134, 4);
             this.page_duyurular.Name = "page_duyurular";
             this.page_duyurular.Padding = new System.Windows.Forms.Padding(3);
@@ -955,17 +970,7 @@
             // 
             // page_devamsizlik
             // 
-            this.page_devamsizlik.Controls.Add(this.lbl_faaliyet_toplam);
-            this.page_devamsizlik.Controls.Add(this.lbl_faaliyet_devamsizlik);
-            this.page_devamsizlik.Controls.Add(this.pictureBox4);
-            this.page_devamsizlik.Controls.Add(this.lbl_ozursuz_top);
-            this.page_devamsizlik.Controls.Add(this.lbl_gec_gelme);
-            this.page_devamsizlik.Controls.Add(this.lbl_tam_gun);
-            this.page_devamsizlik.Controls.Add(this.lbl_ogleden_sonra_yarim);
-            this.page_devamsizlik.Controls.Add(this.pictureBox3);
-            this.page_devamsizlik.Controls.Add(this.lbl_ozurlu_devamsizlik);
-            this.page_devamsizlik.Controls.Add(this.lbl_ozurlu_devamsizlik_top);
-            this.page_devamsizlik.Controls.Add(this.pictureBox2);
+            this.page_devamsizlik.Controls.Add(this.tableLayoutPanel7);
             this.page_devamsizlik.Location = new System.Drawing.Point(134, 4);
             this.page_devamsizlik.Name = "page_devamsizlik";
             this.page_devamsizlik.Padding = new System.Windows.Forms.Padding(3);
@@ -1011,6 +1016,7 @@
             // 
             // page_subeortalama
             // 
+            this.page_subeortalama.Controls.Add(this.tableLayoutPanel6);
             this.page_subeortalama.Location = new System.Drawing.Point(134, 4);
             this.page_subeortalama.Name = "page_subeortalama";
             this.page_subeortalama.Padding = new System.Windows.Forms.Padding(3);
@@ -1019,148 +1025,11 @@
             this.page_subeortalama.Text = "Şube Ortalaması";
             this.page_subeortalama.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(134, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(662, 397);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
             // duyurular
             // 
             this.duyurular.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("duyurular.ImageStream")));
             this.duyurular.TransparentColor = System.Drawing.Color.Transparent;
             this.duyurular.Images.SetKeyName(0, "megaphone.png");
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(60, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(302, 153);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lbl_ozurlu_devamsizlik_top
-            // 
-            this.lbl_ozurlu_devamsizlik_top.AutoSize = true;
-            this.lbl_ozurlu_devamsizlik_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lbl_ozurlu_devamsizlik_top.ForeColor = System.Drawing.Color.White;
-            this.lbl_ozurlu_devamsizlik_top.Location = new System.Drawing.Point(238, 146);
-            this.lbl_ozurlu_devamsizlik_top.Name = "lbl_ozurlu_devamsizlik_top";
-            this.lbl_ozurlu_devamsizlik_top.Size = new System.Drawing.Size(13, 13);
-            this.lbl_ozurlu_devamsizlik_top.TabIndex = 1;
-            this.lbl_ozurlu_devamsizlik_top.Text = "0";
-            this.lbl_ozurlu_devamsizlik_top.Click += new System.EventHandler(this.label15_Click_1);
-            // 
-            // lbl_ozurlu_devamsizlik
-            // 
-            this.lbl_ozurlu_devamsizlik.AutoSize = true;
-            this.lbl_ozurlu_devamsizlik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(186)))), ((int)(((byte)(87)))));
-            this.lbl_ozurlu_devamsizlik.ForeColor = System.Drawing.Color.White;
-            this.lbl_ozurlu_devamsizlik.Location = new System.Drawing.Point(78, 86);
-            this.lbl_ozurlu_devamsizlik.Name = "lbl_ozurlu_devamsizlik";
-            this.lbl_ozurlu_devamsizlik.Size = new System.Drawing.Size(13, 13);
-            this.lbl_ozurlu_devamsizlik.TabIndex = 2;
-            this.lbl_ozurlu_devamsizlik.Text = "0";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(355, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(274, 175);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // lbl_ogleden_sonra_yarim
-            // 
-            this.lbl_ogleden_sonra_yarim.AutoSize = true;
-            this.lbl_ogleden_sonra_yarim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.lbl_ogleden_sonra_yarim.ForeColor = System.Drawing.Color.White;
-            this.lbl_ogleden_sonra_yarim.Location = new System.Drawing.Point(555, 59);
-            this.lbl_ogleden_sonra_yarim.Name = "lbl_ogleden_sonra_yarim";
-            this.lbl_ogleden_sonra_yarim.Size = new System.Drawing.Size(13, 13);
-            this.lbl_ogleden_sonra_yarim.TabIndex = 4;
-            this.lbl_ogleden_sonra_yarim.Text = "0";
-            // 
-            // lbl_tam_gun
-            // 
-            this.lbl_tam_gun.AutoSize = true;
-            this.lbl_tam_gun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.lbl_tam_gun.ForeColor = System.Drawing.Color.White;
-            this.lbl_tam_gun.Location = new System.Drawing.Point(443, 83);
-            this.lbl_tam_gun.Name = "lbl_tam_gun";
-            this.lbl_tam_gun.Size = new System.Drawing.Size(13, 13);
-            this.lbl_tam_gun.TabIndex = 4;
-            this.lbl_tam_gun.Text = "0";
-            // 
-            // lbl_gec_gelme
-            // 
-            this.lbl_gec_gelme.AutoSize = true;
-            this.lbl_gec_gelme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.lbl_gec_gelme.ForeColor = System.Drawing.Color.White;
-            this.lbl_gec_gelme.Location = new System.Drawing.Point(406, 107);
-            this.lbl_gec_gelme.Name = "lbl_gec_gelme";
-            this.lbl_gec_gelme.Size = new System.Drawing.Size(13, 13);
-            this.lbl_gec_gelme.TabIndex = 4;
-            this.lbl_gec_gelme.Text = "0";
-            // 
-            // lbl_ozursuz_top
-            // 
-            this.lbl_ozursuz_top.AutoSize = true;
-            this.lbl_ozursuz_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lbl_ozursuz_top.ForeColor = System.Drawing.Color.White;
-            this.lbl_ozursuz_top.Location = new System.Drawing.Point(555, 159);
-            this.lbl_ozursuz_top.Name = "lbl_ozursuz_top";
-            this.lbl_ozursuz_top.Size = new System.Drawing.Size(13, 13);
-            this.lbl_ozursuz_top.TabIndex = 5;
-            this.lbl_ozursuz_top.Text = "0";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(120, 210);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(368, 119);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lbl_faaliyet_devamsizlik
-            // 
-            this.lbl_faaliyet_devamsizlik.AutoSize = true;
-            this.lbl_faaliyet_devamsizlik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(204)))), ((int)(((byte)(101)))));
-            this.lbl_faaliyet_devamsizlik.ForeColor = System.Drawing.Color.White;
-            this.lbl_faaliyet_devamsizlik.Location = new System.Drawing.Point(194, 259);
-            this.lbl_faaliyet_devamsizlik.Name = "lbl_faaliyet_devamsizlik";
-            this.lbl_faaliyet_devamsizlik.Size = new System.Drawing.Size(13, 13);
-            this.lbl_faaliyet_devamsizlik.TabIndex = 7;
-            this.lbl_faaliyet_devamsizlik.Text = "0";
-            // 
-            // lbl_faaliyet_toplam
-            // 
-            this.lbl_faaliyet_toplam.AutoSize = true;
-            this.lbl_faaliyet_toplam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lbl_faaliyet_toplam.ForeColor = System.Drawing.Color.White;
-            this.lbl_faaliyet_toplam.Location = new System.Drawing.Point(220, 306);
-            this.lbl_faaliyet_toplam.Name = "lbl_faaliyet_toplam";
-            this.lbl_faaliyet_toplam.Size = new System.Drawing.Size(13, 13);
-            this.lbl_faaliyet_toplam.TabIndex = 8;
-            this.lbl_faaliyet_toplam.Text = "0";
             // 
             // tableLayoutPanel2
             // 
@@ -1844,6 +1713,7 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(314, 318);
             this.tableLayoutPanel5.TabIndex = 0;
             this.tableLayoutPanel5.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel5_CellPaint);
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // lbl_sinif
             // 
@@ -2146,6 +2016,388 @@
             this.label16.TabIndex = 29;
             this.label16.Text = "0";
             // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_agveteknoloji, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_teknolojiokur, 1, 8);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_gorselprog, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_beden, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_mat, 1, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_fizik, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_kimya, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_biyo, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label42, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label17, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label18, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label21, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label39, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label27, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label33, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.label30, 0, 8);
+            this.tableLayoutPanel6.Controls.Add(this.label36, 0, 9);
+            this.tableLayoutPanel6.Controls.Add(this.label43, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_sınıfort_turkdili, 1, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(140, 74);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 10;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(396, 300);
+            this.tableLayoutPanel6.TabIndex = 0;
+            this.tableLayoutPanel6.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel6_CellPaint);
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(3, 65);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 19);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "İleri Biyoloji";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(3, 95);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(77, 19);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "İleri Kimya";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.Location = new System.Drawing.Point(3, 125);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(66, 19);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "İleri Fizik";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label24.Location = new System.Drawing.Point(3, 35);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(145, 19);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "Türk Dili ve Edebiyetı";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label27.Location = new System.Drawing.Point(3, 185);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(99, 19);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "Beden Eğitimi";
+            // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label30.Location = new System.Drawing.Point(3, 245);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(156, 19);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "Teknoloji Okuryazarlığı";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label33.Location = new System.Drawing.Point(3, 215);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(189, 19);
+            this.label33.TabIndex = 7;
+            this.label33.Text = "Görsel Programlamaya Giriş";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label36.Location = new System.Drawing.Point(3, 275);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(192, 19);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "Bilgisayar Ağ ve Teknolojiler";
+            // 
+            // label39
+            // 
+            this.label39.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label39.Location = new System.Drawing.Point(3, 155);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(108, 19);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "İleri Matematik";
+            // 
+            // label42
+            // 
+            this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label42.Location = new System.Drawing.Point(87, 5);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(56, 19);
+            this.label42.TabIndex = 10;
+            this.label42.Text = "Dersler";
+            // 
+            // label43
+            // 
+            this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label43.Location = new System.Drawing.Point(243, 5);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(140, 19);
+            this.label43.TabIndex = 11;
+            this.label43.Text = "Ağırlıklı Ortalamalar";
+            // 
+            // lbl_sınıfort_turkdili
+            // 
+            this.lbl_sınıfort_turkdili.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_turkdili.AutoSize = true;
+            this.lbl_sınıfort_turkdili.Location = new System.Drawing.Point(307, 38);
+            this.lbl_sınıfort_turkdili.Name = "lbl_sınıfort_turkdili";
+            this.lbl_sınıfort_turkdili.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_turkdili.TabIndex = 12;
+            this.lbl_sınıfort_turkdili.Text = "0";
+            // 
+            // lbl_sınıfort_biyo
+            // 
+            this.lbl_sınıfort_biyo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_biyo.AutoSize = true;
+            this.lbl_sınıfort_biyo.Location = new System.Drawing.Point(307, 68);
+            this.lbl_sınıfort_biyo.Name = "lbl_sınıfort_biyo";
+            this.lbl_sınıfort_biyo.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_biyo.TabIndex = 13;
+            this.lbl_sınıfort_biyo.Text = "0";
+            // 
+            // lbl_sınıfort_kimya
+            // 
+            this.lbl_sınıfort_kimya.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_kimya.AutoSize = true;
+            this.lbl_sınıfort_kimya.Location = new System.Drawing.Point(307, 98);
+            this.lbl_sınıfort_kimya.Name = "lbl_sınıfort_kimya";
+            this.lbl_sınıfort_kimya.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_kimya.TabIndex = 14;
+            this.lbl_sınıfort_kimya.Text = "0";
+            // 
+            // lbl_sınıfort_fizik
+            // 
+            this.lbl_sınıfort_fizik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_fizik.AutoSize = true;
+            this.lbl_sınıfort_fizik.Location = new System.Drawing.Point(307, 128);
+            this.lbl_sınıfort_fizik.Name = "lbl_sınıfort_fizik";
+            this.lbl_sınıfort_fizik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_fizik.TabIndex = 15;
+            this.lbl_sınıfort_fizik.Text = "0";
+            // 
+            // lbl_sınıfort_mat
+            // 
+            this.lbl_sınıfort_mat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_mat.AutoSize = true;
+            this.lbl_sınıfort_mat.Location = new System.Drawing.Point(307, 158);
+            this.lbl_sınıfort_mat.Name = "lbl_sınıfort_mat";
+            this.lbl_sınıfort_mat.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_mat.TabIndex = 16;
+            this.lbl_sınıfort_mat.Text = "0";
+            // 
+            // lbl_sınıfort_beden
+            // 
+            this.lbl_sınıfort_beden.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_beden.AutoSize = true;
+            this.lbl_sınıfort_beden.Location = new System.Drawing.Point(307, 188);
+            this.lbl_sınıfort_beden.Name = "lbl_sınıfort_beden";
+            this.lbl_sınıfort_beden.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_beden.TabIndex = 17;
+            this.lbl_sınıfort_beden.Text = "0";
+            // 
+            // lbl_sınıfort_gorselprog
+            // 
+            this.lbl_sınıfort_gorselprog.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_gorselprog.AutoSize = true;
+            this.lbl_sınıfort_gorselprog.Location = new System.Drawing.Point(307, 218);
+            this.lbl_sınıfort_gorselprog.Name = "lbl_sınıfort_gorselprog";
+            this.lbl_sınıfort_gorselprog.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_gorselprog.TabIndex = 18;
+            this.lbl_sınıfort_gorselprog.Text = "0";
+            this.lbl_sınıfort_gorselprog.Click += new System.EventHandler(this.label50_Click);
+            // 
+            // lbl_sınıfort_teknolojiokur
+            // 
+            this.lbl_sınıfort_teknolojiokur.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_teknolojiokur.AutoSize = true;
+            this.lbl_sınıfort_teknolojiokur.Location = new System.Drawing.Point(307, 248);
+            this.lbl_sınıfort_teknolojiokur.Name = "lbl_sınıfort_teknolojiokur";
+            this.lbl_sınıfort_teknolojiokur.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_teknolojiokur.TabIndex = 19;
+            this.lbl_sınıfort_teknolojiokur.Text = "0";
+            // 
+            // lbl_sınıfort_agveteknoloji
+            // 
+            this.lbl_sınıfort_agveteknoloji.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sınıfort_agveteknoloji.AutoSize = true;
+            this.lbl_sınıfort_agveteknoloji.Location = new System.Drawing.Point(307, 278);
+            this.lbl_sınıfort_agveteknoloji.Name = "lbl_sınıfort_agveteknoloji";
+            this.lbl_sınıfort_agveteknoloji.Size = new System.Drawing.Size(13, 13);
+            this.lbl_sınıfort_agveteknoloji.TabIndex = 20;
+            this.lbl_sınıfort_agveteknoloji.Text = "0";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.79592F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.20408F));
+            this.tableLayoutPanel7.Controls.Add(this.lbl_toplam_devamsizlik, 1, 4);
+            this.tableLayoutPanel7.Controls.Add(this.label52, 0, 4);
+            this.tableLayoutPanel7.Controls.Add(this.lbl_faaliyet_devamsizlik, 1, 3);
+            this.tableLayoutPanel7.Controls.Add(this.label50, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.lbl_ozurlu_devamsizlik, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label48, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lbl_ozursuz_devamsizlik, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label46, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label45, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label44, 0, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(154, 72);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 5;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(317, 292);
+            this.tableLayoutPanel7.TabIndex = 0;
+            this.tableLayoutPanel7.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel7_CellPaint);
+            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
+            // 
+            // label44
+            // 
+            this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(34, 22);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(88, 13);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "Devamsızlık Türü";
+            // 
+            // label45
+            // 
+            this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(180, 22);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(114, 13);
+            this.label45.TabIndex = 1;
+            this.label45.Text = "Kaç Devamsızlık Günü";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(26, 80);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(104, 13);
+            this.label46.TabIndex = 2;
+            this.label46.Text = "Özürsüz Devamsızlık";
+            // 
+            // lbl_ozursuz_devamsizlik
+            // 
+            this.lbl_ozursuz_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ozursuz_devamsizlik.AutoSize = true;
+            this.lbl_ozursuz_devamsizlik.Location = new System.Drawing.Point(230, 80);
+            this.lbl_ozursuz_devamsizlik.Name = "lbl_ozursuz_devamsizlik";
+            this.lbl_ozursuz_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ozursuz_devamsizlik.TabIndex = 3;
+            this.lbl_ozursuz_devamsizlik.Text = "0";
+            // 
+            // label48
+            // 
+            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(30, 138);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(96, 13);
+            this.label48.TabIndex = 4;
+            this.label48.Text = "Özürlü Devamsızlık";
+            // 
+            // lbl_ozurlu_devamsizlik
+            // 
+            this.lbl_ozurlu_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ozurlu_devamsizlik.AutoSize = true;
+            this.lbl_ozurlu_devamsizlik.Location = new System.Drawing.Point(230, 138);
+            this.lbl_ozurlu_devamsizlik.Name = "lbl_ozurlu_devamsizlik";
+            this.lbl_ozurlu_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_ozurlu_devamsizlik.TabIndex = 5;
+            this.lbl_ozurlu_devamsizlik.Text = "0";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(57, 196);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(43, 13);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "Faaliyet";
+            // 
+            // lbl_faaliyet_devamsizlik
+            // 
+            this.lbl_faaliyet_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_faaliyet_devamsizlik.AutoSize = true;
+            this.lbl_faaliyet_devamsizlik.Location = new System.Drawing.Point(230, 196);
+            this.lbl_faaliyet_devamsizlik.Name = "lbl_faaliyet_devamsizlik";
+            this.lbl_faaliyet_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_faaliyet_devamsizlik.TabIndex = 7;
+            this.lbl_faaliyet_devamsizlik.Text = "0";
+            // 
+            // label52
+            // 
+            this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(57, 255);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(42, 13);
+            this.label52.TabIndex = 8;
+            this.label52.Text = "Toplam";
+            // 
+            // lbl_toplam_devamsizlik
+            // 
+            this.lbl_toplam_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_toplam_devamsizlik.AutoSize = true;
+            this.lbl_toplam_devamsizlik.Location = new System.Drawing.Point(230, 255);
+            this.lbl_toplam_devamsizlik.Name = "lbl_toplam_devamsizlik";
+            this.lbl_toplam_devamsizlik.Size = new System.Drawing.Size(13, 13);
+            this.lbl_toplam_devamsizlik.TabIndex = 9;
+            this.lbl_toplam_devamsizlik.Text = "0";
+            // 
             // ogrencibilgiekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2158,19 +2410,14 @@
             this.Text = " ";
             this.Load += new System.EventHandler(this.ogrencibilgiekran_Load);
             this.tabControl1.ResumeLayout(false);
-            this.page_duyurular.ResumeLayout(false);
             this.page_notbilgi.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.page_devamsizlik.ResumeLayout(false);
-            this.page_devamsizlik.PerformLayout();
             this.page_dersprogram.ResumeLayout(false);
             this.page_alinanbelgeler.ResumeLayout(false);
             this.page_yilsonunot.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.page_subeortalama.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -2179,6 +2426,10 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2194,7 +2445,6 @@
         private System.Windows.Forms.TabPage page_alinanbelgeler;
         private System.Windows.Forms.TabPage page_yilsonunot;
         private System.Windows.Forms.TabPage page_subeortalama;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lbl_ag_1;
         private System.Windows.Forms.Label lbl_ag_2;
@@ -2255,18 +2505,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_ozurlu_devamsizlik_top;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lbl_faaliyet_toplam;
-        private System.Windows.Forms.Label lbl_faaliyet_devamsizlik;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label lbl_ozursuz_top;
-        private System.Windows.Forms.Label lbl_gec_gelme;
-        private System.Windows.Forms.Label lbl_tam_gun;
-        private System.Windows.Forms.Label lbl_ogleden_sonra_yarim;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label lbl_ozurlu_devamsizlik;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lbl_cuma;
         private System.Windows.Forms.Label lbl_persembe;
@@ -2349,5 +2587,37 @@
         private System.Windows.Forms.Label lbl_sinif;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label lbl_sınıfort_agveteknoloji;
+        private System.Windows.Forms.Label lbl_sınıfort_teknolojiokur;
+        private System.Windows.Forms.Label lbl_sınıfort_gorselprog;
+        private System.Windows.Forms.Label lbl_sınıfort_beden;
+        private System.Windows.Forms.Label lbl_sınıfort_mat;
+        private System.Windows.Forms.Label lbl_sınıfort_fizik;
+        private System.Windows.Forms.Label lbl_sınıfort_kimya;
+        private System.Windows.Forms.Label lbl_sınıfort_biyo;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label lbl_sınıfort_turkdili;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label lbl_toplam_devamsizlik;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label lbl_faaliyet_devamsizlik;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label lbl_ozurlu_devamsizlik;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label lbl_ozursuz_devamsizlik;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
     }
 }

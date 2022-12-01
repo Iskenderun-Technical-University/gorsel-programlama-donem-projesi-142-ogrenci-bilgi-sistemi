@@ -38,12 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_kapat
             // 
-            this.button_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_kapat.BackColor = System.Drawing.Color.Transparent;
             this.button_kapat.ImageKey = "458594.png";
             this.button_kapat.ImageList = this.kapat_ico;
             this.button_kapat.Location = new System.Drawing.Point(388, 15);
@@ -115,21 +114,11 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Öğrenci Bilgi Giriş Paneli";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(339, 276);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "label4";
-            // 
             // ogrencibilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 328);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_id);
@@ -140,7 +129,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ogrencibilgigiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ogrencibilgigiris";
+            this.Text = "   ";
             this.Load += new System.EventHandler(this.ogrencibilgigiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,6 +146,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList kapat_ico;
-        private System.Windows.Forms.Label label4;
     }
 }

@@ -173,5 +173,50 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
         }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
+        }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void tableLayoutPanel7_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
+        }
     }
 }

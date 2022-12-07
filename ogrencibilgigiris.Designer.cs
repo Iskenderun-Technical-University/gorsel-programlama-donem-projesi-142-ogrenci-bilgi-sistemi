@@ -140,11 +140,11 @@
 
         private System.Windows.Forms.Button button_kapat;
         private System.Windows.Forms.TextBox txt_sifre;
-        private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList kapat_ico;
+        public System.Windows.Forms.TextBox txt_id;
     }
 }

@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
-        CQAAAk1TRnQBSQFMAwEBAAEQAQABEAEAARkBAAEZAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CQAAAk1TRnQBSQFMAwEBAAEYAQABGAEAARkBAAEZAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AWQDAAEZAwABAQEAAQgFAAHEAQkYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -165,6 +165,23 @@
         AYAMAAH4AQABDwGADAAB8AEAAQcBgAwAAeABAAEDAYAMAAHAAQABAQGADAABgAIAAYAMAAGAAgABgLwA
         AYACAAGADAABgAIAAYAMAAHAAQABAQGADAAB4AEAAQMBgAwAAfABAAEHAYAMAAH4AQABDwGADAAB/gEA
         AT8BgAwACw==
+</value>
+  </data>
+  <data name="lbl_duyuru.Text" xml:space="preserve">
+    <value>Değerli Öğrencilerimiz;
+
+Yetenek Sende Fırsatlar Yetenek Kapısı'nda! Fırsatlardan ilk sen haberdar olmak istiyorsan, Yetenek Kapısı seni bekliyor. İş /Staj ilanları, kariyer danışmanlığı, 
+kariyer fuarları, etkinlikler ve çok daha fazlasına yetenek kapısından ulaşabilirsin. Detaylı bilgi için https://www.yetenekkapisi.org
+
+Üniversitemizin kurumsa e-posta adresine https://eposta.iste.edu.tr internet sayfasından giriş yapılmaktadır. Üniversitemizin kurumsal e-posta başvurusu 
+https://iste.edu.tr/mailbasvuru internet sayfasından yapılmaktadır.  Kurumsal e-postanızın şifresini https://iste.edu.tr/kullanici/resetpassword adresinden 
+sıfırlama işlemi yaptığınızda, iste uzantılı e posta başvurusu esnasında tanımladığınız e-postaya şifre sıfırlama linki gelmektedir.  Gönderilen bu linki 
+tıklayarak kurumsal e-postanızın şifresini sıfırlayabilirsiniz. Kurumsal e-posta başvurusu esnasında tanımladığınız e-posta adresini 
+https://iste.edu.tr/kullanici/ogrenciguncelle adresinden öğrenebilir veya tanımlı e-postanızı güncelleyebilirsiniz.
+
+Öğrenci Numara Sorgulama Sistemine, https://obs.iste.edu.tr/oibs/ogrsis/no_query.aspx internet adresinden giriş sağlayarak T.C. Kimlik numaranızı 
+sisteme girip, öğrenci numaranızı öğrenebilirsiniz. Öğrenci otomasyon şifrenizi, https://obs.iste.edu.tr/oibs/ogrenci/login.aspx internet adresinden 
+“Şifre Sıfırla”yı seçerek  “Kimlik Bilgileriyle Sıfırla” ya da “E-Posta Adresiyle Sıfırla” seçeneklerinden birini kullanarak belirleyebilirsiniz.
 </value>
   </data>
 </root>

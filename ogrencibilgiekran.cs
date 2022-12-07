@@ -14,6 +14,7 @@ namespace Login_Ekranı
     {
         public ogrencibilgiekran()
         {
+            
             InitializeComponent();
             tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
         }
@@ -31,7 +32,7 @@ namespace Login_Ekranı
         private void button_kapat_Click(object sender, EventArgs e)
         {
             this.Close();
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

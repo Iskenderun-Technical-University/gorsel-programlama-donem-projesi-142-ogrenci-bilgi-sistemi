@@ -15,6 +15,8 @@ namespace Login_Ekranı
     {
         public yonetimbilgigiris()
         {
+            yonetimpanel yonetimpanel = new yonetimpanel();
+            yonetimpanel.Show();
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
@@ -90,7 +92,7 @@ namespace Login_Ekranı
         private void button_kapat_Click(object sender, EventArgs e)
         {
             this.Close();
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void label3_Click(object sender, EventArgs e)

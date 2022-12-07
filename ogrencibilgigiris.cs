@@ -15,8 +15,7 @@ namespace Login_Ekranı
     {
         public ogrencibilgigiris()
         {
-            ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
-            ogrencibilgiekran.Show();
+            
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
@@ -73,7 +72,7 @@ namespace Login_Ekranı
         private void button_kapat_Click(object sender, EventArgs e)
         {
             this.Close();
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void txt_sifre_TextChanged(object sender, EventArgs e)

@@ -38,6 +38,7 @@
             this.txt_sifre = new System.Windows.Forms.TextBox();
             this.button_kapat = new System.Windows.Forms.Button();
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -87,6 +88,7 @@
             // txt_id
             // 
             this.txt_id.Location = new System.Drawing.Point(141, 143);
+            this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(154, 20);
             this.txt_id.TabIndex = 5;
@@ -118,12 +120,23 @@
             this.kapat_ico.TransparentColor = System.Drawing.Color.Transparent;
             this.kapat_ico.Images.SetKeyName(0, "458594.png");
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(329, 222);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // yonetimbilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(431, 334);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_id);
@@ -147,9 +160,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.TextBox txt_sifre;
         private System.Windows.Forms.Button button_kapat;
         private System.Windows.Forms.ImageList kapat_ico;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox txt_id;
     }
 }

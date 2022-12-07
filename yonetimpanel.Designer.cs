@@ -78,6 +78,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.page_notgiris = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -117,10 +118,10 @@
             // 
             this.page_girisekran.Controls.Add(this.lbl_duyuru);
             this.page_girisekran.Controls.Add(this.pictureBox2);
-            this.page_girisekran.Location = new System.Drawing.Point(134, 4);
+            this.page_girisekran.Location = new System.Drawing.Point(164, 4);
             this.page_girisekran.Name = "page_girisekran";
             this.page_girisekran.Padding = new System.Windows.Forms.Padding(3);
-            this.page_girisekran.Size = new System.Drawing.Size(1105, 564);
+            this.page_girisekran.Size = new System.Drawing.Size(1075, 564);
             this.page_girisekran.TabIndex = 2;
             this.page_girisekran.Text = "Giriş Paneli";
             this.page_girisekran.UseVisualStyleBackColor = true;
@@ -637,18 +638,19 @@
             this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.eokullogo;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(333, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // page_notgiris
             // 
+            this.page_notgiris.Controls.Add(this.label1);
             this.page_notgiris.Controls.Add(this.comboBox1);
-            this.page_notgiris.Location = new System.Drawing.Point(134, 4);
+            this.page_notgiris.Location = new System.Drawing.Point(164, 4);
             this.page_notgiris.Name = "page_notgiris";
             this.page_notgiris.Padding = new System.Windows.Forms.Padding(3);
-            this.page_notgiris.Size = new System.Drawing.Size(1105, 564);
+            this.page_notgiris.Size = new System.Drawing.Size(1075, 564);
             this.page_notgiris.TabIndex = 0;
             this.page_notgiris.Text = "Not Girişi";
             this.page_notgiris.UseVisualStyleBackColor = true;
@@ -666,6 +668,15 @@
             this.comboBox1.Size = new System.Drawing.Size(178, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(403, 195);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
             // 
             // yonetimpanel
             // 
@@ -689,6 +700,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.page_notgiris.ResumeLayout(false);
+            this.page_notgiris.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -742,5 +754,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage page_notgiris;
         private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Label label1;
     }
 }

@@ -258,11 +258,11 @@
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabControl1.ItemSize = new System.Drawing.Size(70, 170);
-            this.tabControl1.Location = new System.Drawing.Point(0, 95);
+            this.tabControl1.Location = new System.Drawing.Point(0, 102);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1243, 596);
+            this.tabControl1.Size = new System.Drawing.Size(1243, 589);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.TabStop = false;
@@ -2165,7 +2165,7 @@
             this.page_subeortalama.Location = new System.Drawing.Point(174, 4);
             this.page_subeortalama.Name = "page_subeortalama";
             this.page_subeortalama.Padding = new System.Windows.Forms.Padding(3);
-            this.page_subeortalama.Size = new System.Drawing.Size(1065, 588);
+            this.page_subeortalama.Size = new System.Drawing.Size(1065, 581);
             this.page_subeortalama.TabIndex = 6;
             this.page_subeortalama.Text = "Şube Ortalaması";
             this.page_subeortalama.UseVisualStyleBackColor = true;
@@ -2441,7 +2441,7 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1239, 96);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1239, 105);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // pictureBox1
@@ -2449,7 +2449,7 @@
             this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.eokullogo;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(328, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

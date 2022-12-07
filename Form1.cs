@@ -14,6 +14,7 @@ namespace Login_Ekranı
     {
         public Form1()
         {
+            
             InitializeComponent();
         }
 

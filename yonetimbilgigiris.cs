@@ -15,8 +15,7 @@ namespace Login_Ekranı
     {
         public yonetimbilgigiris()
         {
-            yonetimpanel yonetimpanel = new yonetimpanel();
-            yonetimpanel.Show();
+            
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
@@ -33,6 +32,8 @@ namespace Login_Ekranı
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             string parola = "";
             try
             {
@@ -92,7 +93,7 @@ namespace Login_Ekranı
         private void button_kapat_Click(object sender, EventArgs e)
         {
             this.Close();
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -108,6 +109,12 @@ namespace Login_Ekranı
         private void yonetimbilgigiris_Load(object sender, EventArgs e)
         {
 
+        }
+        //BUTONA BASTIĞIMIZDA YÖNETİM GİRİŞTEN YÖNETİM BİLGİYE BİLGİ AKTARILIYOR.....
+        private void button2_Click(object sender, EventArgs e)
+        {
+            yonetimpanel yonetimpanel1 = new yonetimpanel();
+            yonetimpanel1.label1.Text = txt_id.Text;
         }
     }
 }

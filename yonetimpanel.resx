@@ -168,20 +168,18 @@
 </value>
   </data>
   <data name="lbl_duyuru.Text" xml:space="preserve">
-    <value>Değerli Öğrencilerimiz;
+    <value>Değerli Hocalarımız
 
-Yetenek Sende Fırsatlar Yetenek Kapısı'nda! Fırsatlardan ilk sen haberdar olmak istiyorsan, Yetenek Kapısı seni bekliyor. İş /Staj ilanları, kariyer danışmanlığı, 
-kariyer fuarları, etkinlikler ve çok daha fazlasına yetenek kapısından ulaşabilirsin. Detaylı bilgi için https://www.yetenekkapisi.org
+Öğretmen değerlendirmeleri dönemlik yapılmaktadır.
 
-Üniversitemizin kurumsa e-posta adresine https://eposta.iste.edu.tr internet sayfasından giriş yapılmaktadır. Üniversitemizin kurumsal e-posta başvurusu 
-https://iste.edu.tr/mailbasvuru internet sayfasından yapılmaktadır.  Kurumsal e-postanızın şifresini https://iste.edu.tr/kullanici/resetpassword adresinden 
-sıfırlama işlemi yaptığınızda, iste uzantılı e posta başvurusu esnasında tanımladığınız e-postaya şifre sıfırlama linki gelmektedir.  Gönderilen bu linki 
-tıklayarak kurumsal e-postanızın şifresini sıfırlayabilirsiniz. Kurumsal e-posta başvurusu esnasında tanımladığınız e-posta adresini 
-https://iste.edu.tr/kullanici/ogrenciguncelle adresinden öğrenebilir veya tanımlı e-postanızı güncelleyebilirsiniz.
+Dönem kapandıktan 1 ay içinde not girişleri yapılmaktadır.
 
-Öğrenci Numara Sorgulama Sistemine, https://obs.iste.edu.tr/oibs/ogrsis/no_query.aspx internet adresinden giriş sağlayarak T.C. Kimlik numaranızı 
-sisteme girip, öğrenci numaranızı öğrenebilirsiniz. Öğrenci otomasyon şifrenizi, https://obs.iste.edu.tr/oibs/ogrenci/login.aspx internet adresinden 
-“Şifre Sıfırla”yı seçerek  “Kimlik Bilgileriyle Sıfırla” ya da “E-Posta Adresiyle Sıfırla” seçeneklerinden birini kullanarak belirleyebilirsiniz.
+Kurumlar, İlçe ve il milli Eğitim Müdürlükleri not girişleri yapabilirler
+
+Not Düzeltme ve silme işlemleri ise 1 aylık dönemde kurumlar tarafindan, 
+1 alık dönem bittiğinde sadece İl Milli Eğitim Müdürlükleri Tarafından yapılabilecektir.
+
+
 </value>
   </data>
 </root>

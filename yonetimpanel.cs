@@ -53,13 +53,33 @@ namespace Login_Ekranı
             }
 
             // Use our own font.
-            Font _tabFont = new Font("Arial", 12.0f, FontStyle.Bold, GraphicsUnit.Pixel);
+            Font _tabFont = new Font("Arial", 15.0f, FontStyle.Bold, GraphicsUnit.Pixel);
 
             // Draw string. Center the text.
             StringFormat _stringFlags = new StringFormat();
             _stringFlags.Alignment = StringAlignment.Center;
             _stringFlags.LineAlignment = StringAlignment.Center;
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if ((e.Row) % 2 == 0)
+                e.Graphics.FillRectangle(Brushes.LightGray, e.CellBounds);
+            else
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+
+            if (true)
+            {
+                var rectangle = e.CellBounds;
+
+                ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
+            }
         }
     }
 }

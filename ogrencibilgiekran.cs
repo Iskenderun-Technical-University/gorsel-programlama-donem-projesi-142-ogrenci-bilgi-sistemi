@@ -64,7 +64,7 @@ namespace Login_Ekranı
             }
 
             // Use our own font.
-            Font _tabFont = new Font("Arial", 12.0f, FontStyle.Bold, GraphicsUnit.Pixel);
+            Font _tabFont = new Font("Arial", 15.0f, FontStyle.Bold, GraphicsUnit.Pixel);
 
             // Draw string. Center the text.
             StringFormat _stringFlags = new StringFormat();
@@ -218,6 +218,11 @@ namespace Login_Ekranı
 
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
+        }
+
+        private void page_subeortalama_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

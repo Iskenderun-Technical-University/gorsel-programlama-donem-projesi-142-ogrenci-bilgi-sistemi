@@ -111,6 +111,9 @@ namespace Login_Ekranı
 
         }
         //BUTONA BASTIĞIMIZDA YÖNETİM GİRİŞTEN YÖNETİM BİLGİYE BİLGİ AKTARILIYOR.....
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

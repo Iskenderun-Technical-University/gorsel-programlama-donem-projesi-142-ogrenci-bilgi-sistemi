@@ -53,7 +53,7 @@
             this.label2.Location = new System.Drawing.Point(89, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(433, 39);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Yönetim Bilgi Giriş Paneli";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -64,7 +64,7 @@
             this.button1.Location = new System.Drawing.Point(249, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 40);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 3;
             this.button1.Text = "GİRİŞ";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -78,7 +78,7 @@
             this.label1.Location = new System.Drawing.Point(154, 209);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Numara :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -91,7 +91,7 @@
             this.label3.Location = new System.Drawing.Point(154, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Şifre :";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
@@ -101,7 +101,7 @@
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(166, 20);
-            this.txt_id.TabIndex = 5;
+            this.txt_id.TabIndex = 1;
             this.txt_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txt_sifre
@@ -110,7 +110,7 @@
             this.txt_sifre.Multiline = true;
             this.txt_sifre.Name = "txt_sifre";
             this.txt_sifre.Size = new System.Drawing.Size(166, 21);
-            this.txt_sifre.TabIndex = 5;
+            this.txt_sifre.TabIndex = 2;
             this.txt_sifre.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
             // 
             // kapat_ico
@@ -137,7 +137,7 @@
             this.button_kapat.Location = new System.Drawing.Point(560, 12);
             this.button_kapat.Name = "button_kapat";
             this.button_kapat.Size = new System.Drawing.Size(34, 33);
-            this.button_kapat.TabIndex = 6;
+            this.button_kapat.TabIndex = 4;
             this.button_kapat.UseVisualStyleBackColor = false;
             this.button_kapat.Click += new System.EventHandler(this.button_kapat_Click);
             // 

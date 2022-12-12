@@ -64,6 +64,9 @@
     <Compile Include="ogrencibilgigiris.Designer.cs">
       <DependentUpon>ogrencibilgigiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="RJ\RJ.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="yonetimbilgigiris.cs">
       <SubType>Form</SubType>
     </Compile>

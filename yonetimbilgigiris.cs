@@ -62,6 +62,7 @@ namespace Login_Ekranı
             catch (Exception ex)
             {
                 MessageBox.Show("Bağlantı Hatası!" + ex.Message);
+                // Bağlantı hatasında uyarı verecek.
             }
             finally
             {

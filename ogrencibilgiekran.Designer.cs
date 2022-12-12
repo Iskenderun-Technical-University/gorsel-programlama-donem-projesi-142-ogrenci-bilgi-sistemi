@@ -271,10 +271,10 @@
             // 
             this.page_duyurular.Controls.Add(this.lbl_duyuru);
             this.page_duyurular.Controls.Add(this.pictureBox2);
-            this.page_duyurular.Location = new System.Drawing.Point(134, 4);
+            this.page_duyurular.Location = new System.Drawing.Point(174, 4);
             this.page_duyurular.Name = "page_duyurular";
             this.page_duyurular.Padding = new System.Windows.Forms.Padding(3);
-            this.page_duyurular.Size = new System.Drawing.Size(1105, 588);
+            this.page_duyurular.Size = new System.Drawing.Size(1065, 581);
             this.page_duyurular.TabIndex = 2;
             this.page_duyurular.Text = "Duyurular";
             this.page_duyurular.UseVisualStyleBackColor = true;
@@ -303,10 +303,10 @@
             // page_notbilgi
             // 
             this.page_notbilgi.Controls.Add(this.tableLayoutPanel1);
-            this.page_notbilgi.Location = new System.Drawing.Point(134, 4);
+            this.page_notbilgi.Location = new System.Drawing.Point(174, 4);
             this.page_notbilgi.Name = "page_notbilgi";
             this.page_notbilgi.Padding = new System.Windows.Forms.Padding(3);
-            this.page_notbilgi.Size = new System.Drawing.Size(1105, 588);
+            this.page_notbilgi.Size = new System.Drawing.Size(1065, 581);
             this.page_notbilgi.TabIndex = 0;
             this.page_notbilgi.Text = "Not Bilgisi";
             this.page_notbilgi.UseVisualStyleBackColor = true;
@@ -1003,10 +1003,10 @@
             // page_devamsizlik
             // 
             this.page_devamsizlik.Controls.Add(this.tableLayoutPanel7);
-            this.page_devamsizlik.Location = new System.Drawing.Point(134, 4);
+            this.page_devamsizlik.Location = new System.Drawing.Point(174, 4);
             this.page_devamsizlik.Name = "page_devamsizlik";
             this.page_devamsizlik.Padding = new System.Windows.Forms.Padding(3);
-            this.page_devamsizlik.Size = new System.Drawing.Size(1105, 588);
+            this.page_devamsizlik.Size = new System.Drawing.Size(1065, 581);
             this.page_devamsizlik.TabIndex = 1;
             this.page_devamsizlik.Text = "Devamsızlık Bilgisi";
             this.page_devamsizlik.UseVisualStyleBackColor = true;
@@ -1142,10 +1142,10 @@
             // page_dersprogram
             // 
             this.page_dersprogram.Controls.Add(this.tableLayoutPanel2);
-            this.page_dersprogram.Location = new System.Drawing.Point(134, 4);
+            this.page_dersprogram.Location = new System.Drawing.Point(174, 4);
             this.page_dersprogram.Name = "page_dersprogram";
             this.page_dersprogram.Padding = new System.Windows.Forms.Padding(3);
-            this.page_dersprogram.Size = new System.Drawing.Size(1105, 588);
+            this.page_dersprogram.Size = new System.Drawing.Size(1065, 581);
             this.page_dersprogram.TabIndex = 3;
             this.page_dersprogram.Text = "Ders Programı";
             this.page_dersprogram.UseVisualStyleBackColor = true;
@@ -1597,10 +1597,10 @@
             this.page_alinanbelgeler.Controls.Add(this.tableLayoutPanel4);
             this.page_alinanbelgeler.Controls.Add(this.tableLayoutPanel3);
             this.page_alinanbelgeler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.page_alinanbelgeler.Location = new System.Drawing.Point(134, 4);
+            this.page_alinanbelgeler.Location = new System.Drawing.Point(174, 4);
             this.page_alinanbelgeler.Name = "page_alinanbelgeler";
             this.page_alinanbelgeler.Padding = new System.Windows.Forms.Padding(3);
-            this.page_alinanbelgeler.Size = new System.Drawing.Size(1105, 588);
+            this.page_alinanbelgeler.Size = new System.Drawing.Size(1065, 581);
             this.page_alinanbelgeler.TabIndex = 4;
             this.page_alinanbelgeler.Text = "Alınan Belgeler";
             this.page_alinanbelgeler.UseVisualStyleBackColor = true;
@@ -1796,10 +1796,10 @@
             // page_yilsonunot
             // 
             this.page_yilsonunot.Controls.Add(this.tableLayoutPanel5);
-            this.page_yilsonunot.Location = new System.Drawing.Point(134, 4);
+            this.page_yilsonunot.Location = new System.Drawing.Point(174, 4);
             this.page_yilsonunot.Name = "page_yilsonunot";
             this.page_yilsonunot.Padding = new System.Windows.Forms.Padding(3);
-            this.page_yilsonunot.Size = new System.Drawing.Size(1105, 588);
+            this.page_yilsonunot.Size = new System.Drawing.Size(1065, 581);
             this.page_yilsonunot.TabIndex = 5;
             this.page_yilsonunot.Text = "Yıl Sonu Notları";
             this.page_yilsonunot.UseVisualStyleBackColor = true;
@@ -2443,6 +2443,7 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1239, 105);
             this.tableLayoutPanel8.TabIndex = 1;
+            this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel8_Paint);
             // 
             // pictureBox1
             // 

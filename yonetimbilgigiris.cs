@@ -111,10 +111,6 @@ namespace Login_Ekranı
 
         }
         //BUTONA BASTIĞIMIZDA YÖNETİM GİRİŞTEN YÖNETİM BİLGİYE BİLGİ AKTARILIYOR.....
-        private void button2_Click(object sender, EventArgs e)
-        {
-            yonetimpanel yonetimpanel1 = new yonetimpanel();
-            yonetimpanel1.label1.Text = txt_id.Text;
-        }
+        
     }
 }

@@ -34,8 +34,9 @@
             this.yonetimpng = new System.Windows.Forms.ImageList(this.components);
             this.ogrenci_buton = new System.Windows.Forms.Button();
             this.ogrenci = new System.Windows.Forms.ImageList(this.components);
-            this.button_kapat = new System.Windows.Forms.Button();
             this.kapatma_butonu = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // yonetim_buton
@@ -45,10 +46,10 @@
             this.yonetim_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.yonetim_buton.ImageIndex = 0;
             this.yonetim_buton.ImageList = this.yonetimpng;
-            this.yonetim_buton.Location = new System.Drawing.Point(33, 61);
+            this.yonetim_buton.Location = new System.Drawing.Point(24, 107);
             this.yonetim_buton.Name = "yonetim_buton";
             this.yonetim_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.yonetim_buton.Size = new System.Drawing.Size(244, 105);
+            this.yonetim_buton.Size = new System.Drawing.Size(257, 105);
             this.yonetim_buton.TabIndex = 0;
             this.yonetim_buton.Text = "Yönetim Bilgi\r\nSistemi Giriş";
             this.yonetim_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -59,7 +60,7 @@
             // 
             this.yonetimpng.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("yonetimpng.ImageStream")));
             this.yonetimpng.TransparentColor = System.Drawing.Color.Transparent;
-            this.yonetimpng.Images.SetKeyName(0, "stock-vector-toilet-restroom-wc-icon-set-in-thin-line-style-1226443066.png");
+            this.yonetimpng.Images.SetKeyName(0, "teach.png");
             // 
             // ogrenci_buton
             // 
@@ -68,10 +69,10 @@
             this.ogrenci_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ogrenci_buton.ImageIndex = 0;
             this.ogrenci_buton.ImageList = this.ogrenci;
-            this.ogrenci_buton.Location = new System.Drawing.Point(327, 61);
+            this.ogrenci_buton.Location = new System.Drawing.Point(492, 107);
             this.ogrenci_buton.Name = "ogrenci_buton";
             this.ogrenci_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ogrenci_buton.Size = new System.Drawing.Size(244, 105);
+            this.ogrenci_buton.Size = new System.Drawing.Size(255, 105);
             this.ogrenci_buton.TabIndex = 0;
             this.ogrenci_buton.Text = "Öğrenci Bilgi \r\nSistemi Giriş";
             this.ogrenci_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -82,19 +83,7 @@
             // 
             this.ogrenci.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ogrenci.ImageStream")));
             this.ogrenci.TransparentColor = System.Drawing.Color.Transparent;
-            this.ogrenci.Images.SetKeyName(0, "stock-vector-family-avatar-characters-vector-line-icons-2041700969.png");
-            // 
-            // button_kapat
-            // 
-            this.button_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_kapat.ImageKey = "458594.png";
-            this.button_kapat.ImageList = this.kapatma_butonu;
-            this.button_kapat.Location = new System.Drawing.Point(573, 12);
-            this.button_kapat.Name = "button_kapat";
-            this.button_kapat.Size = new System.Drawing.Size(34, 33);
-            this.button_kapat.TabIndex = 1;
-            this.button_kapat.UseVisualStyleBackColor = false;
-            this.button_kapat.Click += new System.EventHandler(this.button3_Click);
+            this.ogrenci.Images.SetKeyName(0, "study.png");
             // 
             // kapatma_butonu
             // 
@@ -102,21 +91,34 @@
             this.kapatma_butonu.TransparentColor = System.Drawing.Color.Transparent;
             this.kapatma_butonu.Images.SetKeyName(0, "458594.png");
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(763, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.WaitOnLoad = true;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(619, 233);
-            this.Controls.Add(this.button_kapat);
+            this.ClientSize = new System.Drawing.Size(759, 322);
             this.Controls.Add(this.ogrenci_buton);
             this.Controls.Add(this.yonetim_buton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -127,8 +129,8 @@
         private System.Windows.Forms.ImageList yonetimpng;
         private System.Windows.Forms.Button ogrenci_buton;
         private System.Windows.Forms.ImageList ogrenci;
-        private System.Windows.Forms.Button button_kapat;
         private System.Windows.Forms.ImageList kapatma_butonu;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

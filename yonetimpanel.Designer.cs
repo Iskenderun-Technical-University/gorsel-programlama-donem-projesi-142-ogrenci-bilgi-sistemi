@@ -35,6 +35,8 @@
             this.page_girisekran = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.page_notgiris = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.page_devamgiris = new System.Windows.Forms.TabPage();
             this.page_dersprogram = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -76,17 +78,14 @@
             this.page_ogrenci_bilgileri = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.page_notgiris = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.page_notgiris.SuspendLayout();
             this.page_dersprogram.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.page_notgiris.SuspendLayout();
             this.SuspendLayout();
             // 
             // kapat_ico
@@ -146,12 +145,37 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // page_notgiris
+            // 
+            this.page_notgiris.Controls.Add(this.comboBox1);
+            this.page_notgiris.Location = new System.Drawing.Point(164, 4);
+            this.page_notgiris.Name = "page_notgiris";
+            this.page_notgiris.Padding = new System.Windows.Forms.Padding(3);
+            this.page_notgiris.Size = new System.Drawing.Size(1075, 564);
+            this.page_notgiris.TabIndex = 0;
+            this.page_notgiris.Text = "Not Girişi";
+            this.page_notgiris.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Öğrenci1",
+            "Öğrenci2",
+            "Öğrenci3"});
+            this.comboBox1.Location = new System.Drawing.Point(81, 72);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(178, 33);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // page_devamgiris
             // 
-            this.page_devamgiris.Location = new System.Drawing.Point(134, 4);
+            this.page_devamgiris.Location = new System.Drawing.Point(164, 4);
             this.page_devamgiris.Name = "page_devamgiris";
             this.page_devamgiris.Padding = new System.Windows.Forms.Padding(3);
-            this.page_devamgiris.Size = new System.Drawing.Size(1105, 564);
+            this.page_devamgiris.Size = new System.Drawing.Size(1075, 564);
             this.page_devamgiris.TabIndex = 1;
             this.page_devamgiris.Text = "Devamsızlık Giriş";
             this.page_devamgiris.UseVisualStyleBackColor = true;
@@ -612,10 +636,10 @@
             // page_ogrenci_bilgileri
             // 
             this.page_ogrenci_bilgileri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.page_ogrenci_bilgileri.Location = new System.Drawing.Point(134, 4);
+            this.page_ogrenci_bilgileri.Location = new System.Drawing.Point(164, 4);
             this.page_ogrenci_bilgileri.Name = "page_ogrenci_bilgileri";
             this.page_ogrenci_bilgileri.Padding = new System.Windows.Forms.Padding(3);
-            this.page_ogrenci_bilgileri.Size = new System.Drawing.Size(1105, 564);
+            this.page_ogrenci_bilgileri.Size = new System.Drawing.Size(1075, 564);
             this.page_ogrenci_bilgileri.TabIndex = 4;
             this.page_ogrenci_bilgileri.Text = "Öğrenci Bilgi Alma";
             this.page_ogrenci_bilgileri.UseVisualStyleBackColor = true;
@@ -643,41 +667,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // page_notgiris
-            // 
-            this.page_notgiris.Controls.Add(this.label1);
-            this.page_notgiris.Controls.Add(this.comboBox1);
-            this.page_notgiris.Location = new System.Drawing.Point(164, 4);
-            this.page_notgiris.Name = "page_notgiris";
-            this.page_notgiris.Padding = new System.Windows.Forms.Padding(3);
-            this.page_notgiris.Size = new System.Drawing.Size(1075, 564);
-            this.page_notgiris.TabIndex = 0;
-            this.page_notgiris.Text = "Not Girişi";
-            this.page_notgiris.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Öğrenci1",
-            "Öğrenci2",
-            "Öğrenci3"});
-            this.comboBox1.Location = new System.Drawing.Point(81, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(178, 33);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(403, 195);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
             // yonetimpanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -694,13 +683,12 @@
             this.page_girisekran.ResumeLayout(false);
             this.page_girisekran.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.page_notgiris.ResumeLayout(false);
             this.page_dersprogram.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.page_notgiris.ResumeLayout(false);
-            this.page_notgiris.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -754,6 +742,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage page_notgiris;
         private System.Windows.Forms.ComboBox comboBox1;
-        public System.Windows.Forms.Label label1;
     }
 }

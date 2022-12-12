@@ -36,6 +36,8 @@
             this.ogrenci_buton = new System.Windows.Forms.Button();
             this.yonetim_buton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button_kapat = new CustomControls.RJControls.RJButton();
+            this.Kapat_buton = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +99,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, -11);
+            this.pictureBox1.Location = new System.Drawing.Point(-10, -16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(776, 364);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,6 +108,32 @@
             this.pictureBox1.WaitOnLoad = true;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button_kapat
+            // 
+            this.button_kapat.BackColor = System.Drawing.Color.Black;
+            this.button_kapat.BackgroundColor = System.Drawing.Color.Black;
+            this.button_kapat.BorderColor = System.Drawing.Color.Black;
+            this.button_kapat.BorderRadius = 0;
+            this.button_kapat.BorderSize = 0;
+            this.button_kapat.FlatAppearance.BorderSize = 0;
+            this.button_kapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_kapat.ForeColor = System.Drawing.Color.Transparent;
+            this.button_kapat.ImageIndex = 0;
+            this.button_kapat.ImageList = this.Kapat_buton;
+            this.button_kapat.Location = new System.Drawing.Point(727, -1);
+            this.button_kapat.Name = "button_kapat";
+            this.button_kapat.Size = new System.Drawing.Size(39, 33);
+            this.button_kapat.TabIndex = 3;
+            this.button_kapat.TextColor = System.Drawing.Color.Transparent;
+            this.button_kapat.UseVisualStyleBackColor = false;
+            this.button_kapat.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
+            // Kapat_buton
+            // 
+            this.Kapat_buton.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Kapat_buton.ImageStream")));
+            this.Kapat_buton.TransparentColor = System.Drawing.Color.Transparent;
+            this.Kapat_buton.Images.SetKeyName(0, "eahaetyt.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,6 +141,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(764, 322);
+            this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.ogrenci_buton);
             this.Controls.Add(this.yonetim_buton);
             this.Controls.Add(this.pictureBox1);
@@ -134,6 +163,8 @@
         private System.Windows.Forms.ImageList ogrenci;
         private System.Windows.Forms.ImageList kapatma_butonu;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private CustomControls.RJControls.RJButton button_kapat;
+        private System.Windows.Forms.ImageList Kapat_buton;
     }
 }
 

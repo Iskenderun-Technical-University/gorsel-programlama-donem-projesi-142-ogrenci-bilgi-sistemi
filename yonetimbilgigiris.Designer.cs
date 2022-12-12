@@ -38,8 +38,10 @@
             this.txt_sifre = new System.Windows.Forms.TextBox();
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button_kapat = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ust_butonlar2 = new System.Windows.Forms.ImageList(this.components);
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -129,18 +131,6 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // button_kapat
-            // 
-            this.button_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_kapat.ImageKey = "458594.png";
-            this.button_kapat.ImageList = this.kapat_ico;
-            this.button_kapat.Location = new System.Drawing.Point(560, 12);
-            this.button_kapat.Name = "button_kapat";
-            this.button_kapat.Size = new System.Drawing.Size(34, 33);
-            this.button_kapat.TabIndex = 4;
-            this.button_kapat.UseVisualStyleBackColor = false;
-            this.button_kapat.Click += new System.EventHandler(this.button_kapat_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -151,14 +141,62 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // ust_butonlar2
+            // 
+            this.ust_butonlar2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ust_butonlar2.ImageStream")));
+            this.ust_butonlar2.TransparentColor = System.Drawing.Color.Transparent;
+            this.ust_butonlar2.Images.SetKeyName(0, "w4te5eete5ty.png");
+            this.ust_butonlar2.Images.SetKeyName(1, "awdfaefef.png");
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Black;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton1.ImageKey = "awdfaefef.png";
+            this.rjButton1.ImageList = this.ust_butonlar2;
+            this.rjButton1.Location = new System.Drawing.Point(571, -1);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(36, 33);
+            this.rjButton1.TabIndex = 9;
+            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.Black;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton2.BorderColor = System.Drawing.Color.Black;
+            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton2.ImageKey = "w4te5eete5ty.png";
+            this.rjButton2.ImageList = this.ust_butonlar2;
+            this.rjButton2.Location = new System.Drawing.Point(535, -1);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(36, 33);
+            this.rjButton2.TabIndex = 10;
+            this.rjButton2.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
+            // 
             // yonetimbilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(606, 529);
+            this.Controls.Add(this.rjButton2);
+            this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label3);
@@ -185,10 +223,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_sifre;
-        private System.Windows.Forms.Button button_kapat;
         private System.Windows.Forms.ImageList kapat_ico;
         public System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.ImageList ust_butonlar2;
+        private CustomControls.RJControls.RJButton rjButton2;
     }
 }

@@ -34,7 +34,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_duyurular = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_ag_1 = new System.Windows.Forms.Label();
@@ -217,11 +216,11 @@
             this.lbl_sınıfort_turkdili = new System.Windows.Forms.Label();
             this.duyurular = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.page_duyurular.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.page_notbilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.page_devamsizlik.SuspendLayout();
@@ -237,6 +236,7 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kapat_ico
@@ -284,21 +284,11 @@
             // 
             this.lbl_duyuru.AutoSize = true;
             this.lbl_duyuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_duyuru.Location = new System.Drawing.Point(39, 112);
+            this.lbl_duyuru.Location = new System.Drawing.Point(26, 135);
             this.lbl_duyuru.Name = "lbl_duyuru";
             this.lbl_duyuru.Size = new System.Drawing.Size(1029, 252);
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(42, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // page_notbilgi
             // 
@@ -2433,17 +2423,23 @@
             // 
             // tableLayoutPanel8
             // 
-            this.tableLayoutPanel8.BackColor = System.Drawing.Color.Blue;
+            this.tableLayoutPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(210)))));
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, -5);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1239, 105);
             this.tableLayoutPanel8.TabIndex = 1;
             this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel8_Paint);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // pictureBox1
             // 
@@ -2455,11 +2451,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ımageList1
+            // pictureBox2
             // 
-            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(42, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // ogrencibilgiekran
             // 
@@ -2476,7 +2476,6 @@
             this.tabControl1.ResumeLayout(false);
             this.page_duyurular.ResumeLayout(false);
             this.page_duyurular.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.page_notbilgi.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -2499,6 +2498,7 @@
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

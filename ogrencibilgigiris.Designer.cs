@@ -52,52 +52,57 @@
             // 
             // txt_sifre
             // 
-            this.txt_sifre.Location = new System.Drawing.Point(250, 251);
+            this.txt_sifre.Location = new System.Drawing.Point(263, 257);
+            this.txt_sifre.Multiline = true;
             this.txt_sifre.Name = "txt_sifre";
-            this.txt_sifre.Size = new System.Drawing.Size(154, 20);
+            this.txt_sifre.Size = new System.Drawing.Size(166, 20);
             this.txt_sifre.TabIndex = 11;
             this.txt_sifre.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(250, 209);
+            this.txt_id.Location = new System.Drawing.Point(263, 215);
+            this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(154, 20);
+            this.txt_id.Size = new System.Drawing.Size(166, 20);
             this.txt_id.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(179, 246);
+            this.label3.Location = new System.Drawing.Point(148, 251);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.Size = new System.Drawing.Size(70, 25);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Şifre";
+            this.label3.Text = "Şifre :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(179, 209);
+            this.label1.Location = new System.Drawing.Point(148, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 25);
+            this.label1.Size = new System.Drawing.Size(100, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "ID";
+            this.label1.Text = "Numara :";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(250, 365);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 40);
+            this.button1.Size = new System.Drawing.Size(144, 41);
             this.button1.TabIndex = 8;
             this.button1.Text = "GİRİŞ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
@@ -124,7 +129,7 @@
             // 
             // button_kapat
             // 
-            this.button_kapat.BackColor = System.Drawing.Color.Transparent;
+            this.button_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
             this.button_kapat.ImageKey = "458594.png";
             this.button_kapat.ImageList = this.kapat_ico;
             this.button_kapat.Location = new System.Drawing.Point(561, 12);

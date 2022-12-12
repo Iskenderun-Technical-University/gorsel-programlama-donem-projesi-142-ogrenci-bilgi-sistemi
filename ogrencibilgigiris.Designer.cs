@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ogrencibilgigiris));
-            this.button_kapat = new System.Windows.Forms.Button();
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
             this.txt_sifre = new System.Windows.Forms.TextBox();
             this.txt_id = new System.Windows.Forms.TextBox();
@@ -38,19 +37,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button_kapat = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button_kapat
-            // 
-            this.button_kapat.BackColor = System.Drawing.Color.Transparent;
-            this.button_kapat.ImageKey = "458594.png";
-            this.button_kapat.ImageList = this.kapat_ico;
-            this.button_kapat.Location = new System.Drawing.Point(388, 15);
-            this.button_kapat.Name = "button_kapat";
-            this.button_kapat.Size = new System.Drawing.Size(34, 33);
-            this.button_kapat.TabIndex = 13;
-            this.button_kapat.UseVisualStyleBackColor = false;
-            this.button_kapat.Click += new System.EventHandler(this.button_kapat_Click);
             // 
             // kapat_ico
             // 
@@ -60,7 +52,7 @@
             // 
             // txt_sifre
             // 
-            this.txt_sifre.Location = new System.Drawing.Point(151, 188);
+            this.txt_sifre.Location = new System.Drawing.Point(250, 251);
             this.txt_sifre.Name = "txt_sifre";
             this.txt_sifre.Size = new System.Drawing.Size(154, 20);
             this.txt_sifre.TabIndex = 11;
@@ -68,7 +60,7 @@
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(151, 146);
+            this.txt_id.Location = new System.Drawing.Point(250, 209);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(154, 20);
             this.txt_id.TabIndex = 12;
@@ -76,8 +68,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label3.Location = new System.Drawing.Point(80, 183);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(179, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 25);
             this.label3.TabIndex = 10;
@@ -86,8 +80,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label1.Location = new System.Drawing.Point(80, 146);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(179, 209);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 25);
             this.label1.TabIndex = 9;
@@ -96,7 +92,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button1.Location = new System.Drawing.Point(151, 244);
+            this.button1.Location = new System.Drawing.Point(250, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 40);
             this.button1.TabIndex = 8;
@@ -107,18 +103,54 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F);
-            this.label2.Location = new System.Drawing.Point(22, 48);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(90, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(395, 39);
+            this.label2.Size = new System.Drawing.Size(427, 39);
             this.label2.TabIndex = 7;
             this.label2.Text = "Öğrenci Bilgi Giriş Paneli";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.rgrgrdgrdgdgrdgdgrdgdr;
+            this.pictureBox2.Location = new System.Drawing.Point(22, 430);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(77, 84);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button_kapat
+            // 
+            this.button_kapat.BackColor = System.Drawing.Color.Transparent;
+            this.button_kapat.ImageKey = "458594.png";
+            this.button_kapat.ImageList = this.kapat_ico;
+            this.button_kapat.Location = new System.Drawing.Point(561, 12);
+            this.button_kapat.Name = "button_kapat";
+            this.button_kapat.Size = new System.Drawing.Size(34, 33);
+            this.button_kapat.TabIndex = 13;
+            this.button_kapat.UseVisualStyleBackColor = false;
+            this.button_kapat.Click += new System.EventHandler(this.button_kapat_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.drrgrdheh1;
+            this.pictureBox1.Location = new System.Drawing.Point(-12, -27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(661, 572);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ogrencibilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 328);
+            this.ClientSize = new System.Drawing.Size(607, 526);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_id);
@@ -126,11 +158,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ogrencibilgigiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   ";
             this.Load += new System.EventHandler(this.ogrencibilgigiris_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +180,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList kapat_ico;
         public System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

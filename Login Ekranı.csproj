@@ -122,5 +122,17 @@
   <ItemGroup>
     <None Include="Resources\duyuru-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instrwdwductor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shsztjtej.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drrgrdheh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rgrgrdgrdgdgrdgdgrdgdr.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

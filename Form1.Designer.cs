@@ -41,15 +41,16 @@
             // 
             // yonetim_buton
             // 
-            this.yonetim_buton.BackColor = System.Drawing.Color.White;
-            this.yonetim_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.yonetim_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(189)))), ((int)(((byte)(233)))));
+            this.yonetim_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.yonetim_buton.ForeColor = System.Drawing.Color.White;
             this.yonetim_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.yonetim_buton.ImageIndex = 0;
             this.yonetim_buton.ImageList = this.yonetimpng;
             this.yonetim_buton.Location = new System.Drawing.Point(24, 107);
             this.yonetim_buton.Name = "yonetim_buton";
             this.yonetim_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.yonetim_buton.Size = new System.Drawing.Size(257, 105);
+            this.yonetim_buton.Size = new System.Drawing.Size(255, 105);
             this.yonetim_buton.TabIndex = 0;
             this.yonetim_buton.Text = "Yönetim Bilgi\r\nSistemi Giriş";
             this.yonetim_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -64,12 +65,13 @@
             // 
             // ogrenci_buton
             // 
-            this.ogrenci_buton.BackColor = System.Drawing.Color.White;
-            this.ogrenci_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.ogrenci_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(189)))), ((int)(((byte)(233)))));
+            this.ogrenci_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenci_buton.ForeColor = System.Drawing.Color.White;
             this.ogrenci_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ogrenci_buton.ImageIndex = 0;
             this.ogrenci_buton.ImageList = this.ogrenci;
-            this.ogrenci_buton.Location = new System.Drawing.Point(492, 107);
+            this.ogrenci_buton.Location = new System.Drawing.Point(494, 107);
             this.ogrenci_buton.Name = "ogrenci_buton";
             this.ogrenci_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ogrenci_buton.Size = new System.Drawing.Size(255, 105);
@@ -95,9 +97,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-7, -11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(763, 325);
+            this.pictureBox1.Size = new System.Drawing.Size(776, 364);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -110,7 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(759, 322);
+            this.ClientSize = new System.Drawing.Size(764, 322);
             this.Controls.Add(this.ogrenci_buton);
             this.Controls.Add(this.yonetim_buton);
             this.Controls.Add(this.pictureBox1);

@@ -63,6 +63,26 @@ namespace Login_Ekranı.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap awdaswsdawd {
+            get {
+                object obj = ResourceManager.GetObject("awdaswsdawd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap drrgrdheh1 {
+            get {
+                object obj = ResourceManager.GetObject("drrgrdheh1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap duyuru_icon {
             get {
                 object obj = ResourceManager.GetObject("duyuru-icon", resourceCulture);
@@ -76,6 +96,46 @@ namespace Login_Ekranı.Properties {
         internal static System.Drawing.Bitmap eokullogo {
             get {
                 object obj = ResourceManager.GetObject("eokullogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap esfesrgesrgsesgse {
+            get {
+                object obj = ResourceManager.GetObject("esfesrgesrgsesgse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap instrwdwductor {
+            get {
+                object obj = ResourceManager.GetObject("instrwdwductor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rgrgrdgrdgdgrdgdgrdgdr {
+            get {
+                object obj = ResourceManager.GetObject("rgrgrdgrdgdgrdgdgrdgdr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shsztjtej {
+            get {
+                object obj = ResourceManager.GetObject("shsztjtej", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

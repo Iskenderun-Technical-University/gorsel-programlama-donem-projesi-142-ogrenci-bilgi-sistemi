@@ -30,38 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.yonetim_buton = new System.Windows.Forms.Button();
             this.yonetimpng = new System.Windows.Forms.ImageList(this.components);
-            this.ogrenci_buton = new System.Windows.Forms.Button();
             this.ogrenci = new System.Windows.Forms.ImageList(this.components);
             this.kapatma_butonu = new System.Windows.Forms.ImageList(this.components);
+            this.ogrenci_buton = new System.Windows.Forms.Button();
+            this.yonetim_buton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // yonetim_buton
-            // 
-            this.yonetim_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(189)))), ((int)(((byte)(233)))));
-            this.yonetim_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.yonetim_buton.ForeColor = System.Drawing.Color.White;
-            this.yonetim_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.yonetim_buton.ImageIndex = 0;
-            this.yonetim_buton.ImageList = this.yonetimpng;
-            this.yonetim_buton.Location = new System.Drawing.Point(24, 107);
-            this.yonetim_buton.Name = "yonetim_buton";
-            this.yonetim_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.yonetim_buton.Size = new System.Drawing.Size(255, 105);
-            this.yonetim_buton.TabIndex = 0;
-            this.yonetim_buton.Text = "Yönetim Bilgi\r\nSistemi Giriş";
-            this.yonetim_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.yonetim_buton.UseVisualStyleBackColor = false;
-            this.yonetim_buton.Click += new System.EventHandler(this.button1_Click);
             // 
             // yonetimpng
             // 
             this.yonetimpng.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("yonetimpng.ImageStream")));
             this.yonetimpng.TransparentColor = System.Drawing.Color.Transparent;
             this.yonetimpng.Images.SetKeyName(0, "teach.png");
+            // 
+            // ogrenci
+            // 
+            this.ogrenci.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ogrenci.ImageStream")));
+            this.ogrenci.TransparentColor = System.Drawing.Color.Transparent;
+            this.ogrenci.Images.SetKeyName(0, "study.png");
+            // 
+            // kapatma_butonu
+            // 
+            this.kapatma_butonu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("kapatma_butonu.ImageStream")));
+            this.kapatma_butonu.TransparentColor = System.Drawing.Color.Transparent;
+            this.kapatma_butonu.Images.SetKeyName(0, "458594.png");
             // 
             // ogrenci_buton
             // 
@@ -81,17 +75,23 @@
             this.ogrenci_buton.UseVisualStyleBackColor = false;
             this.ogrenci_buton.Click += new System.EventHandler(this.ogrenci_buton_Click);
             // 
-            // ogrenci
+            // yonetim_buton
             // 
-            this.ogrenci.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ogrenci.ImageStream")));
-            this.ogrenci.TransparentColor = System.Drawing.Color.Transparent;
-            this.ogrenci.Images.SetKeyName(0, "study.png");
-            // 
-            // kapatma_butonu
-            // 
-            this.kapatma_butonu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("kapatma_butonu.ImageStream")));
-            this.kapatma_butonu.TransparentColor = System.Drawing.Color.Transparent;
-            this.kapatma_butonu.Images.SetKeyName(0, "458594.png");
+            this.yonetim_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(189)))), ((int)(((byte)(233)))));
+            this.yonetim_buton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.yonetim_buton.ForeColor = System.Drawing.Color.White;
+            this.yonetim_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.yonetim_buton.ImageIndex = 0;
+            this.yonetim_buton.ImageList = this.yonetimpng;
+            this.yonetim_buton.Location = new System.Drawing.Point(24, 107);
+            this.yonetim_buton.Name = "yonetim_buton";
+            this.yonetim_buton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.yonetim_buton.Size = new System.Drawing.Size(255, 105);
+            this.yonetim_buton.TabIndex = 0;
+            this.yonetim_buton.Text = "Yönetim Bilgi\r\nSistemi Giriş";
+            this.yonetim_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.yonetim_buton.UseVisualStyleBackColor = false;
+            this.yonetim_buton.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -116,6 +116,7 @@
             this.Controls.Add(this.ogrenci_buton);
             this.Controls.Add(this.yonetim_buton);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

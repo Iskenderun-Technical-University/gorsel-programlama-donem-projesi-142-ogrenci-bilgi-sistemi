@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OgrenciSinavModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblDersler">
+    <Key>
+      <PropertyRef Name="DersID" />
+    </Key>
+    <Property Name="DersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DersAdi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblNotlar">
+    <Key>
+      <PropertyRef Name="NotID" />
+    </Key>
+    <Property Name="NotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Yazili1" Type="tinyint" />
+    <Property Name="Yazili2" Type="tinyint" />
+    <Property Name="Performans" Type="tinyint" />
+    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Ders" Type="int" />
+    <Property Name="Ogrenci" Type="int" />
+  </EntityType>
+  <EntityType Name="TblOgrenci">
+    <Key>
+      <PropertyRef Name="OgrID" />
+    </Key>
+    <Property Name="OgrID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
+    <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
+    <Property Name="OgrSifre" Type="nvarchar" MaxLength="10" />
+    <Property Name="OgrNumara" Type="char" MaxLength="5" />
+    <Property Name="OgrSinif" Type="int" />
+    <Property Name="OgrDurum" Type="bit" />
+  </EntityType>
+  <EntityType Name="TblOgretmen">
+    <Key>
+      <PropertyRef Name="OgrtID" />
+    </Key>
+    <Property Name="OgrtID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OgrtAd" Type="nvarchar" MaxLength="30" />
+    <Property Name="OgrtSoyad" Type="nvarchar" MaxLength="30" />
+    <Property Name="OgrtSifre" Type="nvarchar" MaxLength="10" />
+    <Property Name="OgrtNumara" Type="char" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="TblSinif">
+    <Key>
+      <PropertyRef Name="SinifID" />
+    </Key>
+    <Property Name="SinifID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SinifAd" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_TblNotlar_TblDersler">
+    <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
+    <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblDersler">
+        <PropertyRef Name="DersID" />
+      </Principal>
+      <Dependent Role="TblNotlar">
+        <PropertyRef Name="Ders" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblNotlar_TblOgrenci">
+    <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="0..1" />
+    <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblOgrenci">
+        <PropertyRef Name="OgrID" />
+      </Principal>
+      <Dependent Role="TblNotlar">
+        <PropertyRef Name="Ogrenci" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblOgrenci_TblSinif">
+    <End Role="TblSinif" Type="Self.TblSinif" Multiplicity="0..1" />
+    <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblSinif">
+        <PropertyRef Name="SinifID" />
+      </Principal>
+      <Dependent Role="TblOgrenci">
+        <PropertyRef Name="OgrSinif" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OgrenciSinavModelStoreContainer">
+    <EntitySet Name="TblDersler" EntityType="Self.TblDersler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblNotlar" EntityType="Self.TblNotlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblOgrenci" EntityType="Self.TblOgrenci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblOgretmen" EntityType="Self.TblOgretmen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSinif" EntityType="Self.TblSinif" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
+      <End Role="TblDersler" EntitySet="TblDersler" />
+      <End Role="TblNotlar" EntitySet="TblNotlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblNotlar_TblOgrenci" Association="Self.FK_TblNotlar_TblOgrenci">
+      <End Role="TblOgrenci" EntitySet="TblOgrenci" />
+      <End Role="TblNotlar" EntitySet="TblNotlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblOgrenci_TblSinif" Association="Self.FK_TblOgrenci_TblSinif">
+      <End Role="TblSinif" EntitySet="TblSinif" />
+      <End Role="TblOgrenci" EntitySet="TblOgrenci" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

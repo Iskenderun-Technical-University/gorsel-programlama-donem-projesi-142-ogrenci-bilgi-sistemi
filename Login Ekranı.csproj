@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="Resources\rgrgrdgrdgdgrdgdgrdgdr.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci giriş.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,23 +19,26 @@ namespace Login_Ekranı
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+        private void rjButton3_Click(object sender, EventArgs e)
         {
             string parola = "";
             try
             {
                 baglanti.Open();
-                SqlCommand sqlKomut=new SqlCommand("SELECT OgrSifre FROM TblOgrGirisBilgileri WHERE OgrID = @p1 ", baglanti);
+                SqlCommand sqlKomut = new SqlCommand("SELECT OgrSifre FROM TblOgrGirisBilgileri WHERE OgrID = @p1 ", baglanti);
                 sqlKomut.Parameters.AddWithValue("@p1", txt_id.Text);
                 SqlDataReader sqlDataReader = sqlKomut.ExecuteReader();
 
-                while(sqlDataReader.Read())
+                while (sqlDataReader.Read())
                 {
                     parola = sqlDataReader[0].ToString();
                 }
                 //label4.Text = parola;
 
-                if(parola == txt_sifre.Text)
+                if (parola == txt_sifre.Text)
                 {
                     ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
                     ogrencibilgiekran.Show();
@@ -46,27 +49,31 @@ namespace Login_Ekranı
                     MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Bağlantı Hatası!"+ ex.Message);
+                MessageBox.Show("Bağlantı Hatası!" + ex.Message);
             }
             finally
             {
                 baglanti.Close();
             }
-           /* string id = "Ramazan";
-            string sifre = "Ramazan46";
+            /* string id = "Ramazan";
+             string sifre = "Ramazan46";
 
-            if (txt_id.Text == id && txt_sifre.Text == sifre)
-            {
-                ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
-                ogrencibilgiekran.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+             if (txt_id.Text == id && txt_sifre.Text == sifre)
+             {
+                 ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
+                 ogrencibilgiekran.Show();
+                 this.Hide();
+             }
+             else
+             {
+                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             }*/
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void button_kapat_Click(object sender, EventArgs e)
@@ -102,5 +109,7 @@ namespace Login_Ekranı
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+        
     }
 }

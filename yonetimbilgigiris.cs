@@ -20,20 +20,8 @@ namespace Login_Ekranı
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=142_E_okul;Integrated Security=True");
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void rjButton3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-
             string parola = "";
             try
             {
@@ -82,6 +70,22 @@ namespace Login_Ekranı
             {
                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+            
 
 
         }
@@ -134,5 +138,7 @@ namespace Login_Ekranı
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+        
     }
 }

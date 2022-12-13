@@ -123,6 +123,16 @@ namespace Login_Ekranı.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ogrenci_giriş {
+            get {
+                object obj = ResourceManager.GetObject("ogrenci giriş", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rgrgrdgrdgdgrdgdgrdgdr {
             get {
                 object obj = ResourceManager.GetObject("rgrgrdgrdgdgrdgdgrdgdr", resourceCulture);

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(yonetimbilgigiris));
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
@@ -40,8 +39,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ust_butonlar2 = new System.Windows.Forms.ImageList(this.components);
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.button1 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,18 +58,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Yönetim Bilgi Giriş Paneli";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(249, 361);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "GİRİŞ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -134,7 +122,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-36, -61);
+            this.pictureBox1.Location = new System.Drawing.Point(-25, -67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(742, 600);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,25 +136,25 @@
             this.ust_butonlar2.Images.SetKeyName(0, "w4te5eete5ty.png");
             this.ust_butonlar2.Images.SetKeyName(1, "awdfaefef.png");
             // 
-            // rjButton1
+            // button1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Black;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton1.ImageKey = "awdfaefef.png";
-            this.rjButton1.ImageList = this.ust_butonlar2;
-            this.rjButton1.Location = new System.Drawing.Point(571, -1);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(36, 33);
-            this.rjButton1.TabIndex = 9;
-            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.button1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.button1.BorderColor = System.Drawing.Color.White;
+            this.button1.BorderRadius = 10;
+            this.button1.BorderSize = 2;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(229, 362);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 45);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Giriş Yap";
+            this.button1.TextColor = System.Drawing.Color.White;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton2
             // 
@@ -188,12 +176,33 @@
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Black;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton1.ImageKey = "awdfaefef.png";
+            this.rjButton1.ImageList = this.ust_butonlar2;
+            this.rjButton1.Location = new System.Drawing.Point(571, -1);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(36, 33);
+            this.rjButton1.TabIndex = 9;
+            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
             // yonetimbilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(606, 529);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.pictureBox2);
@@ -201,7 +210,6 @@
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -219,7 +227,6 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_sifre;
@@ -230,5 +237,6 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.ImageList ust_butonlar2;
         private CustomControls.RJControls.RJButton rjButton2;
+        private CustomControls.RJControls.RJButton button1;
     }
 }

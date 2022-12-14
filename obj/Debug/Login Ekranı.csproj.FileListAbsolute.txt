@@ -147,3 +147,9 @@ C:\Users\YAKUP\Desktop\En en son\obj\Debug\Login Ekranı.csproj.CoreCompileInput
 C:\Users\YAKUP\Desktop\En en son\obj\Debug\Login Ekranı.csproj.CopyComplete
 C:\Users\YAKUP\Desktop\En en son\obj\Debug\Login Ekranı.exe
 C:\Users\YAKUP\Desktop\En en son\obj\Debug\Login Ekranı.pdb
+C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.dll
+C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.xml
+C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.YonetimInfo.resources
+C:\Users\Ramazan\Desktop\proje\obj\Debug\Login Ekranı.csproj.CopyComplete

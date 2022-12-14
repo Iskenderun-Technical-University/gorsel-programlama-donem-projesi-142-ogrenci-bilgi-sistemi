@@ -73,6 +73,26 @@ namespace Login_Ekranı.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dfhdjmhmxhfj {
+            get {
+                object obj = ResourceManager.GetObject("dfhdjmhmxhfj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dfhdjmhmxhfj1 {
+            get {
+                object obj = ResourceManager.GetObject("dfhdjmhmxhfj1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap drrgrdheh1 {
             get {
                 object obj = ResourceManager.GetObject("drrgrdheh1", resourceCulture);

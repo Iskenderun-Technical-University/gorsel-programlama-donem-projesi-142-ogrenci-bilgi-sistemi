@@ -33,12 +33,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_duyurular = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_sifreguncelle = new System.Windows.Forms.Button();
             this.mtxtbox_numara = new System.Windows.Forms.MaskedTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -175,14 +173,15 @@
             this.duyurular = new System.Windows.Forms.ImageList(this.components);
             this.butonlar = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_info = new CustomControls.RJControls.RJButton();
             this.btn_kilit = new CustomControls.RJControls.RJButton();
-            this.btn_anaekran = new CustomControls.RJControls.RJButton();
             this.btn_kapat = new CustomControls.RJControls.RJButton();
+            this.btn_anaekran = new CustomControls.RJControls.RJButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_sifreguncelle = new CustomControls.RJControls.RJButton();
             this.tabControl1.SuspendLayout();
             this.page_duyurular.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.page_notbilgi.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -200,6 +199,7 @@
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -246,17 +246,6 @@
             this.lbl_duyuru.Size = new System.Drawing.Size(1029, 252);
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // page_notbilgi
             // 
@@ -313,20 +302,10 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
             // 
-            // btn_sifreguncelle
-            // 
-            this.btn_sifreguncelle.Location = new System.Drawing.Point(132, 239);
-            this.btn_sifreguncelle.Name = "btn_sifreguncelle";
-            this.btn_sifreguncelle.Size = new System.Drawing.Size(127, 29);
-            this.btn_sifreguncelle.TabIndex = 16;
-            this.btn_sifreguncelle.Text = "Güncelle";
-            this.btn_sifreguncelle.UseVisualStyleBackColor = true;
-            this.btn_sifreguncelle.Click += new System.EventHandler(this.btn_sifreguncelle_Click);
-            // 
             // mtxtbox_numara
             // 
             this.mtxtbox_numara.Enabled = false;
-            this.mtxtbox_numara.Location = new System.Drawing.Point(114, 22);
+            this.mtxtbox_numara.Location = new System.Drawing.Point(114, 30);
             this.mtxtbox_numara.Mask = "00000";
             this.mtxtbox_numara.Name = "mtxtbox_numara";
             this.mtxtbox_numara.Size = new System.Drawing.Size(164, 22);
@@ -336,17 +315,18 @@
             // 
             this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(115, 209);
+            this.comboBox2.Location = new System.Drawing.Point(114, 198);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(163, 24);
+            this.comboBox2.Size = new System.Drawing.Size(164, 24);
             this.comboBox2.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 209);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(60, 198);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 16);
+            this.label6.Size = new System.Drawing.Size(40, 18);
             this.label6.TabIndex = 10;
             this.label6.Text = "Sınıf:";
             // 
@@ -360,9 +340,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 173);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(26, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 16);
+            this.label7.Size = new System.Drawing.Size(74, 18);
             this.label7.TabIndex = 6;
             this.label7.Text = "Yeni Şifre:";
             // 
@@ -377,9 +358,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 145);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(26, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(74, 18);
             this.label5.TabIndex = 6;
             this.label5.Text = "Yeni Şifre:";
             // 
@@ -393,18 +375,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 114);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(58, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 16);
+            this.label4.Size = new System.Drawing.Size(42, 18);
             this.label4.TabIndex = 6;
             this.label4.Text = "Şifre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 28);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(35, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.Size = new System.Drawing.Size(65, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "Numara:";
             // 
@@ -419,16 +403,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 89);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(43, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Soyadı:";
             // 
             // txt_ad
             // 
             this.txt_ad.Enabled = false;
-            this.txt_ad.Location = new System.Drawing.Point(114, 54);
+            this.txt_ad.Location = new System.Drawing.Point(114, 58);
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(164, 22);
             this.txt_ad.TabIndex = 1;
@@ -436,9 +421,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 57);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(68, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 16);
+            this.label1.Size = new System.Drawing.Size(32, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Adı:";
             // 
@@ -485,9 +471,10 @@
             // 
             this.lbl_toplam_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_toplam_devamsizlik.AutoSize = true;
-            this.lbl_toplam_devamsizlik.Location = new System.Drawing.Point(344, 354);
+            this.lbl_toplam_devamsizlik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_toplam_devamsizlik.Location = new System.Drawing.Point(340, 350);
             this.lbl_toplam_devamsizlik.Name = "lbl_toplam_devamsizlik";
-            this.lbl_toplam_devamsizlik.Size = new System.Drawing.Size(14, 16);
+            this.lbl_toplam_devamsizlik.Size = new System.Drawing.Size(21, 24);
             this.lbl_toplam_devamsizlik.TabIndex = 9;
             this.lbl_toplam_devamsizlik.Text = "0";
             // 
@@ -495,9 +482,10 @@
             // 
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(89, 354);
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label52.Location = new System.Drawing.Point(76, 350);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(54, 16);
+            this.label52.Size = new System.Drawing.Size(80, 24);
             this.label52.TabIndex = 8;
             this.label52.Text = "Toplam";
             // 
@@ -505,9 +493,10 @@
             // 
             this.lbl_faaliyet_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_faaliyet_devamsizlik.AutoSize = true;
-            this.lbl_faaliyet_devamsizlik.Location = new System.Drawing.Point(344, 272);
+            this.lbl_faaliyet_devamsizlik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_faaliyet_devamsizlik.Location = new System.Drawing.Point(340, 268);
             this.lbl_faaliyet_devamsizlik.Name = "lbl_faaliyet_devamsizlik";
-            this.lbl_faaliyet_devamsizlik.Size = new System.Drawing.Size(14, 16);
+            this.lbl_faaliyet_devamsizlik.Size = new System.Drawing.Size(21, 24);
             this.lbl_faaliyet_devamsizlik.TabIndex = 7;
             this.lbl_faaliyet_devamsizlik.Text = "0";
             // 
@@ -515,9 +504,10 @@
             // 
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(89, 272);
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label50.Location = new System.Drawing.Point(75, 268);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(55, 16);
+            this.label50.Size = new System.Drawing.Size(82, 24);
             this.label50.TabIndex = 6;
             this.label50.Text = "Faaliyet";
             // 
@@ -525,9 +515,10 @@
             // 
             this.lbl_ozurlu_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ozurlu_devamsizlik.AutoSize = true;
-            this.lbl_ozurlu_devamsizlik.Location = new System.Drawing.Point(344, 192);
+            this.lbl_ozurlu_devamsizlik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ozurlu_devamsizlik.Location = new System.Drawing.Point(340, 188);
             this.lbl_ozurlu_devamsizlik.Name = "lbl_ozurlu_devamsizlik";
-            this.lbl_ozurlu_devamsizlik.Size = new System.Drawing.Size(14, 16);
+            this.lbl_ozurlu_devamsizlik.Size = new System.Drawing.Size(21, 24);
             this.lbl_ozurlu_devamsizlik.TabIndex = 5;
             this.lbl_ozurlu_devamsizlik.Text = "0";
             // 
@@ -535,9 +526,10 @@
             // 
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(56, 192);
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label48.Location = new System.Drawing.Point(23, 188);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(120, 16);
+            this.label48.Size = new System.Drawing.Size(187, 24);
             this.label48.TabIndex = 4;
             this.label48.Text = "Özürlü Devamsızlık";
             // 
@@ -545,9 +537,10 @@
             // 
             this.lbl_ozursuz_devamsizlik.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ozursuz_devamsizlik.AutoSize = true;
-            this.lbl_ozursuz_devamsizlik.Location = new System.Drawing.Point(344, 112);
+            this.lbl_ozursuz_devamsizlik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ozursuz_devamsizlik.Location = new System.Drawing.Point(340, 108);
             this.lbl_ozursuz_devamsizlik.Name = "lbl_ozursuz_devamsizlik";
-            this.lbl_ozursuz_devamsizlik.Size = new System.Drawing.Size(14, 16);
+            this.lbl_ozursuz_devamsizlik.Size = new System.Drawing.Size(21, 24);
             this.lbl_ozursuz_devamsizlik.TabIndex = 3;
             this.lbl_ozursuz_devamsizlik.Text = "0";
             // 
@@ -555,9 +548,10 @@
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(51, 112);
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label46.Location = new System.Drawing.Point(15, 108);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(130, 16);
+            this.label46.Size = new System.Drawing.Size(202, 24);
             this.label46.TabIndex = 2;
             this.label46.Text = "Özürsüz Devamsızlık";
             // 
@@ -565,9 +559,10 @@
             // 
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(281, 32);
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label45.Location = new System.Drawing.Point(242, 28);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(140, 16);
+            this.label45.Size = new System.Drawing.Size(217, 24);
             this.label45.TabIndex = 1;
             this.label45.Text = "Kaç Devamsızlık Günü";
             // 
@@ -575,9 +570,10 @@
             // 
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(61, 32);
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label44.Location = new System.Drawing.Point(32, 28);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(110, 16);
+            this.label44.Size = new System.Drawing.Size(169, 24);
             this.label44.TabIndex = 0;
             this.label44.Text = "Devamsızlık Türü";
             // 
@@ -653,10 +649,10 @@
             // 
             this.lbl_cuma_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders5.AutoSize = true;
-            this.lbl_cuma_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cuma_ders5.Location = new System.Drawing.Point(780, 397);
+            this.lbl_cuma_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma_ders5.Location = new System.Drawing.Point(766, 392);
             this.lbl_cuma_ders5.Name = "lbl_cuma_ders5";
-            this.lbl_cuma_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders5.Size = new System.Drawing.Size(68, 29);
             this.lbl_cuma_ders5.TabIndex = 55;
             this.lbl_cuma_ders5.Text = "Ders";
             // 
@@ -664,10 +660,10 @@
             // 
             this.lbl_pers_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders5.AutoSize = true;
-            this.lbl_pers_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pers_ders5.Location = new System.Drawing.Point(633, 397);
+            this.lbl_pers_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pers_ders5.Location = new System.Drawing.Point(618, 392);
             this.lbl_pers_ders5.Name = "lbl_pers_ders5";
-            this.lbl_pers_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders5.Size = new System.Drawing.Size(68, 29);
             this.lbl_pers_ders5.TabIndex = 54;
             this.lbl_pers_ders5.Text = "Ders";
             // 
@@ -675,10 +671,10 @@
             // 
             this.lbl_crsmb_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders5.AutoSize = true;
-            this.lbl_crsmb_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crsmb_ders5.Location = new System.Drawing.Point(488, 397);
+            this.lbl_crsmb_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_crsmb_ders5.Location = new System.Drawing.Point(473, 392);
             this.lbl_crsmb_ders5.Name = "lbl_crsmb_ders5";
-            this.lbl_crsmb_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders5.Size = new System.Drawing.Size(68, 29);
             this.lbl_crsmb_ders5.TabIndex = 53;
             this.lbl_crsmb_ders5.Text = "Ders";
             // 
@@ -686,10 +682,10 @@
             // 
             this.lbl_sali_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders5.AutoSize = true;
-            this.lbl_sali_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sali_ders5.Location = new System.Drawing.Point(343, 397);
+            this.lbl_sali_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali_ders5.Location = new System.Drawing.Point(328, 392);
             this.lbl_sali_ders5.Name = "lbl_sali_ders5";
-            this.lbl_sali_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders5.Size = new System.Drawing.Size(68, 29);
             this.lbl_sali_ders5.TabIndex = 52;
             this.lbl_sali_ders5.Text = "Ders";
             // 
@@ -697,10 +693,10 @@
             // 
             this.lbl_pzt_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders5.AutoSize = true;
-            this.lbl_pzt_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pzt_ders5.Location = new System.Drawing.Point(198, 397);
+            this.lbl_pzt_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pzt_ders5.Location = new System.Drawing.Point(183, 392);
             this.lbl_pzt_ders5.Name = "lbl_pzt_ders5";
-            this.lbl_pzt_ders5.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders5.Size = new System.Drawing.Size(68, 29);
             this.lbl_pzt_ders5.TabIndex = 51;
             this.lbl_pzt_ders5.Text = "Ders";
             // 
@@ -708,10 +704,10 @@
             // 
             this.lbl_cuma_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders4.AutoSize = true;
-            this.lbl_cuma_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cuma_ders4.Location = new System.Drawing.Point(780, 323);
+            this.lbl_cuma_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma_ders4.Location = new System.Drawing.Point(766, 318);
             this.lbl_cuma_ders4.Name = "lbl_cuma_ders4";
-            this.lbl_cuma_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders4.Size = new System.Drawing.Size(68, 29);
             this.lbl_cuma_ders4.TabIndex = 50;
             this.lbl_cuma_ders4.Text = "Ders";
             // 
@@ -719,10 +715,10 @@
             // 
             this.lbl_pers_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders4.AutoSize = true;
-            this.lbl_pers_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pers_ders4.Location = new System.Drawing.Point(633, 323);
+            this.lbl_pers_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pers_ders4.Location = new System.Drawing.Point(618, 318);
             this.lbl_pers_ders4.Name = "lbl_pers_ders4";
-            this.lbl_pers_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders4.Size = new System.Drawing.Size(68, 29);
             this.lbl_pers_ders4.TabIndex = 49;
             this.lbl_pers_ders4.Text = "Ders";
             // 
@@ -730,10 +726,10 @@
             // 
             this.lbl_crsmb_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders4.AutoSize = true;
-            this.lbl_crsmb_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crsmb_ders4.Location = new System.Drawing.Point(488, 323);
+            this.lbl_crsmb_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_crsmb_ders4.Location = new System.Drawing.Point(473, 318);
             this.lbl_crsmb_ders4.Name = "lbl_crsmb_ders4";
-            this.lbl_crsmb_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders4.Size = new System.Drawing.Size(68, 29);
             this.lbl_crsmb_ders4.TabIndex = 48;
             this.lbl_crsmb_ders4.Text = "Ders";
             // 
@@ -741,10 +737,10 @@
             // 
             this.lbl_sali_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders4.AutoSize = true;
-            this.lbl_sali_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sali_ders4.Location = new System.Drawing.Point(343, 323);
+            this.lbl_sali_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali_ders4.Location = new System.Drawing.Point(328, 318);
             this.lbl_sali_ders4.Name = "lbl_sali_ders4";
-            this.lbl_sali_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders4.Size = new System.Drawing.Size(68, 29);
             this.lbl_sali_ders4.TabIndex = 47;
             this.lbl_sali_ders4.Text = "Ders";
             // 
@@ -752,10 +748,10 @@
             // 
             this.lbl_pzt_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders4.AutoSize = true;
-            this.lbl_pzt_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pzt_ders4.Location = new System.Drawing.Point(198, 323);
+            this.lbl_pzt_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pzt_ders4.Location = new System.Drawing.Point(183, 318);
             this.lbl_pzt_ders4.Name = "lbl_pzt_ders4";
-            this.lbl_pzt_ders4.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders4.Size = new System.Drawing.Size(68, 29);
             this.lbl_pzt_ders4.TabIndex = 46;
             this.lbl_pzt_ders4.Text = "Ders";
             // 
@@ -763,10 +759,10 @@
             // 
             this.lbl_cuma_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders3.AutoSize = true;
-            this.lbl_cuma_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cuma_ders3.Location = new System.Drawing.Point(780, 249);
+            this.lbl_cuma_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma_ders3.Location = new System.Drawing.Point(766, 244);
             this.lbl_cuma_ders3.Name = "lbl_cuma_ders3";
-            this.lbl_cuma_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders3.Size = new System.Drawing.Size(68, 29);
             this.lbl_cuma_ders3.TabIndex = 45;
             this.lbl_cuma_ders3.Text = "Ders";
             // 
@@ -774,10 +770,10 @@
             // 
             this.lbl_pers_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders3.AutoSize = true;
-            this.lbl_pers_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pers_ders3.Location = new System.Drawing.Point(633, 249);
+            this.lbl_pers_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pers_ders3.Location = new System.Drawing.Point(618, 244);
             this.lbl_pers_ders3.Name = "lbl_pers_ders3";
-            this.lbl_pers_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders3.Size = new System.Drawing.Size(68, 29);
             this.lbl_pers_ders3.TabIndex = 44;
             this.lbl_pers_ders3.Text = "Ders";
             // 
@@ -785,10 +781,10 @@
             // 
             this.lbl_crsmb_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders3.AutoSize = true;
-            this.lbl_crsmb_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crsmb_ders3.Location = new System.Drawing.Point(488, 249);
+            this.lbl_crsmb_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_crsmb_ders3.Location = new System.Drawing.Point(473, 244);
             this.lbl_crsmb_ders3.Name = "lbl_crsmb_ders3";
-            this.lbl_crsmb_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders3.Size = new System.Drawing.Size(68, 29);
             this.lbl_crsmb_ders3.TabIndex = 43;
             this.lbl_crsmb_ders3.Text = "Ders";
             // 
@@ -796,10 +792,10 @@
             // 
             this.lbl_sali_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders3.AutoSize = true;
-            this.lbl_sali_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sali_ders3.Location = new System.Drawing.Point(343, 249);
+            this.lbl_sali_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali_ders3.Location = new System.Drawing.Point(328, 244);
             this.lbl_sali_ders3.Name = "lbl_sali_ders3";
-            this.lbl_sali_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders3.Size = new System.Drawing.Size(68, 29);
             this.lbl_sali_ders3.TabIndex = 42;
             this.lbl_sali_ders3.Text = "Ders";
             // 
@@ -807,10 +803,10 @@
             // 
             this.lbl_pzt_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders3.AutoSize = true;
-            this.lbl_pzt_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pzt_ders3.Location = new System.Drawing.Point(198, 249);
+            this.lbl_pzt_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pzt_ders3.Location = new System.Drawing.Point(183, 244);
             this.lbl_pzt_ders3.Name = "lbl_pzt_ders3";
-            this.lbl_pzt_ders3.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders3.Size = new System.Drawing.Size(68, 29);
             this.lbl_pzt_ders3.TabIndex = 41;
             this.lbl_pzt_ders3.Text = "Ders";
             // 
@@ -818,10 +814,10 @@
             // 
             this.lbl_cuma_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders2.AutoSize = true;
-            this.lbl_cuma_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cuma_ders2.Location = new System.Drawing.Point(780, 175);
+            this.lbl_cuma_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma_ders2.Location = new System.Drawing.Point(766, 170);
             this.lbl_cuma_ders2.Name = "lbl_cuma_ders2";
-            this.lbl_cuma_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders2.Size = new System.Drawing.Size(68, 29);
             this.lbl_cuma_ders2.TabIndex = 40;
             this.lbl_cuma_ders2.Text = "Ders";
             // 
@@ -829,10 +825,10 @@
             // 
             this.lbl_pers_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders2.AutoSize = true;
-            this.lbl_pers_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pers_ders2.Location = new System.Drawing.Point(633, 175);
+            this.lbl_pers_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pers_ders2.Location = new System.Drawing.Point(618, 170);
             this.lbl_pers_ders2.Name = "lbl_pers_ders2";
-            this.lbl_pers_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders2.Size = new System.Drawing.Size(68, 29);
             this.lbl_pers_ders2.TabIndex = 39;
             this.lbl_pers_ders2.Text = "Ders";
             // 
@@ -840,10 +836,10 @@
             // 
             this.lbl_crsmb_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders2.AutoSize = true;
-            this.lbl_crsmb_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crsmb_ders2.Location = new System.Drawing.Point(488, 175);
+            this.lbl_crsmb_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_crsmb_ders2.Location = new System.Drawing.Point(473, 170);
             this.lbl_crsmb_ders2.Name = "lbl_crsmb_ders2";
-            this.lbl_crsmb_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders2.Size = new System.Drawing.Size(68, 29);
             this.lbl_crsmb_ders2.TabIndex = 38;
             this.lbl_crsmb_ders2.Text = "Ders";
             // 
@@ -851,10 +847,10 @@
             // 
             this.lbl_sali_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders2.AutoSize = true;
-            this.lbl_sali_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sali_ders2.Location = new System.Drawing.Point(343, 175);
+            this.lbl_sali_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali_ders2.Location = new System.Drawing.Point(328, 170);
             this.lbl_sali_ders2.Name = "lbl_sali_ders2";
-            this.lbl_sali_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders2.Size = new System.Drawing.Size(68, 29);
             this.lbl_sali_ders2.TabIndex = 37;
             this.lbl_sali_ders2.Text = "Ders";
             // 
@@ -862,10 +858,10 @@
             // 
             this.lbl_pzt_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders2.AutoSize = true;
-            this.lbl_pzt_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pzt_ders2.Location = new System.Drawing.Point(198, 175);
+            this.lbl_pzt_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pzt_ders2.Location = new System.Drawing.Point(183, 170);
             this.lbl_pzt_ders2.Name = "lbl_pzt_ders2";
-            this.lbl_pzt_ders2.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders2.Size = new System.Drawing.Size(68, 29);
             this.lbl_pzt_ders2.TabIndex = 36;
             this.lbl_pzt_ders2.Text = "Ders";
             // 
@@ -873,10 +869,10 @@
             // 
             this.lbl_cuma_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders1.AutoSize = true;
-            this.lbl_cuma_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cuma_ders1.Location = new System.Drawing.Point(780, 101);
+            this.lbl_cuma_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma_ders1.Location = new System.Drawing.Point(766, 96);
             this.lbl_cuma_ders1.Name = "lbl_cuma_ders1";
-            this.lbl_cuma_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_cuma_ders1.Size = new System.Drawing.Size(68, 29);
             this.lbl_cuma_ders1.TabIndex = 35;
             this.lbl_cuma_ders1.Text = "Ders";
             // 
@@ -884,10 +880,10 @@
             // 
             this.lbl_pers_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders1.AutoSize = true;
-            this.lbl_pers_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pers_ders1.Location = new System.Drawing.Point(633, 101);
+            this.lbl_pers_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pers_ders1.Location = new System.Drawing.Point(618, 96);
             this.lbl_pers_ders1.Name = "lbl_pers_ders1";
-            this.lbl_pers_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pers_ders1.Size = new System.Drawing.Size(68, 29);
             this.lbl_pers_ders1.TabIndex = 34;
             this.lbl_pers_ders1.Text = "Ders";
             // 
@@ -895,10 +891,10 @@
             // 
             this.lbl_crsmb_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders1.AutoSize = true;
-            this.lbl_crsmb_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_crsmb_ders1.Location = new System.Drawing.Point(488, 101);
+            this.lbl_crsmb_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_crsmb_ders1.Location = new System.Drawing.Point(473, 96);
             this.lbl_crsmb_ders1.Name = "lbl_crsmb_ders1";
-            this.lbl_crsmb_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_crsmb_ders1.Size = new System.Drawing.Size(68, 29);
             this.lbl_crsmb_ders1.TabIndex = 33;
             this.lbl_crsmb_ders1.Text = "Ders";
             // 
@@ -906,10 +902,10 @@
             // 
             this.lbl_sali_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders1.AutoSize = true;
-            this.lbl_sali_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sali_ders1.Location = new System.Drawing.Point(343, 101);
+            this.lbl_sali_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali_ders1.Location = new System.Drawing.Point(328, 96);
             this.lbl_sali_ders1.Name = "lbl_sali_ders1";
-            this.lbl_sali_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_sali_ders1.Size = new System.Drawing.Size(68, 29);
             this.lbl_sali_ders1.TabIndex = 32;
             this.lbl_sali_ders1.Text = "Ders";
             // 
@@ -917,10 +913,10 @@
             // 
             this.lbl_cuma.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma.AutoSize = true;
-            this.lbl_cuma.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma.Location = new System.Drawing.Point(776, 27);
+            this.lbl_cuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_cuma.Location = new System.Drawing.Point(760, 22);
             this.lbl_cuma.Name = "lbl_cuma";
-            this.lbl_cuma.Size = new System.Drawing.Size(47, 19);
+            this.lbl_cuma.Size = new System.Drawing.Size(80, 29);
             this.lbl_cuma.TabIndex = 0;
             this.lbl_cuma.Text = "Cuma";
             // 
@@ -928,10 +924,10 @@
             // 
             this.lbl_persembe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_persembe.AutoSize = true;
-            this.lbl_persembe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_persembe.Location = new System.Drawing.Point(614, 27);
+            this.lbl_persembe.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_persembe.Location = new System.Drawing.Point(586, 22);
             this.lbl_persembe.Name = "lbl_persembe";
-            this.lbl_persembe.Size = new System.Drawing.Size(76, 19);
+            this.lbl_persembe.Size = new System.Drawing.Size(133, 29);
             this.lbl_persembe.TabIndex = 0;
             this.lbl_persembe.Text = "Perşembe";
             // 
@@ -939,10 +935,10 @@
             // 
             this.lbl_carsamba.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_carsamba.AutoSize = true;
-            this.lbl_carsamba.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_carsamba.Location = new System.Drawing.Point(470, 27);
+            this.lbl_carsamba.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_carsamba.Location = new System.Drawing.Point(442, 22);
             this.lbl_carsamba.Name = "lbl_carsamba";
-            this.lbl_carsamba.Size = new System.Drawing.Size(75, 19);
+            this.lbl_carsamba.Size = new System.Drawing.Size(131, 29);
             this.lbl_carsamba.TabIndex = 0;
             this.lbl_carsamba.Text = "Çarşamba";
             // 
@@ -950,10 +946,10 @@
             // 
             this.lbl_sali.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali.AutoSize = true;
-            this.lbl_sali.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali.Location = new System.Drawing.Point(346, 27);
+            this.lbl_sali.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sali.Location = new System.Drawing.Point(333, 22);
             this.lbl_sali.Name = "lbl_sali";
-            this.lbl_sali.Size = new System.Drawing.Size(33, 19);
+            this.lbl_sali.Size = new System.Drawing.Size(58, 29);
             this.lbl_sali.TabIndex = 0;
             this.lbl_sali.Text = "Salı";
             // 
@@ -961,10 +957,10 @@
             // 
             this.lbl_pazartesi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pazartesi.AutoSize = true;
-            this.lbl_pazartesi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pazartesi.Location = new System.Drawing.Point(182, 27);
+            this.lbl_pazartesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pazartesi.Location = new System.Drawing.Point(157, 22);
             this.lbl_pazartesi.Name = "lbl_pazartesi";
-            this.lbl_pazartesi.Size = new System.Drawing.Size(70, 19);
+            this.lbl_pazartesi.Size = new System.Drawing.Size(121, 29);
             this.lbl_pazartesi.TabIndex = 0;
             this.lbl_pazartesi.Text = "Pazartesi";
             // 
@@ -972,10 +968,10 @@
             // 
             this.lbl_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders5.AutoSize = true;
-            this.lbl_ders5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ders5.Location = new System.Drawing.Point(47, 397);
+            this.lbl_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders5.Location = new System.Drawing.Point(28, 392);
             this.lbl_ders5.Name = "lbl_ders5";
-            this.lbl_ders5.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders5.Size = new System.Drawing.Size(89, 29);
             this.lbl_ders5.TabIndex = 30;
             this.lbl_ders5.Text = "Ders 5";
             // 
@@ -983,10 +979,10 @@
             // 
             this.lbl_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders4.AutoSize = true;
-            this.lbl_ders4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ders4.Location = new System.Drawing.Point(47, 323);
+            this.lbl_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders4.Location = new System.Drawing.Point(28, 318);
             this.lbl_ders4.Name = "lbl_ders4";
-            this.lbl_ders4.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders4.Size = new System.Drawing.Size(89, 29);
             this.lbl_ders4.TabIndex = 29;
             this.lbl_ders4.Text = "Ders 4";
             // 
@@ -994,10 +990,10 @@
             // 
             this.lbl_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders3.AutoSize = true;
-            this.lbl_ders3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ders3.Location = new System.Drawing.Point(47, 249);
+            this.lbl_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders3.Location = new System.Drawing.Point(28, 244);
             this.lbl_ders3.Name = "lbl_ders3";
-            this.lbl_ders3.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders3.Size = new System.Drawing.Size(89, 29);
             this.lbl_ders3.TabIndex = 28;
             this.lbl_ders3.Text = "Ders 3";
             // 
@@ -1005,10 +1001,10 @@
             // 
             this.lbl_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders2.AutoSize = true;
-            this.lbl_ders2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ders2.Location = new System.Drawing.Point(47, 175);
+            this.lbl_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders2.Location = new System.Drawing.Point(28, 170);
             this.lbl_ders2.Name = "lbl_ders2";
-            this.lbl_ders2.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders2.Size = new System.Drawing.Size(89, 29);
             this.lbl_ders2.TabIndex = 27;
             this.lbl_ders2.Text = "Ders 2";
             // 
@@ -1016,10 +1012,10 @@
             // 
             this.lbl_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders1.AutoSize = true;
-            this.lbl_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ders1.Location = new System.Drawing.Point(47, 101);
+            this.lbl_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders1.Location = new System.Drawing.Point(28, 96);
             this.lbl_ders1.Name = "lbl_ders1";
-            this.lbl_ders1.Size = new System.Drawing.Size(51, 19);
+            this.lbl_ders1.Size = new System.Drawing.Size(89, 29);
             this.lbl_ders1.TabIndex = 26;
             this.lbl_ders1.Text = "Ders 1";
             // 
@@ -1027,10 +1023,10 @@
             // 
             this.lbl_pzt_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders1.AutoSize = true;
-            this.lbl_pzt_ders1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pzt_ders1.Location = new System.Drawing.Point(198, 101);
+            this.lbl_pzt_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_pzt_ders1.Location = new System.Drawing.Point(183, 96);
             this.lbl_pzt_ders1.Name = "lbl_pzt_ders1";
-            this.lbl_pzt_ders1.Size = new System.Drawing.Size(39, 19);
+            this.lbl_pzt_ders1.Size = new System.Drawing.Size(68, 29);
             this.lbl_pzt_ders1.TabIndex = 26;
             this.lbl_pzt_ders1.Text = "Ders";
             // 
@@ -1887,23 +1883,13 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.eokullogo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.dfhdjmhmxhfj;
+            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(354, 116);
+            this.pictureBox1.Size = new System.Drawing.Size(346, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.pictureBox3.Location = new System.Drawing.Point(-9, -2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1330, 117);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btn_info
             // 
@@ -1945,26 +1931,6 @@
             this.btn_kilit.UseVisualStyleBackColor = false;
             this.btn_kilit.Click += new System.EventHandler(this.btn_kilit_Click);
             // 
-            // btn_anaekran
-            // 
-            this.btn_anaekran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btn_anaekran.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btn_anaekran.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_anaekran.BorderRadius = 0;
-            this.btn_anaekran.BorderSize = 0;
-            this.btn_anaekran.FlatAppearance.BorderSize = 0;
-            this.btn_anaekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_anaekran.ForeColor = System.Drawing.Color.White;
-            this.btn_anaekran.ImageKey = "home.png";
-            this.btn_anaekran.ImageList = this.butonlar;
-            this.btn_anaekran.Location = new System.Drawing.Point(1220, 28);
-            this.btn_anaekran.Name = "btn_anaekran";
-            this.btn_anaekran.Size = new System.Drawing.Size(41, 41);
-            this.btn_anaekran.TabIndex = 9;
-            this.btn_anaekran.TextColor = System.Drawing.Color.White;
-            this.btn_anaekran.UseVisualStyleBackColor = false;
-            this.btn_anaekran.Click += new System.EventHandler(this.btn_anaekran_Click);
-            // 
             // btn_kapat
             // 
             this.btn_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
@@ -1985,16 +1951,77 @@
             this.btn_kapat.UseVisualStyleBackColor = false;
             this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
             // 
+            // btn_anaekran
+            // 
+            this.btn_anaekran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_anaekran.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_anaekran.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_anaekran.BorderRadius = 0;
+            this.btn_anaekran.BorderSize = 0;
+            this.btn_anaekran.FlatAppearance.BorderSize = 0;
+            this.btn_anaekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anaekran.ForeColor = System.Drawing.Color.White;
+            this.btn_anaekran.ImageKey = "home.png";
+            this.btn_anaekran.ImageList = this.butonlar;
+            this.btn_anaekran.Location = new System.Drawing.Point(1220, 28);
+            this.btn_anaekran.Name = "btn_anaekran";
+            this.btn_anaekran.Size = new System.Drawing.Size(41, 41);
+            this.btn_anaekran.TabIndex = 9;
+            this.btn_anaekran.TextColor = System.Drawing.Color.White;
+            this.btn_anaekran.UseVisualStyleBackColor = false;
+            this.btn_anaekran.Click += new System.EventHandler(this.btn_anaekran_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.pictureBox3.Location = new System.Drawing.Point(-9, -2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1330, 117);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(46, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btn_sifreguncelle
+            // 
+            this.btn_sifreguncelle.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_sifreguncelle.BackgroundColor = System.Drawing.Color.MediumBlue;
+            this.btn_sifreguncelle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_sifreguncelle.BorderRadius = 15;
+            this.btn_sifreguncelle.BorderSize = 0;
+            this.btn_sifreguncelle.FlatAppearance.BorderSize = 0;
+            this.btn_sifreguncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sifreguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_sifreguncelle.ForeColor = System.Drawing.Color.White;
+            this.btn_sifreguncelle.Location = new System.Drawing.Point(114, 240);
+            this.btn_sifreguncelle.Name = "btn_sifreguncelle";
+            this.btn_sifreguncelle.Size = new System.Drawing.Size(164, 40);
+            this.btn_sifreguncelle.TabIndex = 5;
+            this.btn_sifreguncelle.Text = "Güncelle";
+            this.btn_sifreguncelle.TextColor = System.Drawing.Color.White;
+            this.btn_sifreguncelle.UseVisualStyleBackColor = false;
+            this.btn_sifreguncelle.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
             // ogrencibilgiekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 750);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_info);
             this.Controls.Add(this.btn_kilit);
             this.Controls.Add(this.btn_kapat);
             this.Controls.Add(this.btn_anaekran);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -2005,7 +2032,6 @@
             this.tabControl1.ResumeLayout(false);
             this.page_duyurular.ResumeLayout(false);
             this.page_duyurular.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.page_notbilgi.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -2030,6 +2056,7 @@
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2158,14 +2185,12 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList butonlar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbl_duyuru;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_sifreguncelle;
         private System.Windows.Forms.MaskedTextBox mtxtbox_numara;
         public System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
@@ -2185,5 +2210,7 @@
         private CustomControls.RJControls.RJButton btn_kilit;
         private CustomControls.RJControls.RJButton btn_anaekran;
         private CustomControls.RJControls.RJButton btn_kapat;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private CustomControls.RJControls.RJButton btn_sifreguncelle;
     }
 }

@@ -136,6 +136,7 @@
             this.ust_butonlar2.TransparentColor = System.Drawing.Color.Transparent;
             this.ust_butonlar2.Images.SetKeyName(0, "w4te5eete5ty.png");
             this.ust_butonlar2.Images.SetKeyName(1, "awdfaefef.png");
+            this.ust_butonlar2.Images.SetKeyName(2, "previous.png");
             // 
             // button1
             // 
@@ -167,7 +168,7 @@
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton2.ImageKey = "w4te5eete5ty.png";
+            this.rjButton2.ImageKey = "previous.png";
             this.rjButton2.ImageList = this.ust_butonlar2;
             this.rjButton2.Location = new System.Drawing.Point(535, -1);
             this.rjButton2.Name = "rjButton2";

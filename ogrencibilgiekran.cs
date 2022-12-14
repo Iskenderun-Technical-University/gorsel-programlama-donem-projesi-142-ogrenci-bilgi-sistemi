@@ -58,17 +58,7 @@ namespace Login_Ekranı
         }
         private void btn_sifreguncelle_Click(object sender, EventArgs e)// öğrenci formuna ait şifre değiştirme işlemi yapıldı
         {
-            if (txt_yenisifre1.Text == txt_yenisifre2.Text)
-            {
-                var deger = db.TblOgrenci.Find(ogrid);
-                deger.OgrSifre = txt_yenisifre1.Text;
-                db.SaveChanges();
-                MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
-            }
-            else
-            {
-                MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
-            }
+            
 
         }
 
@@ -271,6 +261,21 @@ namespace Login_Ekranı
             Ogrencibilgi info = new Ogrencibilgi();
             info.Show();
             
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            if (txt_yenisifre1.Text == txt_yenisifre2.Text)
+            {
+                var deger = db.TblOgrenci.Find(ogrid);
+                deger.OgrSifre = txt_yenisifre1.Text;
+                db.SaveChanges();
+                MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
+            }
+            else
+            {
+                MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
+            }
         }
     }
 }

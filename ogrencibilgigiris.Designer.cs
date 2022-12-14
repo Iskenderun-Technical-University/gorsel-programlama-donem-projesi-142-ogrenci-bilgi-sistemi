@@ -124,6 +124,7 @@
             this.ust_butonlar.TransparentColor = System.Drawing.Color.Transparent;
             this.ust_butonlar.Images.SetKeyName(0, "w4te5eete5ty.png");
             this.ust_butonlar.Images.SetKeyName(1, "awdfaefef.png");
+            this.ust_butonlar.Images.SetKeyName(2, "previous.png");
             // 
             // button1
             // 
@@ -155,7 +156,7 @@
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton2.ImageKey = "w4te5eete5ty.png";
+            this.rjButton2.ImageKey = "previous.png";
             this.rjButton2.ImageList = this.ust_butonlar;
             this.rjButton2.Location = new System.Drawing.Point(539, -1);
             this.rjButton2.Name = "rjButton2";
@@ -192,6 +193,7 @@
             this.mtxtbox_giris.Name = "mtxtbox_giris";
             this.mtxtbox_giris.Size = new System.Drawing.Size(166, 20);
             this.mtxtbox_giris.TabIndex = 19;
+            this.mtxtbox_giris.ValidatingType = typeof(int);
             // 
             // ogrencibilgigiris
             // 

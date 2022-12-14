@@ -121,6 +121,9 @@
   <data name="esfesrgesrgsesgse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\esfesrgesrgsesgse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dfhdjmhmxhfj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dfhdjmhmxhfj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rgrgrdgrdgdgrdgdgrdgdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rgrgrdgrdgdgrdgdgrdgdr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,10 +142,13 @@
   <data name="duyuru-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duyuru-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ogrenci giriş" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ogrenci giriş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eokullogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eokullogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ogrenci giriş" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ogrenci giriş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dfhdjmhmxhfj1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dfhdjmhmxhfj1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

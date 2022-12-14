@@ -70,7 +70,7 @@ namespace Login_Ekranı
             comboBox1.DataSource = db.TblDersler.ToList();
 
             comboBox3.DisplayMember = "DersAdi"; //comboboxlara sınıfları getiriyoruz.
-            comboBox3.ValueMember = "DersID";
+            comboBox3.ValueMember = "DersID";  // ID leri getiriyor.
             comboBox3.DataSource = db.TblDersler.ToList();
 
         }

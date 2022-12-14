@@ -10,20 +10,16 @@
 namespace Login_Ekranı.Entity
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class TblNotlar
+    public partial class Notlar2_Result
     {
-        public int NotID { get; set; }
-        public Nullable<int> Yazili1 { get; set; }
-        public Nullable<int> Yazili2 { get; set; }
+        public int Not_ID { get; set; }
+        public Nullable<int> Ders_Adı { get; set; }
+        public string Öğrenci { get; set; }
+        public Nullable<int> C1_Yazılı { get; set; }
+        public Nullable<int> C2_Yazılı { get; set; }
         public Nullable<int> Performans { get; set; }
         public Nullable<int> Proje { get; set; }
         public Nullable<decimal> Ortalama { get; set; }
-        public Nullable<int> Ders { get; set; }
-        public Nullable<int> Ogrenci { get; set; }
-    
-        public virtual TblDersler TblDersler { get; set; }
-        public virtual TblOgrenci TblOgrenci { get; set; }
     }
 }

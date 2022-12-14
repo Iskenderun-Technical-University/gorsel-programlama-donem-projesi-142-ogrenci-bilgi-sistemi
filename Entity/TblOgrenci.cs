@@ -28,8 +28,8 @@ namespace Login_Ekranı.Entity
         public Nullable<int> OgrSinif { get; set; }
         public Nullable<bool> OgrDurum { get; set; }
     
+        public virtual TblSinif TblSinif { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TblNotlar> TblNotlar { get; set; }
-        public virtual TblSinif TblSinif { get; set; }
     }
 }

@@ -64,9 +64,13 @@ namespace Login_Ekranı
             sinif.DisplayMember = "SinifAd";
             sinif.DataSource = dt;
 
-            comboBox1.DisplayMember = "DersAdi";
+            comboBox1.DisplayMember = "DersAdi"; //comboboxlara sınıfları getiriyoruz.
             comboBox1.ValueMember = "DersID";
             comboBox1.DataSource = db.TblDersler.ToList();
+
+            comboBox3.DisplayMember = "DersAdi"; //comboboxlara sınıfları getiriyoruz.
+            comboBox3.ValueMember = "DersID";
+            comboBox3.DataSource = db.TblDersler.ToList();
 
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -81,7 +85,7 @@ namespace Login_Ekranı
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (sifre1.Text==sifre2.Text)
+            if (sifre1.Text==sifre2.Text)//öğrenci kayıt yapıyor.
             {
                 TblOgrenci t = new TblOgrenci();
                 t.OgrAd = ad.Text;
@@ -100,18 +104,9 @@ namespace Login_Ekranı
             }
             listele();
         }
-        private void btn_sil_Click_1(object sender, EventArgs e)
+        private void guncel_Click_1(object sender, EventArgs e)// öğrenci bilgilerini güncelliyor
         {
-            int id = int.Parse(txt_ıd.Text);
-            var x = db.TblOgrenci.Find(id);
-            x.OgrDurum = false;
-            db.SaveChanges();
-            MessageBox.Show("Öğrenci başarılı bir şekilde sistemden silindi,silinen öğrencilere pasif öğrenciler listesi üzerinden erişim sağlayabilirsiniz", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
-            listele();
-        }
-        private void btnguncelle_Click(object sender, EventArgs e)
-        {
             int id = int.Parse(txt_ıd.Text);
             var x = db.TblOgrenci.Find(id);
             x.OgrAd = txt_ad.Text;
@@ -124,7 +119,18 @@ namespace Login_Ekranı
             listele();
 
         }
-        private void btn_ekle_Click(object sender, EventArgs e)
+        private void btn_sil_Click_1(object sender, EventArgs e)//Öğrenci Siliyor.
+        {
+            int id = int.Parse(txt_ıd.Text);
+            var x = db.TblOgrenci.Find(id);
+            x.OgrDurum = false;
+            db.SaveChanges();
+            MessageBox.Show("Öğrenci başarılı bir şekilde sistemden silindi,silinen öğrencilere pasif öğrenciler listesi üzerinden erişim sağlayabilirsiniz", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            listele();
+        }
+        
+        private void btn_ekle_Click(object sender, EventArgs e)// öğrenci notları ekleme ıd e göre yapıyoruz
         {
             TblNotlar t = new TblNotlar();
             t.Yazili1 = byte.Parse(txt_yazili1.Text);
@@ -133,20 +139,110 @@ namespace Login_Ekranı
             t.Performans = byte.Parse(txt_performans.Text);
             t.Ders = int.Parse(comboBox1.SelectedValue.ToString());
             t.Ogrenci = int.Parse(txt_ogrenci.Text);
+            t.Ortalama=int.Parse(txt_ortalama.Text);
             db.TblNotlar.Add(t);
             db.SaveChanges();
             MessageBox.Show("Öğrenci not bilgisi için sisteme kayıt edildi");
         }
-        private void btn_listele_Click(object sender, EventArgs e)
+        private void btn_hesapla_Click(object sender, EventArgs e)//ortalamayı hesaplıyor
+        {
+            byte y1, y2, per, pro;
+            double ort;
+
+            y1 = byte.Parse(txt_yazili1.Text);
+            y2 = byte.Parse(txt_yazili2.Text);
+            per = byte.Parse(txt_performans.Text);
+            pro = byte.Parse(txt_proje.Text);
+            ort = (y1 + y2 + per + pro) / 4;
+            txt_ortalama.Text = ort.ToString();
+        }
+        private void btn_listele_Click(object sender, EventArgs e)//öğrencileri listeliyor
         {
          
             listele();
         }
-
-        private void dataGridView1_CellClick(object sender ,DataGridViewCellEventArgs e)
+        private void btn_list_Click(object sender, EventArgs e)// tüm notları listeliyor
         {
-           
+            //dataGridView2.DataSource = db.View_1.ToList();
+            dataGridView2.DataSource = db.Notlar3();
         }
+        private void btn_ara_Click(object sender, EventArgs e)// numaraya göre öğrenci bulup tüm notları getiriyor.
+        {
+            string no = mtxtbox_numara.Text;
+
+            var deger = db.TblOgrenci.Where(x => x.OgrNumara == no).Select(y => y.OgrID).FirstOrDefault();
+            var not = from x in db.TblNotlar
+                      select new
+                      {
+                          x.NotID,
+                          x.TblDersler.DersAdi,
+                          Öğrenci_Adı = x.TblOgrenci.OgrAd + " " + x.TblOgrenci.OgrSoyad,
+                          x.Yazili1,
+                          x.Yazili2,
+                          x.Performans,
+                          x.Proje,
+                          x.Ortalama,
+                          x.Ogrenci,
+
+                      };
+            dataGridView2.DataSource = not.Where(z => z.Ogrenci == deger).ToList();
+            dataGridView2.Columns["Ogrenci"].Visible = false;
+        }
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)//seçilen derse göre tüm notlar getiriliyor
+        {
+            var degerler = from x in db.TblNotlar
+                           select new
+                           {
+
+                               x.NotID,
+                               x.TblDersler.DersAdi,
+                               Öğrenci_Adı = x.TblOgrenci.OgrAd + " " + x.TblOgrenci.OgrSoyad,
+                               x.Yazili1,
+                               x.Yazili2,
+                               x.Performans,
+                               x.Proje,
+                               x.Ortalama,
+                               x.Ders,
+                           };
+
+            int d = int.Parse(comboBox3.SelectedValue.ToString());
+            dataGridView2.DataSource = degerler.Where(y => y.Ders == d).ToList();
+            dataGridView2.Columns["Ders"].Visible = false;//ders ıd gizlendi.
+
+        }
+
+        private void btn_guncel_Click(object sender, EventArgs e)//öğrenci sınavları güncelleme.çift tık yap txt ıd ye al 
+        {
+            int id = int.Parse(txtID.Text);
+            var x = db.TblNotlar.Find(id);
+            x.Yazili1 = int.Parse(txt_yazili1.Text);
+            x.Yazili2 = int.Parse(txt_yazili2.Text);
+            x.Performans = int.Parse(txt_performans.Text);
+            x.Proje = int.Parse(txt_proje.Text);
+            x.Ortalama = int.Parse(txt_ortalama.Text);
+            db.SaveChanges();
+            MessageBox.Show("Öğrenci notları başarılı bir şekilde güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtID.Text = null;
+            txt_yazili1.Text = null;
+            txt_yazili2.Text = null;
+            txt_performans.Text= null;
+            txt_proje.Text = null;
+            txt_ortalama.Text = null;
+
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)//data griwden txtboxlara bilgileri çekiyoruz.
+        {
+            txtID.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txt_yazili1.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txt_yazili2.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txt_performans.Text = dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txt_proje.Text = dataGridView2.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txt_ogrenci.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txt_ortalama.Text = dataGridView2.Rows[e.RowIndex].Cells[7].Value.ToString();
+
+        }
+
         private void tabControl1_DrawItem(Object sender, System.Windows.Forms.DrawItemEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -225,17 +321,17 @@ namespace Login_Ekranı
 
         }
 
-        private void btn_hesapla_Click(object sender, EventArgs e)
+        
+
+        private void btnderslistele_Click(object sender, EventArgs e)// dersleri listeliyoruz.
         {
-            int y1, y2, per, pro;
-            double ort;
-
-
-            y1 = byte.Parse(txt_yazili1.Text);
-            y2 = byte.Parse(txt_yazili2.Text);
-            per = byte.Parse(txt_performans.Text);
-            pro = byte.Parse(txt_proje.Text);
-
+            var derslistesi = from x in db.TblDersler
+                              select new
+                              {
+                                  x.DersID,
+                                  x.DersAdi
+                              };
+            dataGridView3.DataSource = derslistesi.ToList();
         }
     }
 }

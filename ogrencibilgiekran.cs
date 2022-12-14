@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Ekranı.Entity;
 
 namespace Login_Ekranı
 {
@@ -18,14 +19,50 @@ namespace Login_Ekranı
             InitializeComponent();
             tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
         }
+        public string numara;
+        OgrenciSinavEntities db = new OgrenciSinavEntities();
+        int ogrid;
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ogrencibilgiekran_Load(object sender, EventArgs e)
         {
+            mtxtbox_numara.Text = numara; //numarayı taşıdık giriş formundan 
+            txt_ad.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrAd).FirstOrDefault();
+            txt_soyad.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSoyad).FirstOrDefault();
+            txt_sifre1.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSifre).FirstOrDefault();
+            comboBox2.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSinif).FirstOrDefault().ToString();
+
+            ogrid = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
+            var sinavnotlari = (from x in db.TblNotlar
+                                select new
+                                {
+                                    x.TblDersler.DersAdi,
+                                    x.Yazili1,
+                                    x.Yazili2,
+                                    x.Performans,
+                                    x.Proje,
+                                    x.Ortalama,
+                                    x.Ogrenci
+
+                                }).Where(y => y.Ogrenci == ogrid).ToList();
+            dataGridView1.DataSource = sinavnotlari;
+            dataGridView1.Columns["Ogrenci"].Visible = false;//ogrenci ıd gizlendi.
+
+
+        }
+        private void btn_sifreguncelle_Click(object sender, EventArgs e)// öğrenci formuna ait şifre değiştirme işlemi yapıldı
+        {
+            if (txt_yenisifre1.Text == txt_yenisifre2.Text)
+            {
+                var deger = db.TblOgrenci.Find(ogrid);
+                deger.OgrSifre = txt_yenisifre1.Text;
+                db.SaveChanges();
+                MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
+            }
+            else
+            {
+                MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
+            }
 
         }
 
@@ -229,5 +266,7 @@ namespace Login_Ekranı
         {
 
         }
+
+        
     }
 }

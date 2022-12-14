@@ -17,10 +17,10 @@
             <PropertyRef Name="NotID" />
           </Key>
           <Property Name="NotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Yazili1" Type="tinyint" />
-          <Property Name="Yazili2" Type="tinyint" />
-          <Property Name="Performans" Type="tinyint" />
-          <Property Name="Proje" Type="tinyint" />
+          <Property Name="Yazili1" Type="int" />
+          <Property Name="Yazili2" Type="int" />
+          <Property Name="Performans" Type="int" />
+          <Property Name="Proje" Type="int" />
           <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
           <Property Name="Ders" Type="int" />
           <Property Name="Ogrenci" Type="int" />
@@ -54,6 +54,22 @@
           <Property Name="SinifID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SinifAd" Type="nvarchar" MaxLength="30" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_1">
+          <Key>
+            <PropertyRef Name="NotID" />
+          </Key>
+          <Property Name="NotID" Type="int" Nullable="false" />
+          <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
+          <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
+          <Property Name="DersAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Yazili1" Type="tinyint" />
+          <Property Name="Yazili2" Type="tinyint" />
+          <Property Name="Performans" Type="tinyint" />
+          <Property Name="Proje" Type="tinyint" />
+          <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
+        </EntityType>
         <Association Name="FK_TblNotlar_TblDersler">
           <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
           <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
@@ -90,12 +106,28 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="Notlar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Notlar2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Notlar3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="OgrenciSinavModelStoreContainer">
           <EntitySet Name="TblDersler" EntityType="Self.TblDersler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblNotlar" EntityType="Self.TblNotlar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblOgrenci" EntityType="Self.TblOgrenci" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblOgretmen" EntityType="Self.TblOgretmen" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSinif" EntityType="Self.TblSinif" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="View_1" EntityType="Self.View_1" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_1].[NotID] AS [NotID], 
+    [View_1].[OgrAd] AS [OgrAd], 
+    [View_1].[OgrSoyad] AS [OgrSoyad], 
+    [View_1].[DersAdi] AS [DersAdi], 
+    [View_1].[Yazili1] AS [Yazili1], 
+    [View_1].[Yazili2] AS [Yazili2], 
+    [View_1].[Performans] AS [Performans], 
+    [View_1].[Proje] AS [Proje], 
+    [View_1].[Ortalama] AS [Ortalama]
+    FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
             <End Role="TblDersler" EntitySet="TblDersler" />
             <End Role="TblNotlar" EntitySet="TblNotlar" />
@@ -119,22 +151,7 @@
           </Key>
           <Property Name="DersID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DersAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="TblNotlar" Relationship="Self.FK_TblNotlar_TblDersler" FromRole="TblDersler" ToRole="TblNotlar" />
-        </EntityType>
-        <EntityType Name="TblNotlar">
-          <Key>
-            <PropertyRef Name="NotID" />
-          </Key>
-          <Property Name="NotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Yazili1" Type="Byte" />
-          <Property Name="Yazili2" Type="Byte" />
-          <Property Name="Performans" Type="Byte" />
-          <Property Name="Proje" Type="Byte" />
-          <Property Name="Ders" Type="Int32" />
-          <Property Name="Ogrenci" Type="Int32" />
-          <NavigationProperty Name="TblDersler" Relationship="Self.FK_TblNotlar_TblDersler" FromRole="TblNotlar" ToRole="TblDersler" />
-          <NavigationProperty Name="TblOgrenci" Relationship="Self.FK_TblNotlar_TblOgrenci" FromRole="TblNotlar" ToRole="TblOgrenci" />
-          <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
+          <NavigationProperty Name="TblNotlar" Relationship="OgrenciSinavModel.FK_TblNotlar_TblDersler" FromRole="TblDersler" ToRole="TblNotlar" />
         </EntityType>
         <EntityType Name="TblOgrenci">
           <Key>
@@ -146,9 +163,9 @@
           <Property Name="OgrSifre" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="OgrNumara" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
           <Property Name="OgrSinif" Type="Int32" />
-          <NavigationProperty Name="TblNotlar" Relationship="Self.FK_TblNotlar_TblOgrenci" FromRole="TblOgrenci" ToRole="TblNotlar" />
           <NavigationProperty Name="TblSinif" Relationship="Self.FK_TblOgrenci_TblSinif" FromRole="TblOgrenci" ToRole="TblSinif" />
           <Property Name="OgrDurum" Type="Boolean" />
+          <NavigationProperty Name="TblNotlar" Relationship="OgrenciSinavModel.FK_TblNotlar_TblOgrenci" FromRole="TblOgrenci" ToRole="TblNotlar" />
         </EntityType>
         <EntityType Name="TblOgretmen">
           <Key>
@@ -168,30 +185,6 @@
           <Property Name="SinifAd" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="TblOgrenci" Relationship="Self.FK_TblOgrenci_TblSinif" FromRole="TblSinif" ToRole="TblOgrenci" />
         </EntityType>
-        <Association Name="FK_TblNotlar_TblDersler">
-          <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
-          <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TblDersler">
-              <PropertyRef Name="DersID" />
-            </Principal>
-            <Dependent Role="TblNotlar">
-              <PropertyRef Name="Ders" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TblNotlar_TblOgrenci">
-          <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="0..1" />
-          <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TblOgrenci">
-              <PropertyRef Name="OgrID" />
-            </Principal>
-            <Dependent Role="TblNotlar">
-              <PropertyRef Name="Ogrenci" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_TblOgrenci_TblSinif">
           <End Role="TblSinif" Type="Self.TblSinif" Multiplicity="0..1" />
           <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="*" />
@@ -206,23 +199,110 @@
         </Association>
         <EntityContainer Name="OgrenciSinavEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblDersler" EntityType="Self.TblDersler" />
-          <EntitySet Name="TblNotlar" EntityType="Self.TblNotlar" />
           <EntitySet Name="TblOgrenci" EntityType="Self.TblOgrenci" />
           <EntitySet Name="TblOgretmen" EntityType="Self.TblOgretmen" />
           <EntitySet Name="TblSinif" EntityType="Self.TblSinif" />
-          <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
-            <End Role="TblDersler" EntitySet="TblDersler" />
-            <End Role="TblNotlar" EntitySet="TblNotlar" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TblNotlar_TblOgrenci" Association="Self.FK_TblNotlar_TblOgrenci">
-            <End Role="TblOgrenci" EntitySet="TblOgrenci" />
-            <End Role="TblNotlar" EntitySet="TblNotlar" />
-          </AssociationSet>
           <AssociationSet Name="FK_TblOgrenci_TblSinif" Association="Self.FK_TblOgrenci_TblSinif">
             <End Role="TblSinif" EntitySet="TblSinif" />
             <End Role="TblOgrenci" EntitySet="TblOgrenci" />
           </AssociationSet>
+          <EntitySet Name="View_1" EntityType="OgrenciSinavModel.View_1" />
+          <FunctionImport Name="Notlar" ReturnType="Collection(OgrenciSinavModel.Notlar_Result)" />
+          <EntitySet Name="TblNotlar" EntityType="OgrenciSinavModel.TblNotlar" />
+          <AssociationSet Name="FK_TblNotlar_TblDersler" Association="OgrenciSinavModel.FK_TblNotlar_TblDersler">
+            <End Role="TblDersler" EntitySet="TblDersler" />
+            <End Role="TblNotlar" EntitySet="TblNotlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblNotlar_TblOgrenci" Association="OgrenciSinavModel.FK_TblNotlar_TblOgrenci">
+            <End Role="TblOgrenci" EntitySet="TblOgrenci" />
+            <End Role="TblNotlar" EntitySet="TblNotlar" />
+          </AssociationSet>
+          <FunctionImport Name="Notlar2" ReturnType="Collection(OgrenciSinavModel.Notlar2_Result)" />
+          <FunctionImport Name="Notlar3" ReturnType="Collection(OgrenciSinavModel.Notlar3_Result)" />
         </EntityContainer>
+        <EntityType Name="View_1">
+          <Key>
+            <PropertyRef Name="NotID" />
+          </Key>
+          <Property Name="NotID" Type="Int32" Nullable="false" />
+          <Property Name="OgrAd" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="OgrSoyad" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="DersAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Yazili1" Type="Byte" />
+          <Property Name="Yazili2" Type="Byte" />
+          <Property Name="Performans" Type="Byte" />
+          <Property Name="Proje" Type="Byte" />
+          <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
+        </EntityType>
+        <ComplexType Name="Notlar_Result">
+          <Property Type="Int32" Name="Not_ID" Nullable="false" />
+          <Property Type="Int32" Name="Ders_Adı" Nullable="true" />
+          <Property Type="String" Name="Öğrenci" Nullable="true" MaxLength="46" />
+          <Property Type="Byte" Name="C1_Yazılı" Nullable="true" />
+          <Property Type="Byte" Name="C2_Yazılı" Nullable="true" />
+          <Property Type="Byte" Name="Performans" Nullable="true" />
+          <Property Type="Byte" Name="Proje" Nullable="true" />
+          <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
+        </ComplexType>
+        <EntityType Name="TblNotlar">
+          <Key>
+            <PropertyRef Name="NotID" />
+          </Key>
+          <Property Name="NotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Yazili1" Type="Int32" />
+          <Property Name="Yazili2" Type="Int32" />
+          <Property Name="Performans" Type="Int32" />
+          <Property Name="Proje" Type="Int32" />
+          <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="Ders" Type="Int32" />
+          <Property Name="Ogrenci" Type="Int32" />
+          <NavigationProperty Name="TblDersler" Relationship="OgrenciSinavModel.FK_TblNotlar_TblDersler" FromRole="TblNotlar" ToRole="TblDersler" />
+          <NavigationProperty Name="TblOgrenci" Relationship="OgrenciSinavModel.FK_TblNotlar_TblOgrenci" FromRole="TblNotlar" ToRole="TblOgrenci" />
+        </EntityType>
+        <Association Name="FK_TblNotlar_TblDersler">
+          <End Type="OgrenciSinavModel.TblDersler" Role="TblDersler" Multiplicity="0..1" />
+          <End Type="OgrenciSinavModel.TblNotlar" Role="TblNotlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblDersler">
+              <PropertyRef Name="DersID" />
+            </Principal>
+            <Dependent Role="TblNotlar">
+              <PropertyRef Name="Ders" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblNotlar_TblOgrenci">
+          <End Type="OgrenciSinavModel.TblOgrenci" Role="TblOgrenci" Multiplicity="0..1" />
+          <End Type="OgrenciSinavModel.TblNotlar" Role="TblNotlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblOgrenci">
+              <PropertyRef Name="OgrID" />
+            </Principal>
+            <Dependent Role="TblNotlar">
+              <PropertyRef Name="Ogrenci" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="Notlar2_Result">
+          <Property Type="Int32" Name="Not_ID" Nullable="false" />
+          <Property Type="Int32" Name="Ders_Adı" Nullable="true" />
+          <Property Type="String" Name="Öğrenci" Nullable="true" MaxLength="46" />
+          <Property Type="Int32" Name="C1_Yazılı" Nullable="true" />
+          <Property Type="Int32" Name="C2_Yazılı" Nullable="true" />
+          <Property Type="Int32" Name="Performans" Nullable="true" />
+          <Property Type="Int32" Name="Proje" Nullable="true" />
+          <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="Notlar3_Result">
+          <Property Type="Int32" Name="Not_ID" Nullable="false" />
+          <Property Type="String" Name="Ders_Adı" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Öğrenci" Nullable="true" MaxLength="46" />
+          <Property Type="Int32" Name="C1_Yazılı" Nullable="true" />
+          <Property Type="Int32" Name="C2_Yazılı" Nullable="true" />
+          <Property Type="Int32" Name="Performans" Nullable="true" />
+          <Property Type="Int32" Name="Proje" Nullable="true" />
+          <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -234,20 +314,6 @@
               <MappingFragment StoreEntitySet="TblDersler">
                 <ScalarProperty Name="DersID" ColumnName="DersID" />
                 <ScalarProperty Name="DersAdi" ColumnName="DersAdi" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TblNotlar">
-            <EntityTypeMapping TypeName="OgrenciSinavModel.TblNotlar">
-              <MappingFragment StoreEntitySet="TblNotlar">
-                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
-                <ScalarProperty Name="NotID" ColumnName="NotID" />
-                <ScalarProperty Name="Yazili1" ColumnName="Yazili1" />
-                <ScalarProperty Name="Yazili2" ColumnName="Yazili2" />
-                <ScalarProperty Name="Performans" ColumnName="Performans" />
-                <ScalarProperty Name="Proje" ColumnName="Proje" />
-                <ScalarProperty Name="Ders" ColumnName="Ders" />
-                <ScalarProperty Name="Ogrenci" ColumnName="Ogrenci" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -283,6 +349,77 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="View_1">
+            <EntityTypeMapping TypeName="OgrenciSinavModel.View_1">
+              <MappingFragment StoreEntitySet="View_1">
+                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+                <ScalarProperty Name="Proje" ColumnName="Proje" />
+                <ScalarProperty Name="Performans" ColumnName="Performans" />
+                <ScalarProperty Name="Yazili2" ColumnName="Yazili2" />
+                <ScalarProperty Name="Yazili1" ColumnName="Yazili1" />
+                <ScalarProperty Name="DersAdi" ColumnName="DersAdi" />
+                <ScalarProperty Name="OgrSoyad" ColumnName="OgrSoyad" />
+                <ScalarProperty Name="OgrAd" ColumnName="OgrAd" />
+                <ScalarProperty Name="NotID" ColumnName="NotID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Notlar" FunctionName="OgrenciSinavModel.Store.Notlar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="OgrenciSinavModel.Notlar_Result">
+                <ScalarProperty Name="Not_ID" ColumnName="Not ID" />
+                <ScalarProperty Name="Ders_Adı" ColumnName="Ders Adı" />
+                <ScalarProperty Name="Öğrenci" ColumnName="Öğrenci" />
+                <ScalarProperty Name="C1_Yazılı" ColumnName="1.Yazılı" />
+                <ScalarProperty Name="C2_Yazılı" ColumnName="2.Yazılı" />
+                <ScalarProperty Name="Performans" ColumnName="Performans" />
+                <ScalarProperty Name="Proje" ColumnName="Proje" />
+                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="TblNotlar">
+            <EntityTypeMapping TypeName="OgrenciSinavModel.TblNotlar">
+              <MappingFragment StoreEntitySet="TblNotlar">
+                <ScalarProperty Name="Ogrenci" ColumnName="Ogrenci" />
+                <ScalarProperty Name="Ders" ColumnName="Ders" />
+                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+                <ScalarProperty Name="Proje" ColumnName="Proje" />
+                <ScalarProperty Name="Performans" ColumnName="Performans" />
+                <ScalarProperty Name="Yazili2" ColumnName="Yazili2" />
+                <ScalarProperty Name="Yazili1" ColumnName="Yazili1" />
+                <ScalarProperty Name="NotID" ColumnName="NotID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Notlar2" FunctionName="OgrenciSinavModel.Store.Notlar2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="OgrenciSinavModel.Notlar2_Result">
+                <ScalarProperty Name="Not_ID" ColumnName="Not ID" />
+                <ScalarProperty Name="Ders_Adı" ColumnName="Ders Adı" />
+                <ScalarProperty Name="Öğrenci" ColumnName="Öğrenci" />
+                <ScalarProperty Name="C1_Yazılı" ColumnName="1 Yazılı" />
+                <ScalarProperty Name="C2_Yazılı" ColumnName="2 Yazılı" />
+                <ScalarProperty Name="Performans" ColumnName="Performans" />
+                <ScalarProperty Name="Proje" ColumnName="Proje" />
+                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Notlar3" FunctionName="OgrenciSinavModel.Store.Notlar3">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="OgrenciSinavModel.Notlar3_Result">
+                <ScalarProperty Name="Not_ID" ColumnName="Not ID" />
+                <ScalarProperty Name="Ders_Adı" ColumnName="Ders Adı" />
+                <ScalarProperty Name="Öğrenci" ColumnName="Öğrenci" />
+                <ScalarProperty Name="C1_Yazılı" ColumnName="1 Yazılı" />
+                <ScalarProperty Name="C2_Yazılı" ColumnName="2 Yazılı" />
+                <ScalarProperty Name="Performans" ColumnName="Performans" />
+                <ScalarProperty Name="Proje" ColumnName="Proje" />
+                <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

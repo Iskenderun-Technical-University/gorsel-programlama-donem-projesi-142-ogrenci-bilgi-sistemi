@@ -12,10 +12,11 @@
       <PropertyRef Name="NotID" />
     </Key>
     <Property Name="NotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Yazili1" Type="tinyint" />
-    <Property Name="Yazili2" Type="tinyint" />
-    <Property Name="Performans" Type="tinyint" />
-    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Yazili1" Type="int" />
+    <Property Name="Yazili2" Type="int" />
+    <Property Name="Performans" Type="int" />
+    <Property Name="Proje" Type="int" />
+    <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
     <Property Name="Ders" Type="int" />
     <Property Name="Ogrenci" Type="int" />
   </EntityType>
@@ -47,6 +48,22 @@
     </Key>
     <Property Name="SinifID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SinifAd" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_1">
+    <Key>
+      <PropertyRef Name="NotID" />
+    </Key>
+    <Property Name="NotID" Type="int" Nullable="false" />
+    <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
+    <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
+    <Property Name="DersAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Yazili1" Type="tinyint" />
+    <Property Name="Yazili2" Type="tinyint" />
+    <Property Name="Performans" Type="tinyint" />
+    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
   </EntityType>
   <Association Name="FK_TblNotlar_TblDersler">
     <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
@@ -84,12 +101,28 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="Notlar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Notlar2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Notlar3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="OgrenciSinavModelStoreContainer">
     <EntitySet Name="TblDersler" EntityType="Self.TblDersler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblNotlar" EntityType="Self.TblNotlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblOgrenci" EntityType="Self.TblOgrenci" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblOgretmen" EntityType="Self.TblOgretmen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblSinif" EntityType="Self.TblSinif" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="View_1" EntityType="Self.View_1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_1].[NotID] AS [NotID], 
+    [View_1].[OgrAd] AS [OgrAd], 
+    [View_1].[OgrSoyad] AS [OgrSoyad], 
+    [View_1].[DersAdi] AS [DersAdi], 
+    [View_1].[Yazili1] AS [Yazili1], 
+    [View_1].[Yazili2] AS [Yazili2], 
+    [View_1].[Performans] AS [Performans], 
+    [View_1].[Proje] AS [Proje], 
+    [View_1].[Ortalama] AS [Ortalama]
+    FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
       <End Role="TblDersler" EntitySet="TblDersler" />
       <End Role="TblNotlar" EntitySet="TblNotlar" />

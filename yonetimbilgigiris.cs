@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Ekranı.Entity;
 
 namespace Login_Ekranı
 {
@@ -18,12 +19,35 @@ namespace Login_Ekranı
             
             InitializeComponent();
         }
-        
+        SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
+
+        //************************************************
+        // private void rjButton3_Click(object sender, EventArgs e) SINIFIN İÇİNDE 32-48 ARASINI YORUM İÇİNE AL 49-62 ARASINI KALDIR RAMAZAN RAMAZAN46 İLE GİRİŞ YAPABİLİRSİN RAHAT ÇALIŞIRSIN.
+        //****************************************************
+
+
+
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select * From TblOgretmen Where OgrtNumara=@p1 and OgrtSifre=@p2", baglanti);
+            komut.Parameters.AddWithValue("@p1", txt_id.Text);
+            komut.Parameters.AddWithValue("@p2", txt_sifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                yonetimpanel yonetimpanel = new yonetimpanel();
+                yonetimpanel.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Numaranız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            baglanti.Close();
 
+            /*
             string id = "Ramazan";
             string sifre = "Ramazan46";
 
@@ -36,7 +60,7 @@ namespace Login_Ekranı
             else
             {
                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -106,6 +130,9 @@ namespace Login_Ekranı
             form1.Show();
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

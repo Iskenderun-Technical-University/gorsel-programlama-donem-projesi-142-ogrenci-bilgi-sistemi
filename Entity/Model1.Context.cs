@@ -12,6 +12,8 @@ namespace Login_Ekranı.Entity
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class OgrenciSinavEntities : DbContext
     {
@@ -26,9 +28,25 @@ namespace Login_Ekranı.Entity
         }
     
         public virtual DbSet<TblDersler> TblDersler { get; set; }
-        public virtual DbSet<TblNotlar> TblNotlar { get; set; }
         public virtual DbSet<TblOgrenci> TblOgrenci { get; set; }
         public virtual DbSet<TblOgretmen> TblOgretmen { get; set; }
         public virtual DbSet<TblSinif> TblSinif { get; set; }
+        public virtual DbSet<View_1> View_1 { get; set; }
+        public virtual DbSet<TblNotlar> TblNotlar { get; set; }
+    
+        public virtual ObjectResult<Notlar_Result> Notlar()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Notlar_Result>("Notlar");
+        }
+    
+        public virtual ObjectResult<Notlar2_Result> Notlar2()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Notlar2_Result>("Notlar2");
+        }
+    
+        public virtual ObjectResult<Notlar3_Result> Notlar3()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Notlar3_Result>("Notlar3");
+        }
     }
 }

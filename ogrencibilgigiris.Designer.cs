@@ -32,16 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ogrencibilgigiris));
             this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
             this.txt_sifre = new System.Windows.Forms.TextBox();
-            this.txt_id = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.ust_butonlar = new System.Windows.Forms.ImageList(this.components);
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.button1 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.mtxtbox_giris = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,14 +60,6 @@
             this.txt_sifre.Size = new System.Drawing.Size(166, 20);
             this.txt_sifre.TabIndex = 2;
             this.txt_sifre.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
-            // 
-            // txt_id
-            // 
-            this.txt_id.Location = new System.Drawing.Point(263, 215);
-            this.txt_id.Multiline = true;
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(166, 20);
-            this.txt_id.TabIndex = 1;
             // 
             // label3
             // 
@@ -126,52 +118,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.Black;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton1.ImageKey = "awdfaefef.png";
-            this.rjButton1.ImageList = this.ust_butonlar;
-            this.rjButton1.Location = new System.Drawing.Point(572, -1);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(36, 33);
-            this.rjButton1.TabIndex = 16;
-            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
-            // 
             // ust_butonlar
             // 
             this.ust_butonlar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ust_butonlar.ImageStream")));
             this.ust_butonlar.TransparentColor = System.Drawing.Color.Transparent;
             this.ust_butonlar.Images.SetKeyName(0, "w4te5eete5ty.png");
             this.ust_butonlar.Images.SetKeyName(1, "awdfaefef.png");
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.BackColor = System.Drawing.Color.Black;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton2.BorderColor = System.Drawing.Color.Black;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton2.ImageKey = "w4te5eete5ty.png";
-            this.rjButton2.ImageList = this.ust_butonlar;
-            this.rjButton2.Location = new System.Drawing.Point(539, -1);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(36, 33);
-            this.rjButton2.TabIndex = 17;
-            this.rjButton2.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // button1
             // 
@@ -193,17 +145,65 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.rjButton3_Click);
             // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.Black;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton2.BorderColor = System.Drawing.Color.Black;
+            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton2.ImageKey = "w4te5eete5ty.png";
+            this.rjButton2.ImageList = this.ust_butonlar;
+            this.rjButton2.Location = new System.Drawing.Point(539, -1);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(36, 33);
+            this.rjButton2.TabIndex = 17;
+            this.rjButton2.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Black;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton1.ImageKey = "awdfaefef.png";
+            this.rjButton1.ImageList = this.ust_butonlar;
+            this.rjButton1.Location = new System.Drawing.Point(572, -1);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(36, 33);
+            this.rjButton1.TabIndex = 16;
+            this.rjButton1.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
+            // mtxtbox_giris
+            // 
+            this.mtxtbox_giris.Location = new System.Drawing.Point(263, 215);
+            this.mtxtbox_giris.Mask = "00000";
+            this.mtxtbox_giris.Name = "mtxtbox_giris";
+            this.mtxtbox_giris.Size = new System.Drawing.Size(166, 20);
+            this.mtxtbox_giris.TabIndex = 19;
+            // 
             // ogrencibilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 526);
+            this.Controls.Add(this.mtxtbox_giris);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txt_sifre);
-            this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -226,12 +226,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ImageList kapat_ico;
-        public System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.ImageList ust_butonlar;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton button1;
+        private System.Windows.Forms.MaskedTextBox mtxtbox_giris;
     }
 }

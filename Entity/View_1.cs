@@ -12,18 +12,16 @@ namespace Login_Ekranı.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class TblNotlar
+    public partial class View_1
     {
         public int NotID { get; set; }
-        public Nullable<int> Yazili1 { get; set; }
-        public Nullable<int> Yazili2 { get; set; }
-        public Nullable<int> Performans { get; set; }
-        public Nullable<int> Proje { get; set; }
+        public string OgrAd { get; set; }
+        public string OgrSoyad { get; set; }
+        public string DersAdi { get; set; }
+        public Nullable<byte> Yazili1 { get; set; }
+        public Nullable<byte> Yazili2 { get; set; }
+        public Nullable<byte> Performans { get; set; }
+        public Nullable<byte> Proje { get; set; }
         public Nullable<decimal> Ortalama { get; set; }
-        public Nullable<int> Ders { get; set; }
-        public Nullable<int> Ogrenci { get; set; }
-    
-        public virtual TblDersler TblDersler { get; set; }
-        public virtual TblOgrenci TblOgrenci { get; set; }
     }
 }

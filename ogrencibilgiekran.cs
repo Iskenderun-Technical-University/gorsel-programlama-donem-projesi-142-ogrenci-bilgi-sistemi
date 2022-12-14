@@ -31,7 +31,13 @@ namespace Login_Ekranı
             txt_soyad.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSoyad).FirstOrDefault();
             txt_sifre1.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSifre).FirstOrDefault();
             comboBox2.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSinif).FirstOrDefault().ToString();
-
+            lbl_ozursuz_devamsizlik.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrDevamsizlik).FirstOrDefault().ToString();
+            lbl_toplam_devamsizlik.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrDevamsizlik).FirstOrDefault().ToString();
+            ort4_lbl.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.Ort9).FirstOrDefault().ToString();
+            ort5_lbl.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.Ort10).FirstOrDefault().ToString();
+            ort6_lbl.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.Ort11).FirstOrDefault().ToString();
+            ort7_lbl.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.Ort12).FirstOrDefault().ToString();
+            ort8_lbl.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.Ort13).FirstOrDefault().ToString();
             ogrid = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
             var sinavnotlari = (from x in db.TblNotlar
                                 select new

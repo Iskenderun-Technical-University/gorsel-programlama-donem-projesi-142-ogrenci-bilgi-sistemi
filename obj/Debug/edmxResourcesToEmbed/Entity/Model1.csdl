@@ -21,6 +21,13 @@
     <NavigationProperty Name="TblSinif" Relationship="Self.FK_TblOgrenci_TblSinif" FromRole="TblOgrenci" ToRole="TblSinif" />
     <Property Name="OgrDurum" Type="Boolean" />
     <NavigationProperty Name="TblNotlar" Relationship="OgrenciSinavModel.FK_TblNotlar_TblOgrenci" FromRole="TblOgrenci" ToRole="TblNotlar" />
+    <Property Name="OgrDevamsizlik" Type="Int32" />
+    <Property Name="OgrOrtalama" Type="Int32" />
+    <Property Name="Ort9" Type="Int32" />
+    <Property Name="Ort10" Type="Int32" />
+    <Property Name="Ort11" Type="Int32" />
+    <Property Name="Ort12" Type="Int32" />
+    <Property Name="Ort13" Type="Int32" />
   </EntityType>
   <EntityType Name="TblOgretmen">
     <Key>

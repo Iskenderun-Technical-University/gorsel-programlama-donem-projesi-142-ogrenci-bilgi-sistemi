@@ -31,6 +31,13 @@
     <Property Name="OgrNumara" Type="char" MaxLength="5" />
     <Property Name="OgrSinif" Type="int" />
     <Property Name="OgrDurum" Type="bit" />
+    <Property Name="OgrDevamsizlik" Type="int" />
+    <Property Name="OgrOrtalama" Type="int" />
+    <Property Name="Ort9" Type="int" />
+    <Property Name="Ort10" Type="int" />
+    <Property Name="Ort11" Type="int" />
+    <Property Name="Ort12" Type="int" />
+    <Property Name="Ort13" Type="int" />
   </EntityType>
   <EntityType Name="TblOgretmen">
     <Key>

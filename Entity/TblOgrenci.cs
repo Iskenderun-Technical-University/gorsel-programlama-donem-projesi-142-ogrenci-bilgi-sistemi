@@ -27,6 +27,13 @@ namespace Login_Ekranı.Entity
         public string OgrNumara { get; set; }
         public Nullable<int> OgrSinif { get; set; }
         public Nullable<bool> OgrDurum { get; set; }
+        public Nullable<int> OgrDevamsizlik { get; set; }
+        public Nullable<int> OgrOrtalama { get; set; }
+        public Nullable<int> Ort9 { get; set; }
+        public Nullable<int> Ort10 { get; set; }
+        public Nullable<int> Ort11 { get; set; }
+        public Nullable<int> Ort12 { get; set; }
+        public Nullable<int> Ort13 { get; set; }
     
         public virtual TblSinif TblSinif { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

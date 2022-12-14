@@ -33,6 +33,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_duyurular = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -130,19 +131,19 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.lbl_sinif9 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.ort8_lbl = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.lbl_sinif8 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.ort7_lbl = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.lbl_sinif7 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.ort6_lbl = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.lbl_sinif6 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.ort5_lbl = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.lbl_sinif5 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.ort4_lbl = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lbl_sinif4 = new System.Windows.Forms.Label();
             this.lbl_yilsonuortalama = new System.Windows.Forms.Label();
@@ -175,13 +176,13 @@
             this.butonlar = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_info = new CustomControls.RJControls.RJButton();
             this.btn_kilit = new CustomControls.RJControls.RJButton();
             this.btn_anaekran = new CustomControls.RJControls.RJButton();
             this.btn_kapat = new CustomControls.RJControls.RJButton();
             this.tabControl1.SuspendLayout();
             this.page_duyurular.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.page_notbilgi.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -199,7 +200,6 @@
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -246,6 +246,17 @@
             this.lbl_duyuru.Size = new System.Drawing.Size(1029, 252);
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(46, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // page_notbilgi
             // 
@@ -1252,19 +1263,19 @@
             this.tableLayoutPanel5.Controls.Add(this.label35, 2, 6);
             this.tableLayoutPanel5.Controls.Add(this.label34, 1, 6);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif9, 0, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label32, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.ort8_lbl, 2, 5);
             this.tableLayoutPanel5.Controls.Add(this.label31, 1, 5);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif8, 0, 5);
-            this.tableLayoutPanel5.Controls.Add(this.label29, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.ort7_lbl, 2, 4);
             this.tableLayoutPanel5.Controls.Add(this.label28, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif7, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.label26, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.ort6_lbl, 2, 3);
             this.tableLayoutPanel5.Controls.Add(this.label25, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif6, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.label23, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.ort5_lbl, 2, 2);
             this.tableLayoutPanel5.Controls.Add(this.label22, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif5, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.label20, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.ort4_lbl, 2, 1);
             this.tableLayoutPanel5.Controls.Add(this.label19, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.lbl_sinif4, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lbl_yilsonuortalama, 2, 0);
@@ -1399,15 +1410,15 @@
             this.lbl_sinif9.TabIndex = 18;
             this.lbl_sinif9.Text = "9. Sınıf";
             // 
-            // label32
+            // ort8_lbl
             // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(385, 245);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(14, 16);
-            this.label32.TabIndex = 17;
-            this.label32.Text = "0";
+            this.ort8_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort8_lbl.AutoSize = true;
+            this.ort8_lbl.Location = new System.Drawing.Point(385, 245);
+            this.ort8_lbl.Name = "ort8_lbl";
+            this.ort8_lbl.Size = new System.Drawing.Size(14, 16);
+            this.ort8_lbl.TabIndex = 17;
+            this.ort8_lbl.Text = "0";
             // 
             // label31
             // 
@@ -1429,15 +1440,15 @@
             this.lbl_sinif8.TabIndex = 15;
             this.lbl_sinif8.Text = "8. Sınıf";
             // 
-            // label29
+            // ort7_lbl
             // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(385, 199);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(14, 16);
-            this.label29.TabIndex = 14;
-            this.label29.Text = "0";
+            this.ort7_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort7_lbl.AutoSize = true;
+            this.ort7_lbl.Location = new System.Drawing.Point(385, 199);
+            this.ort7_lbl.Name = "ort7_lbl";
+            this.ort7_lbl.Size = new System.Drawing.Size(14, 16);
+            this.ort7_lbl.TabIndex = 14;
+            this.ort7_lbl.Text = "0";
             // 
             // label28
             // 
@@ -1459,15 +1470,15 @@
             this.lbl_sinif7.TabIndex = 12;
             this.lbl_sinif7.Text = "7. Sınıf";
             // 
-            // label26
+            // ort6_lbl
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(385, 153);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(14, 16);
-            this.label26.TabIndex = 11;
-            this.label26.Text = "0";
+            this.ort6_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort6_lbl.AutoSize = true;
+            this.ort6_lbl.Location = new System.Drawing.Point(385, 153);
+            this.ort6_lbl.Name = "ort6_lbl";
+            this.ort6_lbl.Size = new System.Drawing.Size(14, 16);
+            this.ort6_lbl.TabIndex = 11;
+            this.ort6_lbl.Text = "0";
             // 
             // label25
             // 
@@ -1489,15 +1500,15 @@
             this.lbl_sinif6.TabIndex = 9;
             this.lbl_sinif6.Text = "6. Sınıf\t";
             // 
-            // label23
+            // ort5_lbl
             // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(385, 107);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(14, 16);
-            this.label23.TabIndex = 8;
-            this.label23.Text = "0";
+            this.ort5_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort5_lbl.AutoSize = true;
+            this.ort5_lbl.Location = new System.Drawing.Point(385, 107);
+            this.ort5_lbl.Name = "ort5_lbl";
+            this.ort5_lbl.Size = new System.Drawing.Size(14, 16);
+            this.ort5_lbl.TabIndex = 8;
+            this.ort5_lbl.Text = "0";
             // 
             // label22
             // 
@@ -1519,15 +1530,15 @@
             this.lbl_sinif5.TabIndex = 6;
             this.lbl_sinif5.Text = "5. Sınıf\t";
             // 
-            // label20
+            // ort4_lbl
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(385, 61);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(14, 16);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "0";
+            this.ort4_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort4_lbl.AutoSize = true;
+            this.ort4_lbl.Location = new System.Drawing.Point(385, 61);
+            this.ort4_lbl.Name = "ort4_lbl";
+            this.ort4_lbl.Size = new System.Drawing.Size(14, 16);
+            this.ort4_lbl.TabIndex = 5;
+            this.ort4_lbl.Text = "0";
             // 
             // label19
             // 
@@ -1894,17 +1905,6 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // btn_info
             // 
             this.btn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
@@ -2005,6 +2005,7 @@
             this.tabControl1.ResumeLayout(false);
             this.page_duyurular.ResumeLayout(false);
             this.page_duyurular.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.page_notbilgi.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -2029,7 +2030,6 @@
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2106,19 +2106,19 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lbl_sinif9;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label ort8_lbl;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label lbl_sinif8;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label ort7_lbl;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label lbl_sinif7;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label ort6_lbl;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbl_sinif6;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label ort5_lbl;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lbl_sinif5;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label ort4_lbl;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lbl_sinif4;
         private System.Windows.Forms.Label lbl_yilsonuortalama;

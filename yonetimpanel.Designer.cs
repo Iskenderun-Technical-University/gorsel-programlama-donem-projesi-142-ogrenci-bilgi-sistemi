@@ -34,7 +34,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_girisekran = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.page_notgiris = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btn_ara = new System.Windows.Forms.Button();
@@ -67,6 +66,8 @@
             this.txt_yazili1 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.page_derslistesi = new System.Windows.Forms.TabPage();
+            this.btnderslistele = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.page_dersprogram = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_cuma_ders5 = new System.Windows.Forms.Label();
@@ -139,19 +140,22 @@
             this.label12 = new System.Windows.Forms.Label();
             this.ad = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonlar = new System.Windows.Forms.ImageList(this.components);
+            this.btn_info = new CustomControls.RJControls.RJButton();
+            this.btn_kilit = new CustomControls.RJControls.RJButton();
+            this.btn_anaekran = new CustomControls.RJControls.RJButton();
+            this.btn_kapat = new CustomControls.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.btnderslistele = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.page_notgiris.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.page_derslistesi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.page_dersprogram.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.page_ogrenci_bilgileri.SuspendLayout();
@@ -160,9 +164,8 @@
             this.groupBox1.SuspendLayout();
             this.page_ogrenci_kayıt.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kapat_ico
@@ -182,11 +185,11 @@
             this.tabControl1.Controls.Add(this.page_ogrenci_kayıt);
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.ItemSize = new System.Drawing.Size(80, 160);
-            this.tabControl1.Location = new System.Drawing.Point(1, 102);
+            this.tabControl1.Location = new System.Drawing.Point(1, 111);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1243, 572);
+            this.tabControl1.Size = new System.Drawing.Size(1322, 643);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 1;
             this.tabControl1.TabStop = false;
@@ -198,7 +201,7 @@
             this.page_girisekran.Location = new System.Drawing.Point(164, 4);
             this.page_girisekran.Name = "page_girisekran";
             this.page_girisekran.Padding = new System.Windows.Forms.Padding(3);
-            this.page_girisekran.Size = new System.Drawing.Size(1075, 564);
+            this.page_girisekran.Size = new System.Drawing.Size(1154, 635);
             this.page_girisekran.TabIndex = 2;
             this.page_girisekran.Text = "Giriş Paneli";
             this.page_girisekran.UseVisualStyleBackColor = true;
@@ -214,15 +217,6 @@
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(36, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // page_notgiris
             // 
             this.page_notgiris.Controls.Add(this.groupBox6);
@@ -231,7 +225,7 @@
             this.page_notgiris.Location = new System.Drawing.Point(164, 4);
             this.page_notgiris.Name = "page_notgiris";
             this.page_notgiris.Padding = new System.Windows.Forms.Padding(3);
-            this.page_notgiris.Size = new System.Drawing.Size(1075, 564);
+            this.page_notgiris.Size = new System.Drawing.Size(1154, 635);
             this.page_notgiris.TabIndex = 0;
             this.page_notgiris.Text = "Not Girişi";
             this.page_notgiris.UseVisualStyleBackColor = true;
@@ -529,10 +523,28 @@
             this.page_derslistesi.Location = new System.Drawing.Point(164, 4);
             this.page_derslistesi.Name = "page_derslistesi";
             this.page_derslistesi.Padding = new System.Windows.Forms.Padding(3);
-            this.page_derslistesi.Size = new System.Drawing.Size(1075, 564);
+            this.page_derslistesi.Size = new System.Drawing.Size(1154, 635);
             this.page_derslistesi.TabIndex = 1;
             this.page_derslistesi.Text = "Ders Listesi";
             this.page_derslistesi.UseVisualStyleBackColor = true;
+            // 
+            // btnderslistele
+            // 
+            this.btnderslistele.Location = new System.Drawing.Point(202, 290);
+            this.btnderslistele.Name = "btnderslistele";
+            this.btnderslistele.Size = new System.Drawing.Size(160, 23);
+            this.btnderslistele.TabIndex = 1;
+            this.btnderslistele.Text = "Dersleri Listele";
+            this.btnderslistele.UseVisualStyleBackColor = true;
+            this.btnderslistele.Click += new System.EventHandler(this.btnderslistele_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(65, 43);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(429, 152);
+            this.dataGridView3.TabIndex = 0;
             // 
             // page_dersprogram
             // 
@@ -540,7 +552,7 @@
             this.page_dersprogram.Location = new System.Drawing.Point(164, 4);
             this.page_dersprogram.Name = "page_dersprogram";
             this.page_dersprogram.Padding = new System.Windows.Forms.Padding(3);
-            this.page_dersprogram.Size = new System.Drawing.Size(1075, 564);
+            this.page_dersprogram.Size = new System.Drawing.Size(1154, 635);
             this.page_dersprogram.TabIndex = 3;
             this.page_dersprogram.Text = "Ders Programı";
             this.page_dersprogram.UseVisualStyleBackColor = true;
@@ -995,7 +1007,7 @@
             this.page_ogrenci_bilgileri.Location = new System.Drawing.Point(164, 4);
             this.page_ogrenci_bilgileri.Name = "page_ogrenci_bilgileri";
             this.page_ogrenci_bilgileri.Padding = new System.Windows.Forms.Padding(3);
-            this.page_ogrenci_bilgileri.Size = new System.Drawing.Size(1075, 564);
+            this.page_ogrenci_bilgileri.Size = new System.Drawing.Size(1154, 635);
             this.page_ogrenci_bilgileri.TabIndex = 4;
             this.page_ogrenci_bilgileri.Text = "Öğrenci Bilgi Alma";
             this.page_ogrenci_bilgileri.UseVisualStyleBackColor = true;
@@ -1179,7 +1191,7 @@
             this.page_ogrenci_kayıt.Controls.Add(this.groupBox3);
             this.page_ogrenci_kayıt.Location = new System.Drawing.Point(164, 4);
             this.page_ogrenci_kayıt.Name = "page_ogrenci_kayıt";
-            this.page_ogrenci_kayıt.Size = new System.Drawing.Size(1075, 564);
+            this.page_ogrenci_kayıt.Size = new System.Drawing.Size(1154, 635);
             this.page_ogrenci_kayıt.TabIndex = 5;
             this.page_ogrenci_kayıt.Text = "Öğrenci Kayıt";
             this.page_ogrenci_kayıt.UseVisualStyleBackColor = true;
@@ -1323,54 +1335,130 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Adı:";
             // 
-            // tableLayoutPanel1
+            // buttonlar
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(-2, -1);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1246, 106);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.buttonlar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("buttonlar.ImageStream")));
+            this.buttonlar.TransparentColor = System.Drawing.Color.Transparent;
+            this.buttonlar.Images.SetKeyName(0, "back-arrow.png");
+            this.buttonlar.Images.SetKeyName(1, "cancel.png");
+            this.buttonlar.Images.SetKeyName(2, "home.png");
+            this.buttonlar.Images.SetKeyName(3, "information.png");
+            this.buttonlar.Images.SetKeyName(4, "lock.png");
+            this.buttonlar.Images.SetKeyName(5, "right-arrow.png");
+            // 
+            // btn_info
+            // 
+            this.btn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_info.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_info.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_info.BorderRadius = 0;
+            this.btn_info.BorderSize = 0;
+            this.btn_info.FlatAppearance.BorderSize = 0;
+            this.btn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_info.ForeColor = System.Drawing.Color.White;
+            this.btn_info.ImageKey = "information.png";
+            this.btn_info.ImageList = this.buttonlar;
+            this.btn_info.Location = new System.Drawing.Point(1129, 26);
+            this.btn_info.Name = "btn_info";
+            this.btn_info.Size = new System.Drawing.Size(41, 41);
+            this.btn_info.TabIndex = 6;
+            this.btn_info.TextColor = System.Drawing.Color.White;
+            this.btn_info.UseVisualStyleBackColor = false;
+            this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
+            // 
+            // btn_kilit
+            // 
+            this.btn_kilit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_kilit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_kilit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_kilit.BorderRadius = 0;
+            this.btn_kilit.BorderSize = 0;
+            this.btn_kilit.FlatAppearance.BorderSize = 0;
+            this.btn_kilit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kilit.ForeColor = System.Drawing.Color.White;
+            this.btn_kilit.ImageKey = "lock.png";
+            this.btn_kilit.ImageList = this.buttonlar;
+            this.btn_kilit.Location = new System.Drawing.Point(1176, 26);
+            this.btn_kilit.Name = "btn_kilit";
+            this.btn_kilit.Size = new System.Drawing.Size(41, 41);
+            this.btn_kilit.TabIndex = 5;
+            this.btn_kilit.TextColor = System.Drawing.Color.White;
+            this.btn_kilit.UseVisualStyleBackColor = false;
+            this.btn_kilit.Click += new System.EventHandler(this.btn_kilit_Click);
+            // 
+            // btn_anaekran
+            // 
+            this.btn_anaekran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_anaekran.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_anaekran.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_anaekran.BorderRadius = 0;
+            this.btn_anaekran.BorderSize = 0;
+            this.btn_anaekran.FlatAppearance.BorderSize = 0;
+            this.btn_anaekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anaekran.ForeColor = System.Drawing.Color.White;
+            this.btn_anaekran.ImageKey = "home.png";
+            this.btn_anaekran.ImageList = this.buttonlar;
+            this.btn_anaekran.Location = new System.Drawing.Point(1223, 26);
+            this.btn_anaekran.Name = "btn_anaekran";
+            this.btn_anaekran.Size = new System.Drawing.Size(41, 41);
+            this.btn_anaekran.TabIndex = 4;
+            this.btn_anaekran.TextColor = System.Drawing.Color.White;
+            this.btn_anaekran.UseVisualStyleBackColor = false;
+            this.btn_anaekran.Click += new System.EventHandler(this.btn_anaekran_Click);
+            // 
+            // btn_kapat
+            // 
+            this.btn_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_kapat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.btn_kapat.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_kapat.BorderRadius = 0;
+            this.btn_kapat.BorderSize = 0;
+            this.btn_kapat.FlatAppearance.BorderSize = 0;
+            this.btn_kapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kapat.ForeColor = System.Drawing.Color.White;
+            this.btn_kapat.ImageKey = "cancel.png";
+            this.btn_kapat.ImageList = this.buttonlar;
+            this.btn_kapat.Location = new System.Drawing.Point(1270, 26);
+            this.btn_kapat.Name = "btn_kapat";
+            this.btn_kapat.Size = new System.Drawing.Size(41, 41);
+            this.btn_kapat.TabIndex = 3;
+            this.btn_kapat.TextColor = System.Drawing.Color.White;
+            this.btn_kapat.UseVisualStyleBackColor = false;
+            this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(333, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(1328, 114);
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // dataGridView3
+            // pictureBox2
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(65, 43);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(429, 152);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // btnderslistele
-            // 
-            this.btnderslistele.Location = new System.Drawing.Point(202, 290);
-            this.btnderslistele.Name = "btnderslistele";
-            this.btnderslistele.Size = new System.Drawing.Size(160, 23);
-            this.btnderslistele.TabIndex = 1;
-            this.btnderslistele.Text = "Dersleri Listele";
-            this.btnderslistele.UseVisualStyleBackColor = true;
-            this.btnderslistele.Click += new System.EventHandler(this.btnderslistele_Click);
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // yonetimpanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 671);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1320, 750);
+            this.Controls.Add(this.btn_info);
+            this.Controls.Add(this.btn_kilit);
+            this.Controls.Add(this.btn_anaekran);
+            this.Controls.Add(this.btn_kapat);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "yonetimpanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "yonetimpanel";
@@ -1378,7 +1466,6 @@
             this.tabControl1.ResumeLayout(false);
             this.page_girisekran.ResumeLayout(false);
             this.page_girisekran.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.page_notgiris.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -1387,6 +1474,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.page_derslistesi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.page_dersprogram.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1399,9 +1487,8 @@
             this.page_ogrenci_kayıt.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1451,8 +1538,6 @@
         private System.Windows.Forms.Label lbl_ders1;
         private System.Windows.Forms.Label lbl_pzt_ders1;
         private System.Windows.Forms.TabPage page_ogrenci_bilgileri;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage page_notgiris;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_guncelle;
@@ -1521,5 +1606,11 @@
         public System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btnderslistele;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private CustomControls.RJControls.RJButton btn_kapat;
+        private System.Windows.Forms.ImageList buttonlar;
+        private CustomControls.RJControls.RJButton btn_anaekran;
+        private CustomControls.RJControls.RJButton btn_kilit;
+        private CustomControls.RJControls.RJButton btn_info;
     }
 }

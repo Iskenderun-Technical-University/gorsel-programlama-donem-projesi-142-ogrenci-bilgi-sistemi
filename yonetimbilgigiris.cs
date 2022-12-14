@@ -20,7 +20,7 @@ namespace Login_Ekranı
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
-
+       
         //************************************************
         // private void rjButton3_Click(object sender, EventArgs e) SINIFIN İÇİNDE 32-48 ARASINI YORUM İÇİNE AL 49-62 ARASINI KALDIR RAMAZAN RAMAZAN46 İLE GİRİŞ YAPABİLİRSİN RAHAT ÇALIŞIRSIN.
         //****************************************************
@@ -48,19 +48,19 @@ namespace Login_Ekranı
             baglanti.Close();
 
             /*
-            string id = "Ramazan";
-            string sifre = "Ramazan46";
+                        string id = "Ramazan";
+                        string sifre = "Ramazan46";
 
-            if(txt_id.Text == id && txt_sifre.Text == sifre)
-            {
-                yonetimpanel yonetimpanel = new yonetimpanel();
-                yonetimpanel.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+                        if(txt_id.Text == id && txt_sifre.Text == sifre)
+                        {
+                            yonetimpanel yonetimpanel = new yonetimpanel();
+                            yonetimpanel.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }*/
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

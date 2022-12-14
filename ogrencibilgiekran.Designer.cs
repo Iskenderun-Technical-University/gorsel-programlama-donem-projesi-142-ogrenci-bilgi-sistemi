@@ -30,11 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ogrencibilgiekran));
-            this.kapat_ico = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_duyurular = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,6 +41,10 @@
             this.mtxtbox_numara = new System.Windows.Forms.MaskedTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.txt_yenisifre2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_yenisifre1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txt_sifre1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -170,16 +172,16 @@
             this.label43 = new System.Windows.Forms.Label();
             this.lbl_sınıfort_turkdili = new System.Windows.Forms.Label();
             this.duyurular = new System.Windows.Forms.ImageList(this.components);
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.butonlar = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_yenisifre1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_yenisifre2 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_info = new CustomControls.RJControls.RJButton();
+            this.btn_kilit = new CustomControls.RJControls.RJButton();
+            this.btn_anaekran = new CustomControls.RJControls.RJButton();
+            this.btn_kapat = new CustomControls.RJControls.RJButton();
             this.tabControl1.SuspendLayout();
             this.page_duyurular.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.page_notbilgi.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -195,15 +197,10 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.page_subeortalama.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // kapat_ico
-            // 
-            this.kapat_ico.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("kapat_ico.ImageStream")));
-            this.kapat_ico.TransparentColor = System.Drawing.Color.Transparent;
-            this.kapat_ico.Images.SetKeyName(0, "458594.png");
             // 
             // tabControl1
             // 
@@ -218,11 +215,11 @@
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabControl1.ItemSize = new System.Drawing.Size(70, 170);
-            this.tabControl1.Location = new System.Drawing.Point(0, 102);
+            this.tabControl1.Location = new System.Drawing.Point(0, 110);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1243, 589);
+            this.tabControl1.Size = new System.Drawing.Size(1323, 643);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.TabStop = false;
@@ -234,7 +231,7 @@
             this.page_duyurular.Location = new System.Drawing.Point(174, 4);
             this.page_duyurular.Name = "page_duyurular";
             this.page_duyurular.Padding = new System.Windows.Forms.Padding(3);
-            this.page_duyurular.Size = new System.Drawing.Size(1065, 581);
+            this.page_duyurular.Size = new System.Drawing.Size(1145, 635);
             this.page_duyurular.TabIndex = 2;
             this.page_duyurular.Text = "Duyurular";
             this.page_duyurular.UseVisualStyleBackColor = true;
@@ -250,16 +247,6 @@
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(42, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // page_notbilgi
             // 
             this.page_notbilgi.Controls.Add(this.groupBox2);
@@ -267,7 +254,7 @@
             this.page_notbilgi.Location = new System.Drawing.Point(174, 4);
             this.page_notbilgi.Name = "page_notbilgi";
             this.page_notbilgi.Padding = new System.Windows.Forms.Padding(3);
-            this.page_notbilgi.Size = new System.Drawing.Size(1065, 581);
+            this.page_notbilgi.Size = new System.Drawing.Size(1145, 635);
             this.page_notbilgi.TabIndex = 0;
             this.page_notbilgi.Text = "Not Bilgisi";
             this.page_notbilgi.UseVisualStyleBackColor = true;
@@ -352,6 +339,39 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Sınıf:";
             // 
+            // txt_yenisifre2
+            // 
+            this.txt_yenisifre2.Location = new System.Drawing.Point(114, 170);
+            this.txt_yenisifre2.Name = "txt_yenisifre2";
+            this.txt_yenisifre2.Size = new System.Drawing.Size(164, 22);
+            this.txt_yenisifre2.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(28, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Yeni Şifre:";
+            // 
+            // txt_yenisifre1
+            // 
+            this.txt_yenisifre1.Location = new System.Drawing.Point(114, 142);
+            this.txt_yenisifre1.Name = "txt_yenisifre1";
+            this.txt_yenisifre1.Size = new System.Drawing.Size(164, 22);
+            this.txt_yenisifre1.TabIndex = 7;
+            this.txt_yenisifre1.UseSystemPasswordChar = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 145);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Yeni Şifre:";
+            // 
             // txt_sifre1
             // 
             this.txt_sifre1.Location = new System.Drawing.Point(114, 114);
@@ -417,7 +437,7 @@
             this.page_devamsizlik.Location = new System.Drawing.Point(174, 4);
             this.page_devamsizlik.Name = "page_devamsizlik";
             this.page_devamsizlik.Padding = new System.Windows.Forms.Padding(3);
-            this.page_devamsizlik.Size = new System.Drawing.Size(1065, 581);
+            this.page_devamsizlik.Size = new System.Drawing.Size(1145, 635);
             this.page_devamsizlik.TabIndex = 1;
             this.page_devamsizlik.Text = "Devamsızlık Bilgisi";
             this.page_devamsizlik.UseVisualStyleBackColor = true;
@@ -556,7 +576,7 @@
             this.page_dersprogram.Location = new System.Drawing.Point(174, 4);
             this.page_dersprogram.Name = "page_dersprogram";
             this.page_dersprogram.Padding = new System.Windows.Forms.Padding(3);
-            this.page_dersprogram.Size = new System.Drawing.Size(1065, 581);
+            this.page_dersprogram.Size = new System.Drawing.Size(1145, 635);
             this.page_dersprogram.TabIndex = 3;
             this.page_dersprogram.Text = "Ders Programı";
             this.page_dersprogram.UseVisualStyleBackColor = true;
@@ -1011,7 +1031,7 @@
             this.page_alinanbelgeler.Location = new System.Drawing.Point(174, 4);
             this.page_alinanbelgeler.Name = "page_alinanbelgeler";
             this.page_alinanbelgeler.Padding = new System.Windows.Forms.Padding(3);
-            this.page_alinanbelgeler.Size = new System.Drawing.Size(1065, 581);
+            this.page_alinanbelgeler.Size = new System.Drawing.Size(1145, 635);
             this.page_alinanbelgeler.TabIndex = 4;
             this.page_alinanbelgeler.Text = "Alınan Belgeler";
             this.page_alinanbelgeler.UseVisualStyleBackColor = true;
@@ -1210,7 +1230,7 @@
             this.page_yilsonunot.Location = new System.Drawing.Point(174, 4);
             this.page_yilsonunot.Name = "page_yilsonunot";
             this.page_yilsonunot.Padding = new System.Windows.Forms.Padding(3);
-            this.page_yilsonunot.Size = new System.Drawing.Size(1065, 581);
+            this.page_yilsonunot.Size = new System.Drawing.Size(1145, 635);
             this.page_yilsonunot.TabIndex = 5;
             this.page_yilsonunot.Text = "Yıl Sonu Notları";
             this.page_yilsonunot.UseVisualStyleBackColor = true;
@@ -1576,7 +1596,7 @@
             this.page_subeortalama.Location = new System.Drawing.Point(174, 4);
             this.page_subeortalama.Name = "page_subeortalama";
             this.page_subeortalama.Padding = new System.Windows.Forms.Padding(3);
-            this.page_subeortalama.Size = new System.Drawing.Size(1065, 581);
+            this.page_subeortalama.Size = new System.Drawing.Size(1145, 635);
             this.page_subeortalama.TabIndex = 6;
             this.page_subeortalama.Text = "Şube Ortalaması";
             this.page_subeortalama.UseVisualStyleBackColor = true;
@@ -1842,77 +1862,142 @@
             this.duyurular.TransparentColor = System.Drawing.Color.Transparent;
             this.duyurular.Images.SetKeyName(0, "megaphone.png");
             // 
-            // tableLayoutPanel8
+            // butonlar
             // 
-            this.tableLayoutPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(210)))));
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, -5);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1239, 105);
-            this.tableLayoutPanel8.TabIndex = 1;
-            this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel8_Paint);
+            this.butonlar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("butonlar.ImageStream")));
+            this.butonlar.TransparentColor = System.Drawing.Color.Transparent;
+            this.butonlar.Images.SetKeyName(0, "back-arrow.png");
+            this.butonlar.Images.SetKeyName(1, "cancel.png");
+            this.butonlar.Images.SetKeyName(2, "home.png");
+            this.butonlar.Images.SetKeyName(3, "information.png");
+            this.butonlar.Images.SetKeyName(4, "lock.png");
+            this.butonlar.Images.SetKeyName(5, "right-arrow.png");
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.pictureBox1.Image = global::Login_Ekranı.Properties.Resources.eokullogo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(328, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(354, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ımageList1
+            // pictureBox3
             // 
-            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.pictureBox3.Location = new System.Drawing.Point(-9, -2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1330, 117);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 145);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Yeni Şifre:";
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(46, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // txt_yenisifre1
+            // btn_info
             // 
-            this.txt_yenisifre1.Location = new System.Drawing.Point(114, 142);
-            this.txt_yenisifre1.Name = "txt_yenisifre1";
-            this.txt_yenisifre1.Size = new System.Drawing.Size(164, 22);
-            this.txt_yenisifre1.TabIndex = 7;
-            this.txt_yenisifre1.UseSystemPasswordChar = true;
+            this.btn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_info.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_info.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_info.BorderRadius = 0;
+            this.btn_info.BorderSize = 0;
+            this.btn_info.FlatAppearance.BorderSize = 0;
+            this.btn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_info.ForeColor = System.Drawing.Color.White;
+            this.btn_info.ImageKey = "information.png";
+            this.btn_info.ImageList = this.butonlar;
+            this.btn_info.Location = new System.Drawing.Point(1126, 28);
+            this.btn_info.Name = "btn_info";
+            this.btn_info.Size = new System.Drawing.Size(41, 41);
+            this.btn_info.TabIndex = 11;
+            this.btn_info.TextColor = System.Drawing.Color.White;
+            this.btn_info.UseVisualStyleBackColor = false;
+            this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
             // 
-            // label7
+            // btn_kilit
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 173);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Yeni Şifre:";
+            this.btn_kilit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_kilit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_kilit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_kilit.BorderRadius = 0;
+            this.btn_kilit.BorderSize = 0;
+            this.btn_kilit.FlatAppearance.BorderSize = 0;
+            this.btn_kilit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kilit.ForeColor = System.Drawing.Color.White;
+            this.btn_kilit.ImageKey = "lock.png";
+            this.btn_kilit.ImageList = this.butonlar;
+            this.btn_kilit.Location = new System.Drawing.Point(1173, 28);
+            this.btn_kilit.Name = "btn_kilit";
+            this.btn_kilit.Size = new System.Drawing.Size(41, 41);
+            this.btn_kilit.TabIndex = 10;
+            this.btn_kilit.TextColor = System.Drawing.Color.White;
+            this.btn_kilit.UseVisualStyleBackColor = false;
+            this.btn_kilit.Click += new System.EventHandler(this.btn_kilit_Click);
             // 
-            // txt_yenisifre2
+            // btn_anaekran
             // 
-            this.txt_yenisifre2.Location = new System.Drawing.Point(114, 170);
-            this.txt_yenisifre2.Name = "txt_yenisifre2";
-            this.txt_yenisifre2.Size = new System.Drawing.Size(164, 22);
-            this.txt_yenisifre2.TabIndex = 7;
+            this.btn_anaekran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_anaekran.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_anaekran.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_anaekran.BorderRadius = 0;
+            this.btn_anaekran.BorderSize = 0;
+            this.btn_anaekran.FlatAppearance.BorderSize = 0;
+            this.btn_anaekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anaekran.ForeColor = System.Drawing.Color.White;
+            this.btn_anaekran.ImageKey = "home.png";
+            this.btn_anaekran.ImageList = this.butonlar;
+            this.btn_anaekran.Location = new System.Drawing.Point(1220, 28);
+            this.btn_anaekran.Name = "btn_anaekran";
+            this.btn_anaekran.Size = new System.Drawing.Size(41, 41);
+            this.btn_anaekran.TabIndex = 9;
+            this.btn_anaekran.TextColor = System.Drawing.Color.White;
+            this.btn_anaekran.UseVisualStyleBackColor = false;
+            this.btn_anaekran.Click += new System.EventHandler(this.btn_anaekran_Click);
+            // 
+            // btn_kapat
+            // 
+            this.btn_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_kapat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_kapat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_kapat.BorderRadius = 0;
+            this.btn_kapat.BorderSize = 0;
+            this.btn_kapat.FlatAppearance.BorderSize = 0;
+            this.btn_kapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kapat.ForeColor = System.Drawing.Color.White;
+            this.btn_kapat.ImageKey = "cancel.png";
+            this.btn_kapat.ImageList = this.butonlar;
+            this.btn_kapat.Location = new System.Drawing.Point(1267, 28);
+            this.btn_kapat.Name = "btn_kapat";
+            this.btn_kapat.Size = new System.Drawing.Size(41, 41);
+            this.btn_kapat.TabIndex = 9;
+            this.btn_kapat.TextColor = System.Drawing.Color.White;
+            this.btn_kapat.UseVisualStyleBackColor = false;
+            this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
             // 
             // ogrencibilgiekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 599);
-            this.Controls.Add(this.tableLayoutPanel8);
+            this.ClientSize = new System.Drawing.Size(1320, 750);
+            this.Controls.Add(this.btn_info);
+            this.Controls.Add(this.btn_kilit);
+            this.Controls.Add(this.btn_kapat);
+            this.Controls.Add(this.btn_anaekran);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ogrencibilgiekran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -1920,7 +2005,6 @@
             this.tabControl1.ResumeLayout(false);
             this.page_duyurular.ResumeLayout(false);
             this.page_duyurular.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.page_notbilgi.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1943,14 +2027,14 @@
             this.page_subeortalama.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ImageList kapat_ico;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage page_notbilgi;
         private System.Windows.Forms.TabPage page_devamsizlik;
@@ -2074,9 +2158,8 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.ImageList butonlar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbl_duyuru;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -2097,5 +2180,10 @@
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txt_yenisifre1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private CustomControls.RJControls.RJButton btn_info;
+        private CustomControls.RJControls.RJButton btn_kilit;
+        private CustomControls.RJControls.RJButton btn_anaekran;
+        private CustomControls.RJControls.RJButton btn_kapat;
     }
 }

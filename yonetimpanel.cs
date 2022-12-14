@@ -45,6 +45,7 @@ namespace Login_Ekranı
         }
         //Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
+        //SqlConnection baglanti = new SqlConnection("Data Source=25.42.111.49,1433;Network Library=DBMSSOCN;Initial Catalog=OgrenciSinav;User Id = ADMIN; Password=1;");
 
         private void yonetimpanel_Load(object sender, EventArgs e)
         {
@@ -332,6 +333,38 @@ namespace Login_Ekranı
                                   x.DersAdi
                               };
             dataGridView3.DataSource = derslistesi.ToList();
+        }
+
+        private void btn_kapat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void btn_anaekran_Click(object sender, EventArgs e)
+        {
+            Form1 formgoster = new Form1();
+            this.Close();
+            formgoster.Show();
+
+        }
+
+        private void btn_kilit_Click(object sender, EventArgs e)
+        {
+            yonetimbilgigiris yonetimgoster = new yonetimbilgigiris();
+            yonetimgoster.Show();
+        }
+
+        private void btn_info_Click(object sender, EventArgs e)
+        {
+            YonetimInfo yonetiminfo = new YonetimInfo();
+            this.Close();
+            yonetiminfo.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

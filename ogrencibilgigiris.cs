@@ -20,8 +20,6 @@ namespace Login_Ekranı
         }
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
 
-
-
         private void rjButton3_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -42,29 +40,7 @@ namespace Login_Ekranı
                 MessageBox.Show("Numaranız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             baglanti.Close();
-                /* string id = "Ramazan";
-             string sifre = "Ramazan46";
-
-             if (txt_id.Text == id && txt_sifre.Text == sifre)
-             {
-                 ogrencibilgiekran ogrencibilgiekran = new ogrencibilgiekran();
-                 ogrencibilgiekran.Show();
-                 this.Hide();
-             }
-             else
-             {
-                 MessageBox.Show("Kullanıcı Adınız Veya Parolanız Hatalı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
-             }*/
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button_kapat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
+               
         }
 
         private void txt_sifre_TextChanged(object sender, EventArgs e)

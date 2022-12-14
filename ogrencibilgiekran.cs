@@ -66,11 +66,6 @@ namespace Login_Ekranı
 
         }
 
-        private void button_kapat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            //Application.Exit();
-        }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -111,33 +106,6 @@ namespace Login_Ekranı
         }
 
         private void page_duyurular_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void lbl_mat_ort_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label45_Click(object sender, EventArgs e)
         {
 
         }
@@ -267,6 +235,36 @@ namespace Login_Ekranı
 
         }
 
-        
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_kapat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void btn_anaekran_Click(object sender, EventArgs e)
+        {
+            Form1 formgoster = new Form1();
+            this.Close();
+            formgoster.Show();
+        }
+
+        private void btn_kilit_Click(object sender, EventArgs e)
+        {
+            ogrencibilgigiris ogrencibilgigiris = new ogrencibilgigiris();
+            this.Close();
+            ogrencibilgigiris.Show();
+        }
+
+        private void btn_info_Click(object sender, EventArgs e)
+        {
+            Ogrencibilgi info = new Ogrencibilgi();
+            info.Show();
+            
+        }
     }
 }

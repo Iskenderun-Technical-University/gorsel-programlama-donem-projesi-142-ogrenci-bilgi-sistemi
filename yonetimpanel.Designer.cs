@@ -39,6 +39,7 @@
             this.page_notgiris = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.mtxt_numara = new System.Windows.Forms.MaskedTextBox();
+            this.btn_ara = new CustomControls.RJControls.RJButton();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -46,9 +47,14 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btn_list = new CustomControls.RJControls.RJButton();
+            this.btn_ogrencibul = new CustomControls.RJControls.RJButton();
+            this.btn_guncel = new CustomControls.RJControls.RJButton();
             this.txt_ortalama = new System.Windows.Forms.TextBox();
+            this.btn_hesapla = new CustomControls.RJControls.RJButton();
             this.label20 = new System.Windows.Forms.Label();
             this.txt_proje = new System.Windows.Forms.TextBox();
+            this.btn_ekle = new CustomControls.RJControls.RJButton();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -65,6 +71,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.page_derslistesi = new System.Windows.Forms.TabPage();
+            this.btnderslistele = new CustomControls.RJControls.RJButton();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.page_dersprogram = new System.Windows.Forms.TabPage();
@@ -111,6 +118,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txt_devamsizlik = new System.Windows.Forms.TextBox();
+            this.btn_listele = new CustomControls.RJControls.RJButton();
+            this.btn_sil = new CustomControls.RJControls.RJButton();
+            this.guncel = new CustomControls.RJControls.RJButton();
             this.txt_ıd = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.mtxtbox_numara = new System.Windows.Forms.MaskedTextBox();
@@ -129,6 +139,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.masked_numara = new System.Windows.Forms.TextBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.sinif = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.sifre2 = new System.Windows.Forms.TextBox();
@@ -149,17 +160,6 @@
             this.btn_kilit = new CustomControls.RJControls.RJButton();
             this.btn_anaekran = new CustomControls.RJControls.RJButton();
             this.btn_kapat = new CustomControls.RJControls.RJButton();
-            this.btn_ara = new CustomControls.RJControls.RJButton();
-            this.btn_list = new CustomControls.RJControls.RJButton();
-            this.btn_ogrencibul = new CustomControls.RJControls.RJButton();
-            this.btn_guncel = new CustomControls.RJControls.RJButton();
-            this.btn_hesapla = new CustomControls.RJControls.RJButton();
-            this.btn_ekle = new CustomControls.RJControls.RJButton();
-            this.btnderslistele = new CustomControls.RJControls.RJButton();
-            this.btn_listele = new CustomControls.RJControls.RJButton();
-            this.btn_sil = new CustomControls.RJControls.RJButton();
-            this.guncel = new CustomControls.RJControls.RJButton();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -299,6 +299,26 @@
             this.mtxt_numara.Size = new System.Drawing.Size(164, 20);
             this.mtxt_numara.TabIndex = 12;
             // 
+            // btn_ara
+            // 
+            this.btn_ara.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ara.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ara.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ara.BorderRadius = 10;
+            this.btn_ara.BorderSize = 0;
+            this.btn_ara.FlatAppearance.BorderSize = 0;
+            this.btn_ara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ara.ForeColor = System.Drawing.Color.White;
+            this.btn_ara.Location = new System.Drawing.Point(572, 29);
+            this.btn_ara.Name = "btn_ara";
+            this.btn_ara.Size = new System.Drawing.Size(106, 31);
+            this.btn_ara.TabIndex = 24;
+            this.btn_ara.Text = "Ara";
+            this.btn_ara.TextColor = System.Drawing.Color.White;
+            this.btn_ara.UseVisualStyleBackColor = false;
+            this.btn_ara.Click += new System.EventHandler(this.rjButton6_Click);
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -390,12 +410,91 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = " ";
             // 
+            // btn_list
+            // 
+            this.btn_list.BackColor = System.Drawing.Color.Maroon;
+            this.btn_list.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_list.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_list.BorderRadius = 12;
+            this.btn_list.BorderSize = 0;
+            this.btn_list.FlatAppearance.BorderSize = 0;
+            this.btn_list.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_list.ForeColor = System.Drawing.Color.White;
+            this.btn_list.Location = new System.Drawing.Point(109, 453);
+            this.btn_list.Name = "btn_list";
+            this.btn_list.Size = new System.Drawing.Size(164, 40);
+            this.btn_list.TabIndex = 24;
+            this.btn_list.Text = "Listele";
+            this.btn_list.TextColor = System.Drawing.Color.White;
+            this.btn_list.UseVisualStyleBackColor = false;
+            this.btn_list.Click += new System.EventHandler(this.rjButton5_Click);
+            // 
+            // btn_ogrencibul
+            // 
+            this.btn_ogrencibul.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ogrencibul.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ogrencibul.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ogrencibul.BorderRadius = 10;
+            this.btn_ogrencibul.BorderSize = 0;
+            this.btn_ogrencibul.FlatAppearance.BorderSize = 0;
+            this.btn_ogrencibul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ogrencibul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ogrencibul.ForeColor = System.Drawing.Color.White;
+            this.btn_ogrencibul.Location = new System.Drawing.Point(277, 253);
+            this.btn_ogrencibul.Name = "btn_ogrencibul";
+            this.btn_ogrencibul.Size = new System.Drawing.Size(39, 21);
+            this.btn_ogrencibul.TabIndex = 24;
+            this.btn_ogrencibul.Text = "...";
+            this.btn_ogrencibul.TextColor = System.Drawing.Color.White;
+            this.btn_ogrencibul.UseVisualStyleBackColor = false;
+            // 
+            // btn_guncel
+            // 
+            this.btn_guncel.BackColor = System.Drawing.Color.Maroon;
+            this.btn_guncel.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_guncel.BorderRadius = 12;
+            this.btn_guncel.BorderSize = 0;
+            this.btn_guncel.FlatAppearance.BorderSize = 0;
+            this.btn_guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guncel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_guncel.ForeColor = System.Drawing.Color.White;
+            this.btn_guncel.Location = new System.Drawing.Point(109, 407);
+            this.btn_guncel.Name = "btn_guncel";
+            this.btn_guncel.Size = new System.Drawing.Size(164, 40);
+            this.btn_guncel.TabIndex = 24;
+            this.btn_guncel.Text = "Güncelle";
+            this.btn_guncel.TextColor = System.Drawing.Color.White;
+            this.btn_guncel.UseVisualStyleBackColor = false;
+            this.btn_guncel.Click += new System.EventHandler(this.rjButton4_Click_1);
+            // 
             // txt_ortalama
             // 
             this.txt_ortalama.Location = new System.Drawing.Point(109, 289);
             this.txt_ortalama.Name = "txt_ortalama";
             this.txt_ortalama.Size = new System.Drawing.Size(164, 20);
             this.txt_ortalama.TabIndex = 23;
+            // 
+            // btn_hesapla
+            // 
+            this.btn_hesapla.BackColor = System.Drawing.Color.Maroon;
+            this.btn_hesapla.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_hesapla.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_hesapla.BorderRadius = 12;
+            this.btn_hesapla.BorderSize = 0;
+            this.btn_hesapla.FlatAppearance.BorderSize = 0;
+            this.btn_hesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_hesapla.ForeColor = System.Drawing.Color.White;
+            this.btn_hesapla.Location = new System.Drawing.Point(109, 361);
+            this.btn_hesapla.Name = "btn_hesapla";
+            this.btn_hesapla.Size = new System.Drawing.Size(165, 40);
+            this.btn_hesapla.TabIndex = 24;
+            this.btn_hesapla.Text = "Hesapla";
+            this.btn_hesapla.TextColor = System.Drawing.Color.White;
+            this.btn_hesapla.UseVisualStyleBackColor = false;
+            this.btn_hesapla.Click += new System.EventHandler(this.rjButton3_Click_1);
             // 
             // label20
             // 
@@ -414,6 +513,26 @@
             this.txt_proje.Name = "txt_proje";
             this.txt_proje.Size = new System.Drawing.Size(164, 20);
             this.txt_proje.TabIndex = 20;
+            // 
+            // btn_ekle
+            // 
+            this.btn_ekle.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ekle.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ekle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ekle.BorderRadius = 12;
+            this.btn_ekle.BorderSize = 0;
+            this.btn_ekle.FlatAppearance.BorderSize = 0;
+            this.btn_ekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ekle.ForeColor = System.Drawing.Color.White;
+            this.btn_ekle.Location = new System.Drawing.Point(109, 315);
+            this.btn_ekle.Name = "btn_ekle";
+            this.btn_ekle.Size = new System.Drawing.Size(164, 40);
+            this.btn_ekle.TabIndex = 24;
+            this.btn_ekle.Text = "Ekle";
+            this.btn_ekle.TextColor = System.Drawing.Color.White;
+            this.btn_ekle.UseVisualStyleBackColor = false;
+            this.btn_ekle.Click += new System.EventHandler(this.rjButton2_Click_1);
             // 
             // txtID
             // 
@@ -570,6 +689,26 @@
             this.page_derslistesi.Text = "Ders Listesi";
             this.page_derslistesi.UseVisualStyleBackColor = true;
             // 
+            // btnderslistele
+            // 
+            this.btnderslistele.BackColor = System.Drawing.Color.Maroon;
+            this.btnderslistele.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btnderslistele.BorderColor = System.Drawing.Color.Black;
+            this.btnderslistele.BorderRadius = 25;
+            this.btnderslistele.BorderSize = 0;
+            this.btnderslistele.FlatAppearance.BorderSize = 0;
+            this.btnderslistele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnderslistele.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnderslistele.ForeColor = System.Drawing.Color.White;
+            this.btnderslistele.Location = new System.Drawing.Point(417, 43);
+            this.btnderslistele.Name = "btnderslistele";
+            this.btnderslistele.Size = new System.Drawing.Size(214, 52);
+            this.btnderslistele.TabIndex = 2;
+            this.btnderslistele.Text = "Dersleri Listele";
+            this.btnderslistele.TextColor = System.Drawing.Color.White;
+            this.btnderslistele.UseVisualStyleBackColor = false;
+            this.btnderslistele.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
             // dataGridView3
             // 
             this.dataGridView3.BackgroundColor = System.Drawing.Color.WhiteSmoke;
@@ -664,11 +803,11 @@
             this.lbl_cuma_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders5.AutoSize = true;
             this.lbl_cuma_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma_ders5.Location = new System.Drawing.Point(764, 391);
+            this.lbl_cuma_ders5.Location = new System.Drawing.Point(763, 391);
             this.lbl_cuma_ders5.Name = "lbl_cuma_ders5";
-            this.lbl_cuma_ders5.Size = new System.Drawing.Size(72, 31);
+            this.lbl_cuma_ders5.Size = new System.Drawing.Size(73, 31);
             this.lbl_cuma_ders5.TabIndex = 55;
-            this.lbl_cuma_ders5.Text = "Ders";
+            this.lbl_cuma_ders5.Text = "12-D";
             // 
             // lbl_pers_ders5
             // 
@@ -677,31 +816,31 @@
             this.lbl_pers_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_pers_ders5.Location = new System.Drawing.Point(616, 391);
             this.lbl_pers_ders5.Name = "lbl_pers_ders5";
-            this.lbl_pers_ders5.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pers_ders5.Size = new System.Drawing.Size(73, 31);
             this.lbl_pers_ders5.TabIndex = 54;
-            this.lbl_pers_ders5.Text = "Ders";
+            this.lbl_pers_ders5.Text = "11-C";
             // 
             // lbl_crsmb_ders5
             // 
             this.lbl_crsmb_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders5.AutoSize = true;
             this.lbl_crsmb_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_crsmb_ders5.Location = new System.Drawing.Point(471, 391);
+            this.lbl_crsmb_ders5.Location = new System.Drawing.Point(472, 391);
             this.lbl_crsmb_ders5.Name = "lbl_crsmb_ders5";
-            this.lbl_crsmb_ders5.Size = new System.Drawing.Size(72, 31);
+            this.lbl_crsmb_ders5.Size = new System.Drawing.Size(71, 31);
             this.lbl_crsmb_ders5.TabIndex = 53;
-            this.lbl_crsmb_ders5.Text = "Ders";
+            this.lbl_crsmb_ders5.Text = "12-B";
             // 
             // lbl_sali_ders5
             // 
             this.lbl_sali_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders5.AutoSize = true;
             this.lbl_sali_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali_ders5.Location = new System.Drawing.Point(326, 391);
+            this.lbl_sali_ders5.Location = new System.Drawing.Point(332, 391);
             this.lbl_sali_ders5.Name = "lbl_sali_ders5";
-            this.lbl_sali_ders5.Size = new System.Drawing.Size(72, 31);
+            this.lbl_sali_ders5.Size = new System.Drawing.Size(61, 31);
             this.lbl_sali_ders5.TabIndex = 52;
-            this.lbl_sali_ders5.Text = "Ders";
+            this.lbl_sali_ders5.Text = "Boş";
             // 
             // lbl_pzt_ders5
             // 
@@ -710,20 +849,20 @@
             this.lbl_pzt_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_pzt_ders5.Location = new System.Drawing.Point(181, 391);
             this.lbl_pzt_ders5.Name = "lbl_pzt_ders5";
-            this.lbl_pzt_ders5.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pzt_ders5.Size = new System.Drawing.Size(73, 31);
             this.lbl_pzt_ders5.TabIndex = 51;
-            this.lbl_pzt_ders5.Text = "Ders";
+            this.lbl_pzt_ders5.Text = "11-D";
             // 
             // lbl_cuma_ders4
             // 
             this.lbl_cuma_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders4.AutoSize = true;
             this.lbl_cuma_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma_ders4.Location = new System.Drawing.Point(764, 317);
+            this.lbl_cuma_ders4.Location = new System.Drawing.Point(763, 317);
             this.lbl_cuma_ders4.Name = "lbl_cuma_ders4";
-            this.lbl_cuma_ders4.Size = new System.Drawing.Size(72, 31);
+            this.lbl_cuma_ders4.Size = new System.Drawing.Size(73, 31);
             this.lbl_cuma_ders4.TabIndex = 50;
-            this.lbl_cuma_ders4.Text = "Ders";
+            this.lbl_cuma_ders4.Text = "12-D";
             // 
             // lbl_pers_ders4
             // 
@@ -732,31 +871,31 @@
             this.lbl_pers_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_pers_ders4.Location = new System.Drawing.Point(616, 317);
             this.lbl_pers_ders4.Name = "lbl_pers_ders4";
-            this.lbl_pers_ders4.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pers_ders4.Size = new System.Drawing.Size(73, 31);
             this.lbl_pers_ders4.TabIndex = 49;
-            this.lbl_pers_ders4.Text = "Ders";
+            this.lbl_pers_ders4.Text = "11-C";
             // 
             // lbl_crsmb_ders4
             // 
             this.lbl_crsmb_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders4.AutoSize = true;
             this.lbl_crsmb_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_crsmb_ders4.Location = new System.Drawing.Point(471, 317);
+            this.lbl_crsmb_ders4.Location = new System.Drawing.Point(472, 317);
             this.lbl_crsmb_ders4.Name = "lbl_crsmb_ders4";
-            this.lbl_crsmb_ders4.Size = new System.Drawing.Size(72, 31);
+            this.lbl_crsmb_ders4.Size = new System.Drawing.Size(71, 31);
             this.lbl_crsmb_ders4.TabIndex = 48;
-            this.lbl_crsmb_ders4.Text = "Ders";
+            this.lbl_crsmb_ders4.Text = "12-B";
             // 
             // lbl_sali_ders4
             // 
             this.lbl_sali_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders4.AutoSize = true;
             this.lbl_sali_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali_ders4.Location = new System.Drawing.Point(326, 317);
+            this.lbl_sali_ders4.Location = new System.Drawing.Point(332, 317);
             this.lbl_sali_ders4.Name = "lbl_sali_ders4";
-            this.lbl_sali_ders4.Size = new System.Drawing.Size(72, 31);
+            this.lbl_sali_ders4.Size = new System.Drawing.Size(61, 31);
             this.lbl_sali_ders4.TabIndex = 47;
-            this.lbl_sali_ders4.Text = "Ders";
+            this.lbl_sali_ders4.Text = "Boş";
             // 
             // lbl_pzt_ders4
             // 
@@ -765,163 +904,163 @@
             this.lbl_pzt_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_pzt_ders4.Location = new System.Drawing.Point(181, 317);
             this.lbl_pzt_ders4.Name = "lbl_pzt_ders4";
-            this.lbl_pzt_ders4.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pzt_ders4.Size = new System.Drawing.Size(73, 31);
             this.lbl_pzt_ders4.TabIndex = 46;
-            this.lbl_pzt_ders4.Text = "Ders";
+            this.lbl_pzt_ders4.Text = "11-D";
             // 
             // lbl_cuma_ders3
             // 
             this.lbl_cuma_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders3.AutoSize = true;
             this.lbl_cuma_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma_ders3.Location = new System.Drawing.Point(764, 243);
+            this.lbl_cuma_ders3.Location = new System.Drawing.Point(769, 243);
             this.lbl_cuma_ders3.Name = "lbl_cuma_ders3";
-            this.lbl_cuma_ders3.Size = new System.Drawing.Size(72, 31);
+            this.lbl_cuma_ders3.Size = new System.Drawing.Size(61, 31);
             this.lbl_cuma_ders3.TabIndex = 45;
-            this.lbl_cuma_ders3.Text = "Ders";
+            this.lbl_cuma_ders3.Text = "Boş";
             // 
             // lbl_pers_ders3
             // 
             this.lbl_pers_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders3.AutoSize = true;
             this.lbl_pers_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pers_ders3.Location = new System.Drawing.Point(616, 243);
+            this.lbl_pers_ders3.Location = new System.Drawing.Point(617, 243);
             this.lbl_pers_ders3.Name = "lbl_pers_ders3";
-            this.lbl_pers_ders3.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pers_ders3.Size = new System.Drawing.Size(71, 31);
             this.lbl_pers_ders3.TabIndex = 44;
-            this.lbl_pers_ders3.Text = "Ders";
+            this.lbl_pers_ders3.Text = "11-A";
             // 
             // lbl_crsmb_ders3
             // 
             this.lbl_crsmb_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders3.AutoSize = true;
             this.lbl_crsmb_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_crsmb_ders3.Location = new System.Drawing.Point(471, 243);
+            this.lbl_crsmb_ders3.Location = new System.Drawing.Point(472, 243);
             this.lbl_crsmb_ders3.Name = "lbl_crsmb_ders3";
-            this.lbl_crsmb_ders3.Size = new System.Drawing.Size(72, 31);
+            this.lbl_crsmb_ders3.Size = new System.Drawing.Size(71, 31);
             this.lbl_crsmb_ders3.TabIndex = 43;
-            this.lbl_crsmb_ders3.Text = "Ders";
+            this.lbl_crsmb_ders3.Text = "12-B";
             // 
             // lbl_sali_ders3
             // 
             this.lbl_sali_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders3.AutoSize = true;
             this.lbl_sali_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali_ders3.Location = new System.Drawing.Point(326, 243);
+            this.lbl_sali_ders3.Location = new System.Drawing.Point(327, 243);
             this.lbl_sali_ders3.Name = "lbl_sali_ders3";
-            this.lbl_sali_ders3.Size = new System.Drawing.Size(72, 31);
+            this.lbl_sali_ders3.Size = new System.Drawing.Size(71, 31);
             this.lbl_sali_ders3.TabIndex = 42;
-            this.lbl_sali_ders3.Text = "Ders";
+            this.lbl_sali_ders3.Text = "11-B";
             // 
             // lbl_pzt_ders3
             // 
             this.lbl_pzt_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders3.AutoSize = true;
             this.lbl_pzt_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pzt_ders3.Location = new System.Drawing.Point(181, 243);
+            this.lbl_pzt_ders3.Location = new System.Drawing.Point(182, 243);
             this.lbl_pzt_ders3.Name = "lbl_pzt_ders3";
-            this.lbl_pzt_ders3.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pzt_ders3.Size = new System.Drawing.Size(71, 31);
             this.lbl_pzt_ders3.TabIndex = 41;
-            this.lbl_pzt_ders3.Text = "Ders";
+            this.lbl_pzt_ders3.Text = "12-A";
             // 
             // lbl_cuma_ders2
             // 
             this.lbl_cuma_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders2.AutoSize = true;
             this.lbl_cuma_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma_ders2.Location = new System.Drawing.Point(764, 169);
+            this.lbl_cuma_ders2.Location = new System.Drawing.Point(763, 169);
             this.lbl_cuma_ders2.Name = "lbl_cuma_ders2";
-            this.lbl_cuma_ders2.Size = new System.Drawing.Size(72, 31);
+            this.lbl_cuma_ders2.Size = new System.Drawing.Size(73, 31);
             this.lbl_cuma_ders2.TabIndex = 40;
-            this.lbl_cuma_ders2.Text = "Ders";
+            this.lbl_cuma_ders2.Text = "12-C";
             // 
             // lbl_pers_ders2
             // 
             this.lbl_pers_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders2.AutoSize = true;
             this.lbl_pers_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pers_ders2.Location = new System.Drawing.Point(616, 169);
+            this.lbl_pers_ders2.Location = new System.Drawing.Point(617, 169);
             this.lbl_pers_ders2.Name = "lbl_pers_ders2";
-            this.lbl_pers_ders2.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pers_ders2.Size = new System.Drawing.Size(71, 31);
             this.lbl_pers_ders2.TabIndex = 39;
-            this.lbl_pers_ders2.Text = "Ders";
+            this.lbl_pers_ders2.Text = "11-A";
             // 
             // lbl_crsmb_ders2
             // 
             this.lbl_crsmb_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders2.AutoSize = true;
             this.lbl_crsmb_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_crsmb_ders2.Location = new System.Drawing.Point(471, 169);
+            this.lbl_crsmb_ders2.Location = new System.Drawing.Point(477, 169);
             this.lbl_crsmb_ders2.Name = "lbl_crsmb_ders2";
-            this.lbl_crsmb_ders2.Size = new System.Drawing.Size(72, 31);
+            this.lbl_crsmb_ders2.Size = new System.Drawing.Size(61, 31);
             this.lbl_crsmb_ders2.TabIndex = 38;
-            this.lbl_crsmb_ders2.Text = "Ders";
+            this.lbl_crsmb_ders2.Text = "Boş";
             // 
             // lbl_sali_ders2
             // 
             this.lbl_sali_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders2.AutoSize = true;
             this.lbl_sali_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali_ders2.Location = new System.Drawing.Point(326, 169);
+            this.lbl_sali_ders2.Location = new System.Drawing.Point(327, 169);
             this.lbl_sali_ders2.Name = "lbl_sali_ders2";
-            this.lbl_sali_ders2.Size = new System.Drawing.Size(72, 31);
+            this.lbl_sali_ders2.Size = new System.Drawing.Size(71, 31);
             this.lbl_sali_ders2.TabIndex = 37;
-            this.lbl_sali_ders2.Text = "Ders";
+            this.lbl_sali_ders2.Text = "11-B";
             // 
             // lbl_pzt_ders2
             // 
             this.lbl_pzt_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders2.AutoSize = true;
             this.lbl_pzt_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pzt_ders2.Location = new System.Drawing.Point(181, 169);
+            this.lbl_pzt_ders2.Location = new System.Drawing.Point(182, 169);
             this.lbl_pzt_ders2.Name = "lbl_pzt_ders2";
-            this.lbl_pzt_ders2.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pzt_ders2.Size = new System.Drawing.Size(71, 31);
             this.lbl_pzt_ders2.TabIndex = 36;
-            this.lbl_pzt_ders2.Text = "Ders";
+            this.lbl_pzt_ders2.Text = "12-A";
             // 
             // lbl_cuma_ders1
             // 
             this.lbl_cuma_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_cuma_ders1.AutoSize = true;
             this.lbl_cuma_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cuma_ders1.Location = new System.Drawing.Point(764, 95);
+            this.lbl_cuma_ders1.Location = new System.Drawing.Point(763, 95);
             this.lbl_cuma_ders1.Name = "lbl_cuma_ders1";
-            this.lbl_cuma_ders1.Size = new System.Drawing.Size(72, 31);
+            this.lbl_cuma_ders1.Size = new System.Drawing.Size(73, 31);
             this.lbl_cuma_ders1.TabIndex = 35;
-            this.lbl_cuma_ders1.Text = "Ders";
+            this.lbl_cuma_ders1.Text = "12-C";
             // 
             // lbl_pers_ders1
             // 
             this.lbl_pers_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pers_ders1.AutoSize = true;
             this.lbl_pers_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pers_ders1.Location = new System.Drawing.Point(616, 95);
+            this.lbl_pers_ders1.Location = new System.Drawing.Point(617, 95);
             this.lbl_pers_ders1.Name = "lbl_pers_ders1";
-            this.lbl_pers_ders1.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pers_ders1.Size = new System.Drawing.Size(71, 31);
             this.lbl_pers_ders1.TabIndex = 34;
-            this.lbl_pers_ders1.Text = "Ders";
+            this.lbl_pers_ders1.Text = "11-A";
             // 
             // lbl_crsmb_ders1
             // 
             this.lbl_crsmb_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_crsmb_ders1.AutoSize = true;
             this.lbl_crsmb_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_crsmb_ders1.Location = new System.Drawing.Point(471, 95);
+            this.lbl_crsmb_ders1.Location = new System.Drawing.Point(477, 95);
             this.lbl_crsmb_ders1.Name = "lbl_crsmb_ders1";
-            this.lbl_crsmb_ders1.Size = new System.Drawing.Size(72, 31);
+            this.lbl_crsmb_ders1.Size = new System.Drawing.Size(61, 31);
             this.lbl_crsmb_ders1.TabIndex = 33;
-            this.lbl_crsmb_ders1.Text = "Ders";
+            this.lbl_crsmb_ders1.Text = "Boş";
             // 
             // lbl_sali_ders1
             // 
             this.lbl_sali_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sali_ders1.AutoSize = true;
             this.lbl_sali_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sali_ders1.Location = new System.Drawing.Point(326, 95);
+            this.lbl_sali_ders1.Location = new System.Drawing.Point(327, 95);
             this.lbl_sali_ders1.Name = "lbl_sali_ders1";
-            this.lbl_sali_ders1.Size = new System.Drawing.Size(72, 31);
+            this.lbl_sali_ders1.Size = new System.Drawing.Size(71, 31);
             this.lbl_sali_ders1.TabIndex = 32;
-            this.lbl_sali_ders1.Text = "Ders";
+            this.lbl_sali_ders1.Text = "11-B";
             // 
             // lbl_cuma
             // 
@@ -982,67 +1121,67 @@
             // 
             this.lbl_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders5.AutoSize = true;
-            this.lbl_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders5.Location = new System.Drawing.Point(25, 391);
+            this.lbl_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders5.Location = new System.Drawing.Point(4, 392);
             this.lbl_ders5.Name = "lbl_ders5";
-            this.lbl_ders5.Size = new System.Drawing.Size(94, 31);
+            this.lbl_ders5.Size = new System.Drawing.Size(137, 29);
             this.lbl_ders5.TabIndex = 30;
-            this.lbl_ders5.Text = "Ders 5";
+            this.lbl_ders5.Text = "12.00-12.40";
             // 
             // lbl_ders4
             // 
             this.lbl_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders4.AutoSize = true;
-            this.lbl_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders4.Location = new System.Drawing.Point(25, 317);
+            this.lbl_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders4.Location = new System.Drawing.Point(4, 318);
             this.lbl_ders4.Name = "lbl_ders4";
-            this.lbl_ders4.Size = new System.Drawing.Size(94, 31);
+            this.lbl_ders4.Size = new System.Drawing.Size(137, 29);
             this.lbl_ders4.TabIndex = 29;
-            this.lbl_ders4.Text = "Ders 4";
+            this.lbl_ders4.Text = "11.00-11.40";
             // 
             // lbl_ders3
             // 
             this.lbl_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders3.AutoSize = true;
-            this.lbl_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders3.Location = new System.Drawing.Point(25, 243);
+            this.lbl_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders3.Location = new System.Drawing.Point(4, 244);
             this.lbl_ders3.Name = "lbl_ders3";
-            this.lbl_ders3.Size = new System.Drawing.Size(94, 31);
+            this.lbl_ders3.Size = new System.Drawing.Size(137, 29);
             this.lbl_ders3.TabIndex = 28;
-            this.lbl_ders3.Text = "Ders 3";
+            this.lbl_ders3.Text = "10.00-10.40";
             // 
             // lbl_ders2
             // 
             this.lbl_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders2.AutoSize = true;
-            this.lbl_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders2.Location = new System.Drawing.Point(25, 169);
+            this.lbl_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders2.Location = new System.Drawing.Point(17, 170);
             this.lbl_ders2.Name = "lbl_ders2";
-            this.lbl_ders2.Size = new System.Drawing.Size(94, 31);
+            this.lbl_ders2.Size = new System.Drawing.Size(111, 29);
             this.lbl_ders2.TabIndex = 27;
-            this.lbl_ders2.Text = "Ders 2";
+            this.lbl_ders2.Text = "9.00-9.40";
             // 
             // lbl_ders1
             // 
             this.lbl_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders1.AutoSize = true;
-            this.lbl_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders1.Location = new System.Drawing.Point(25, 95);
+            this.lbl_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders1.Location = new System.Drawing.Point(17, 96);
             this.lbl_ders1.Name = "lbl_ders1";
-            this.lbl_ders1.Size = new System.Drawing.Size(94, 31);
+            this.lbl_ders1.Size = new System.Drawing.Size(111, 29);
             this.lbl_ders1.TabIndex = 26;
-            this.lbl_ders1.Text = "Ders 1";
+            this.lbl_ders1.Text = "8.00-8.40";
             // 
             // lbl_pzt_ders1
             // 
             this.lbl_pzt_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pzt_ders1.AutoSize = true;
             this.lbl_pzt_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_pzt_ders1.Location = new System.Drawing.Point(181, 95);
+            this.lbl_pzt_ders1.Location = new System.Drawing.Point(182, 95);
             this.lbl_pzt_ders1.Name = "lbl_pzt_ders1";
-            this.lbl_pzt_ders1.Size = new System.Drawing.Size(72, 31);
+            this.lbl_pzt_ders1.Size = new System.Drawing.Size(71, 31);
             this.lbl_pzt_ders1.TabIndex = 26;
-            this.lbl_pzt_ders1.Text = "Ders";
+            this.lbl_pzt_ders1.Text = "12-A";
             // 
             // pictureBox9
             // 
@@ -1130,6 +1269,63 @@
             this.txt_devamsizlik.Name = "txt_devamsizlik";
             this.txt_devamsizlik.Size = new System.Drawing.Size(163, 26);
             this.txt_devamsizlik.TabIndex = 23;
+            // 
+            // btn_listele
+            // 
+            this.btn_listele.BackColor = System.Drawing.Color.Maroon;
+            this.btn_listele.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_listele.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_listele.BorderRadius = 20;
+            this.btn_listele.BorderSize = 0;
+            this.btn_listele.FlatAppearance.BorderSize = 0;
+            this.btn_listele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_listele.ForeColor = System.Drawing.Color.White;
+            this.btn_listele.Location = new System.Drawing.Point(645, 186);
+            this.btn_listele.Name = "btn_listele";
+            this.btn_listele.Size = new System.Drawing.Size(164, 40);
+            this.btn_listele.TabIndex = 21;
+            this.btn_listele.Text = "Listele";
+            this.btn_listele.TextColor = System.Drawing.Color.White;
+            this.btn_listele.UseVisualStyleBackColor = false;
+            this.btn_listele.Click += new System.EventHandler(this.rjButton3_Click);
+            // 
+            // btn_sil
+            // 
+            this.btn_sil.BackColor = System.Drawing.Color.Maroon;
+            this.btn_sil.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_sil.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_sil.BorderRadius = 20;
+            this.btn_sil.BorderSize = 0;
+            this.btn_sil.FlatAppearance.BorderSize = 0;
+            this.btn_sil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sil.ForeColor = System.Drawing.Color.White;
+            this.btn_sil.Location = new System.Drawing.Point(646, 35);
+            this.btn_sil.Name = "btn_sil";
+            this.btn_sil.Size = new System.Drawing.Size(163, 40);
+            this.btn_sil.TabIndex = 22;
+            this.btn_sil.Text = "Sil";
+            this.btn_sil.TextColor = System.Drawing.Color.White;
+            this.btn_sil.UseVisualStyleBackColor = false;
+            this.btn_sil.Click += new System.EventHandler(this.rjButton4_Click);
+            // 
+            // guncel
+            // 
+            this.guncel.BackColor = System.Drawing.Color.Maroon;
+            this.guncel.BackgroundColor = System.Drawing.Color.Maroon;
+            this.guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.guncel.BorderRadius = 20;
+            this.guncel.BorderSize = 0;
+            this.guncel.FlatAppearance.BorderSize = 0;
+            this.guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncel.ForeColor = System.Drawing.Color.White;
+            this.guncel.Location = new System.Drawing.Point(646, 114);
+            this.guncel.Name = "guncel";
+            this.guncel.Size = new System.Drawing.Size(163, 40);
+            this.guncel.TabIndex = 20;
+            this.guncel.Text = "Güncelle";
+            this.guncel.TextColor = System.Drawing.Color.White;
+            this.guncel.UseVisualStyleBackColor = false;
+            this.guncel.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // txt_ıd
             // 
@@ -1309,6 +1505,26 @@
             this.masked_numara.Name = "masked_numara";
             this.masked_numara.Size = new System.Drawing.Size(233, 27);
             this.masked_numara.TabIndex = 3;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjButton1.BorderRadius = 15;
+            this.rjButton1.BorderSize = 1;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(114, 337);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(155, 46);
+            this.rjButton1.TabIndex = 16;
+            this.rjButton1.Text = "Kayıt";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
             // sinif
             // 
@@ -1546,222 +1762,6 @@
             this.btn_kapat.TextColor = System.Drawing.Color.White;
             this.btn_kapat.UseVisualStyleBackColor = false;
             this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
-            // 
-            // btn_ara
-            // 
-            this.btn_ara.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ara.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ara.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ara.BorderRadius = 10;
-            this.btn_ara.BorderSize = 0;
-            this.btn_ara.FlatAppearance.BorderSize = 0;
-            this.btn_ara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ara.ForeColor = System.Drawing.Color.White;
-            this.btn_ara.Location = new System.Drawing.Point(572, 29);
-            this.btn_ara.Name = "btn_ara";
-            this.btn_ara.Size = new System.Drawing.Size(106, 31);
-            this.btn_ara.TabIndex = 24;
-            this.btn_ara.Text = "Ara";
-            this.btn_ara.TextColor = System.Drawing.Color.White;
-            this.btn_ara.UseVisualStyleBackColor = false;
-            this.btn_ara.Click += new System.EventHandler(this.rjButton6_Click);
-            // 
-            // btn_list
-            // 
-            this.btn_list.BackColor = System.Drawing.Color.Maroon;
-            this.btn_list.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_list.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_list.BorderRadius = 12;
-            this.btn_list.BorderSize = 0;
-            this.btn_list.FlatAppearance.BorderSize = 0;
-            this.btn_list.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_list.ForeColor = System.Drawing.Color.White;
-            this.btn_list.Location = new System.Drawing.Point(109, 453);
-            this.btn_list.Name = "btn_list";
-            this.btn_list.Size = new System.Drawing.Size(164, 40);
-            this.btn_list.TabIndex = 24;
-            this.btn_list.Text = "Listele";
-            this.btn_list.TextColor = System.Drawing.Color.White;
-            this.btn_list.UseVisualStyleBackColor = false;
-            this.btn_list.Click += new System.EventHandler(this.rjButton5_Click);
-            // 
-            // btn_ogrencibul
-            // 
-            this.btn_ogrencibul.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ogrencibul.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ogrencibul.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ogrencibul.BorderRadius = 10;
-            this.btn_ogrencibul.BorderSize = 0;
-            this.btn_ogrencibul.FlatAppearance.BorderSize = 0;
-            this.btn_ogrencibul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ogrencibul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ogrencibul.ForeColor = System.Drawing.Color.White;
-            this.btn_ogrencibul.Location = new System.Drawing.Point(277, 253);
-            this.btn_ogrencibul.Name = "btn_ogrencibul";
-            this.btn_ogrencibul.Size = new System.Drawing.Size(39, 21);
-            this.btn_ogrencibul.TabIndex = 24;
-            this.btn_ogrencibul.Text = "...";
-            this.btn_ogrencibul.TextColor = System.Drawing.Color.White;
-            this.btn_ogrencibul.UseVisualStyleBackColor = false;
-            // 
-            // btn_guncel
-            // 
-            this.btn_guncel.BackColor = System.Drawing.Color.Maroon;
-            this.btn_guncel.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_guncel.BorderRadius = 12;
-            this.btn_guncel.BorderSize = 0;
-            this.btn_guncel.FlatAppearance.BorderSize = 0;
-            this.btn_guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guncel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_guncel.ForeColor = System.Drawing.Color.White;
-            this.btn_guncel.Location = new System.Drawing.Point(109, 407);
-            this.btn_guncel.Name = "btn_guncel";
-            this.btn_guncel.Size = new System.Drawing.Size(164, 40);
-            this.btn_guncel.TabIndex = 24;
-            this.btn_guncel.Text = "Güncelle";
-            this.btn_guncel.TextColor = System.Drawing.Color.White;
-            this.btn_guncel.UseVisualStyleBackColor = false;
-            this.btn_guncel.Click += new System.EventHandler(this.rjButton4_Click_1);
-            // 
-            // btn_hesapla
-            // 
-            this.btn_hesapla.BackColor = System.Drawing.Color.Maroon;
-            this.btn_hesapla.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_hesapla.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_hesapla.BorderRadius = 12;
-            this.btn_hesapla.BorderSize = 0;
-            this.btn_hesapla.FlatAppearance.BorderSize = 0;
-            this.btn_hesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_hesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_hesapla.ForeColor = System.Drawing.Color.White;
-            this.btn_hesapla.Location = new System.Drawing.Point(109, 361);
-            this.btn_hesapla.Name = "btn_hesapla";
-            this.btn_hesapla.Size = new System.Drawing.Size(165, 40);
-            this.btn_hesapla.TabIndex = 24;
-            this.btn_hesapla.Text = "Hesapla";
-            this.btn_hesapla.TextColor = System.Drawing.Color.White;
-            this.btn_hesapla.UseVisualStyleBackColor = false;
-            this.btn_hesapla.Click += new System.EventHandler(this.rjButton3_Click_1);
-            // 
-            // btn_ekle
-            // 
-            this.btn_ekle.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ekle.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ekle.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ekle.BorderRadius = 12;
-            this.btn_ekle.BorderSize = 0;
-            this.btn_ekle.FlatAppearance.BorderSize = 0;
-            this.btn_ekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ekle.ForeColor = System.Drawing.Color.White;
-            this.btn_ekle.Location = new System.Drawing.Point(109, 315);
-            this.btn_ekle.Name = "btn_ekle";
-            this.btn_ekle.Size = new System.Drawing.Size(164, 40);
-            this.btn_ekle.TabIndex = 24;
-            this.btn_ekle.Text = "Ekle";
-            this.btn_ekle.TextColor = System.Drawing.Color.White;
-            this.btn_ekle.UseVisualStyleBackColor = false;
-            this.btn_ekle.Click += new System.EventHandler(this.rjButton2_Click_1);
-            // 
-            // btnderslistele
-            // 
-            this.btnderslistele.BackColor = System.Drawing.Color.Maroon;
-            this.btnderslistele.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btnderslistele.BorderColor = System.Drawing.Color.Black;
-            this.btnderslistele.BorderRadius = 25;
-            this.btnderslistele.BorderSize = 0;
-            this.btnderslistele.FlatAppearance.BorderSize = 0;
-            this.btnderslistele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnderslistele.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnderslistele.ForeColor = System.Drawing.Color.White;
-            this.btnderslistele.Location = new System.Drawing.Point(417, 43);
-            this.btnderslistele.Name = "btnderslistele";
-            this.btnderslistele.Size = new System.Drawing.Size(214, 52);
-            this.btnderslistele.TabIndex = 2;
-            this.btnderslistele.Text = "Dersleri Listele";
-            this.btnderslistele.TextColor = System.Drawing.Color.White;
-            this.btnderslistele.UseVisualStyleBackColor = false;
-            this.btnderslistele.Click += new System.EventHandler(this.rjButton1_Click);
-            // 
-            // btn_listele
-            // 
-            this.btn_listele.BackColor = System.Drawing.Color.Maroon;
-            this.btn_listele.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_listele.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_listele.BorderRadius = 20;
-            this.btn_listele.BorderSize = 0;
-            this.btn_listele.FlatAppearance.BorderSize = 0;
-            this.btn_listele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_listele.ForeColor = System.Drawing.Color.White;
-            this.btn_listele.Location = new System.Drawing.Point(645, 186);
-            this.btn_listele.Name = "btn_listele";
-            this.btn_listele.Size = new System.Drawing.Size(164, 40);
-            this.btn_listele.TabIndex = 21;
-            this.btn_listele.Text = "Listele";
-            this.btn_listele.TextColor = System.Drawing.Color.White;
-            this.btn_listele.UseVisualStyleBackColor = false;
-            this.btn_listele.Click += new System.EventHandler(this.rjButton3_Click);
-            // 
-            // btn_sil
-            // 
-            this.btn_sil.BackColor = System.Drawing.Color.Maroon;
-            this.btn_sil.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_sil.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_sil.BorderRadius = 20;
-            this.btn_sil.BorderSize = 0;
-            this.btn_sil.FlatAppearance.BorderSize = 0;
-            this.btn_sil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sil.ForeColor = System.Drawing.Color.White;
-            this.btn_sil.Location = new System.Drawing.Point(646, 35);
-            this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(163, 40);
-            this.btn_sil.TabIndex = 22;
-            this.btn_sil.Text = "Sil";
-            this.btn_sil.TextColor = System.Drawing.Color.White;
-            this.btn_sil.UseVisualStyleBackColor = false;
-            this.btn_sil.Click += new System.EventHandler(this.rjButton4_Click);
-            // 
-            // guncel
-            // 
-            this.guncel.BackColor = System.Drawing.Color.Maroon;
-            this.guncel.BackgroundColor = System.Drawing.Color.Maroon;
-            this.guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.guncel.BorderRadius = 20;
-            this.guncel.BorderSize = 0;
-            this.guncel.FlatAppearance.BorderSize = 0;
-            this.guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.guncel.ForeColor = System.Drawing.Color.White;
-            this.guncel.Location = new System.Drawing.Point(646, 114);
-            this.guncel.Name = "guncel";
-            this.guncel.Size = new System.Drawing.Size(163, 40);
-            this.guncel.TabIndex = 20;
-            this.guncel.Text = "Güncelle";
-            this.guncel.TextColor = System.Drawing.Color.White;
-            this.guncel.UseVisualStyleBackColor = false;
-            this.guncel.Click += new System.EventHandler(this.rjButton2_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjButton1.BorderRadius = 15;
-            this.rjButton1.BorderSize = 1;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(114, 337);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(155, 46);
-            this.rjButton1.TabIndex = 16;
-            this.rjButton1.Text = "Kayıt";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
             // yonetimpanel
             // 

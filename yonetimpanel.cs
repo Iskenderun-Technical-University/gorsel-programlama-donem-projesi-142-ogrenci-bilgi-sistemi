@@ -414,7 +414,7 @@ namespace Login_Ekranı
 
         private void rjButton6_Click(object sender, EventArgs e)
         {
-            string no = mtxtbox_numara.Text;
+            string no = mtxt_numara.Text;
 
             var deger = db.TblOgrenci.Where(x => x.OgrNumara == no).Select(y => y.OgrID).FirstOrDefault();
             var not = from x in db.TblNotlar

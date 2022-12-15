@@ -1,2 +1,3 @@
-# gorsel-programlama-donem-projesi-142-ogrenci-bilgi-sistemi
-gorsel-programlama-donem-projesi-142-ogrenci-bilgi-sistemi created by GitHub Classroom
+GÖRSEL PROGRAMLAMA DERSİ GRUP 142
+MEVLANA42
+ÖĞRENCİ BİLGİ SİSTEMİ

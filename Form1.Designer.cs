@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_kapat = new CustomControls.RJControls.RJButton();
             this.Kapat_buton = new System.Windows.Forms.ImageList(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-10, -16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(776, 364);
+            this.pictureBox1.Size = new System.Drawing.Size(785, 364);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -134,6 +135,17 @@
             this.Kapat_buton.TransparentColor = System.Drawing.Color.Transparent;
             this.Kapat_buton.Images.SetKeyName(0, "eahaetyt.png");
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(144)))), ((int)(((byte)(171)))));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(227, 308);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(310, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Bu Uygulamanın Telif Hakları Mevlana42© Yazılım Şirketine Aittir";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,17 +153,20 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(764, 322);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_kapat);
             this.Controls.Add(this.ogrenci_buton);
             this.Controls.Add(this.yonetim_buton);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,6 +180,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private CustomControls.RJControls.RJButton button_kapat;
         private System.Windows.Forms.ImageList Kapat_buton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

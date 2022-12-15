@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABc
-        DQAAAk1TRnQBSQFMAgEBAgEAARgBAAEYAQABKAEAASgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DQAAAk1TRnQBSQFMAgEBAgEAASABAAEgAQABKAEAASgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABoAMAASgDAAEBAQABCAYAARkYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -193,7 +193,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAe
-        CQAAAk1TRnQBSQFMAwEBAAEYAQABGAEAARkBAAEZAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CQAAAk1TRnQBSQFMAwEBAAEgAQABIAEAARkBAAEZAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AWQDAAEZAwABAQEAAQgFAAHEAQkYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -260,6 +260,83 @@ amacı ile kullanılır.
 
 7- Öğrenci Devamsızlık paneli, öğrencilerin 
 devamsızlık bilgilerini görüntülemek amacı ile kullanılır.
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfB/wAHwf8EB8H/KQfB/2wHwf+sB8H/2QfB
+        //IHwf/9B8H//QfB//IHwf/ZB8H/rQfB/2wHwf8pB8H/BAfB/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfB/wAHwf8DB8H/NgfB/5YHwf/fB8H/+wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/+wfB/98Hwf+WB8H/NgfB/wMHwf8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfB/wAHwf8AB8H/GQfB/4cHwf/qB8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf/pB8H/iAfB
+        /xkHwf8AB8H/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwf8AB8H/AAfB/zQHwf/AB8H//gfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf/+B8H/wQfB/zQHwf8AB8H/AAAAAAAAAAAAAAAAAAAAAAAAAAAAB8H/AAfB/wAHwf8/B8H/1wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H/2AfB/0AHwf8AB8H/AAAAAAAAAAAAAAAAAAfB/wAHwf8AB8H/NAfB
+        /9cHwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//BMD//wTA//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/1wfB/zQHwf8AB8H/AAAAAAAAAAAAB8H/AAfB
+        /xkHwf/AB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wvC//8/zPr/P8z6/wvC
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/wAfB/xkHwf8AAAAAAAfB
+        /wAHwf8CB8H/hwfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8EwP//P8z6/+Ds
+        7f/g7O3/P8z6/wTA//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/hwfB
+        /wIHwf8AB8H/AAfB/zYHwf/oB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wTA
+        //8/zPr/4Ozt/+Ds7f8/zPr/BMD//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf/oB8H/NwfB/wAHwf8CB8H/lgfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wvC//8/zPr/P8z6/wvC//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf+WB8H/AgfB/ykHwf/eB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wPA//8DwP//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB/94Hwf8pB8H/bAfB//sHwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Gwf//F8X//xfF//8Gwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/+wfB/2wHwf+sB8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//BcH//yvJ/v++7Pv/vuz7/yvJ/v8Fwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/rAfB/9kHwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8DwP//W9X9//v6+v/7+vr/WtX9/wLA
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf/ZB8H/8gfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wPA//9S0/3/9vn6//z6
+        +v+J3/z/CsL//wXA//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //IHwf/9B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//BcH//ybI
+        /v/Y8vv//vv6/+/3+v+d5Pz/Ksn+/wXA//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//QfB//0Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//BsH//2jY/f/u9/r//vv6//77+v/I7vv/Msv+/wXA//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf/9B8H/8gfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Gwf//CsL//1TT/f/F7vv/+/r6//77+v+56/v/GcX//wbB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//IHwf/ZB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//BcD//wbB//8Fwf//B8H//wfB//8Hwf//A8D//yHH/v+y6fz//Pv6//n6+v9u2f3/BMD//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/2QfB/6wHwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wnB//9c1f3/luP8/zTM/v8Fwf//B8H//wfB//8Hwf//A8D//zPL/v/f9Pv///v6/73s
+        +/8Rw///BsH//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf+sB8H/bAfB//sHwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Gwf//Hsb//9Xx+////Pr/mOP8/wfB//8Hwf//B8H//wfB//8Hwf//CsL//67o
+        /P//+/r/2vL7/yHH/v8Fwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H/+wfB/2wHwf8qB8H/3gfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wbB//8dxv//0/H7///7+v+97Pv/EMP//wbB//8Hwf//B8H//wbB
+        //8Qw///vOv7///7+v/T8fv/HMb//wbB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf/eB8H/KQfB
+        /wIHwf+WB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wvC//+q5/z///v6/+73+v9U0/3/A8D//wTA
+        //8EwP//A8D//1TT/f/u9/r///v6/6nn/P8Lwv//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        /5YHwf8CB8H/AAfB/zcHwf/pB8H//wfB//8Hwf//B8H//wfB//8Hwf//BMD//1TT/f/y+Pr//fv6/93z
+        +/9r2f3/LMr+/yzK/v9r2P3/3fP7//37+v/y+Pr/VNP9/wTA//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf/pB8H/NwfB/wAHwf8AB8H/AgfB/4gHwf//B8H//wfB//8Hwf//B8H//wfB//8Gwf//DcL//5Dh
+        /P/6+vr//vv6//f5+v/j9fv/5PX7//j5+v/++/r/+vr6/5Dh/P8Nwv//BsH//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB/4gHwf8CB8H/AAAAAAAHwf8AB8H/GQfB/8AHwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Gwf//FMT//4Pe/P/l9fr//fv6///7+v//+/r//fv6/+X1+v+D3vz/FMT//wbB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf/AB8H/GQfB/wAAAAAAAAAAAAfB/wAHwf8AB8H/NAfB/9cHwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Gwf//CcH//zfM/v953P3/neT8/53k/P953P3/N8z+/wnB//8Gwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H/1wfB/zQHwf8AB8H/AAAAAAAAAAAAAAAAAAfB/wAHwf8AB8H/QAfB
+        /9gHwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//BMD//wTA//8Hwf//B8H//wTA//8EwP//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB/9gHwf9AB8H/AAfB/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAfB
+        /wAHwf8AB8H/NAfB/8EHwf/+B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//4Hwf/BB8H/NAfB/wAHwf8AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAfB/wAHwf8AB8H/GQfB/4gHwf/qB8H//wfB//8Hwf//B8H//wfB//8Hwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//8Hwf/pB8H/iAfB/xkHwf8AB8H/AAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwf8AB8H/AwfB/zYHwf+WB8H/3wfB//sHwf//B8H//wfB
+        //8Hwf//B8H//wfB//8Hwf//B8H//wfB//sHwf/fB8H/lgfB/zYHwf8DB8H/AAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8H/AAfB/wQHwf8pB8H/bAfB
+        /60Hwf/ZB8H/8wfB//0Hwf/9B8H/8wfB/9oHwf+tB8H/bAfB/ykHwf8EB8H/AAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/4AB//4AAH/8AAA/+AAAH/AAAA/gAAAHwAAAA4AAAAGAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABgAAAAcAA
+        AAPgAAAH8AAAD/gAAB/8AAA//gAAf/+AAf8=
 </value>
   </data>
 </root>

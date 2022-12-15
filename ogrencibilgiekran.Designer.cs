@@ -33,10 +33,13 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_duyurular = new System.Windows.Forms.TabPage();
             this.lbl_duyuru = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.page_notbilgi = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_sifreguncelle = new CustomControls.RJControls.RJButton();
             this.mtxtbox_numara = new System.Windows.Forms.MaskedTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,6 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_ad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.page_devamsizlik = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_toplam_devamsizlik = new System.Windows.Forms.Label();
@@ -63,6 +68,7 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.page_dersprogram = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_cuma_ders5 = new System.Windows.Forms.Label();
@@ -100,6 +106,7 @@
             this.lbl_ders2 = new System.Windows.Forms.Label();
             this.lbl_ders1 = new System.Windows.Forms.Label();
             this.lbl_pzt_ders1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.page_alinanbelgeler = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_alinan_basari = new System.Windows.Forms.Label();
@@ -116,14 +123,28 @@
             this.lbl_aldigibelgetur = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_alinanbelge_bilgi = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.page_yilsonunot = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.ort8_lbl = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.lbl_sinif8 = new System.Windows.Forms.Label();
+            this.ort7_lbl = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.lbl_sinif7 = new System.Windows.Forms.Label();
+            this.ort6_lbl = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.lbl_sinif6 = new System.Windows.Forms.Label();
+            this.ort5_lbl = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.lbl_sinif5 = new System.Windows.Forms.Label();
+            this.ort4_lbl = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.lbl_sinif4 = new System.Windows.Forms.Label();
+            this.lbl_yilsonuortalama = new System.Windows.Forms.Label();
+            this.lbl_ogretimyil = new System.Windows.Forms.Label();
             this.lbl_sinif = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.page_subeortalama = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_sınıfort_agveteknoloji = new System.Windows.Forms.Label();
@@ -146,64 +167,43 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.lbl_sınıfort_turkdili = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.duyurular = new System.Windows.Forms.ImageList(this.components);
             this.butonlar = new System.Windows.Forms.ImageList(this.components);
-            this.lbl_ogretimyil = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.lbl_yilsonuortalama = new System.Windows.Forms.Label();
-            this.ort4_lbl = new System.Windows.Forms.Label();
-            this.ort5_lbl = new System.Windows.Forms.Label();
-            this.ort6_lbl = new System.Windows.Forms.Label();
-            this.ort7_lbl = new System.Windows.Forms.Label();
-            this.ort8_lbl = new System.Windows.Forms.Label();
-            this.btn_sifreguncelle = new CustomControls.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_info = new CustomControls.RJControls.RJButton();
             this.btn_kilit = new CustomControls.RJControls.RJButton();
             this.btn_kapat = new CustomControls.RJControls.RJButton();
             this.btn_anaekran = new CustomControls.RJControls.RJButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.page_duyurular.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.page_notbilgi.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.page_devamsizlik.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.page_dersprogram.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.page_alinanbelgeler.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.page_yilsonunot.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.page_subeortalama.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -240,7 +240,6 @@
             this.page_duyurular.TabIndex = 2;
             this.page_duyurular.Text = "Duyurular";
             this.page_duyurular.UseVisualStyleBackColor = true;
-            this.page_duyurular.Click += new System.EventHandler(this.page_duyurular_Click);
             // 
             // lbl_duyuru
             // 
@@ -252,6 +251,27 @@
             this.lbl_duyuru.Size = new System.Drawing.Size(1029, 252);
             this.lbl_duyuru.TabIndex = 1;
             this.lbl_duyuru.Text = resources.GetString("lbl_duyuru.Text");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(29, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox4.Location = new System.Drawing.Point(-150, -39);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(1660, 969);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
             // 
             // page_notbilgi
             // 
@@ -265,14 +285,13 @@
             this.page_notbilgi.TabIndex = 0;
             this.page_notbilgi.Text = "Not Bilgisi";
             this.page_notbilgi.UseVisualStyleBackColor = true;
-            this.page_notbilgi.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(11, 25);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(654, 450);
+            this.groupBox2.Size = new System.Drawing.Size(654, 419);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -281,7 +300,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(654, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(654, 412);
             this.dataGridView1.TabIndex = 1;
             // 
             // groupBox1
@@ -309,6 +328,26 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
+            // 
+            // btn_sifreguncelle
+            // 
+            this.btn_sifreguncelle.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_sifreguncelle.BackgroundColor = System.Drawing.Color.MediumBlue;
+            this.btn_sifreguncelle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_sifreguncelle.BorderRadius = 15;
+            this.btn_sifreguncelle.BorderSize = 0;
+            this.btn_sifreguncelle.FlatAppearance.BorderSize = 0;
+            this.btn_sifreguncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sifreguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_sifreguncelle.ForeColor = System.Drawing.Color.White;
+            this.btn_sifreguncelle.Location = new System.Drawing.Point(111, 372);
+            this.btn_sifreguncelle.Name = "btn_sifreguncelle";
+            this.btn_sifreguncelle.Size = new System.Drawing.Size(164, 40);
+            this.btn_sifreguncelle.TabIndex = 5;
+            this.btn_sifreguncelle.Text = "Güncelle";
+            this.btn_sifreguncelle.TextColor = System.Drawing.Color.White;
+            this.btn_sifreguncelle.UseVisualStyleBackColor = false;
+            this.btn_sifreguncelle.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // mtxtbox_numara
             // 
@@ -443,6 +482,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Adı:";
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox11.Location = new System.Drawing.Point(-914, -80);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(1588, 887);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 5;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox5.Location = new System.Drawing.Point(-162, -55);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(1588, 887);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
+            // 
             // page_devamsizlik
             // 
             this.page_devamsizlik.Controls.Add(this.tableLayoutPanel7);
@@ -481,7 +540,6 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(469, 404);
             this.tableLayoutPanel7.TabIndex = 0;
             this.tableLayoutPanel7.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel7_CellPaint);
-            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
             // lbl_toplam_devamsizlik
             // 
@@ -592,6 +650,16 @@
             this.label44.Size = new System.Drawing.Size(169, 24);
             this.label44.TabIndex = 0;
             this.label44.Text = "Devamsızlık Türü";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox6.Location = new System.Drawing.Point(-93, -39);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(1488, 990);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
             // 
             // page_dersprogram
             // 
@@ -1047,6 +1115,16 @@
             this.lbl_pzt_ders1.TabIndex = 26;
             this.lbl_pzt_ders1.Text = "Beden Eğitim ";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox7.Location = new System.Drawing.Point(-91, -129);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(1326, 1026);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
             // page_alinanbelgeler
             // 
             this.page_alinanbelgeler.Controls.Add(this.tableLayoutPanel4);
@@ -1247,7 +1325,16 @@
             this.lbl_alinanbelge_bilgi.Size = new System.Drawing.Size(283, 20);
             this.lbl_alinanbelge_bilgi.TabIndex = 0;
             this.lbl_alinanbelge_bilgi.Text = "Alınan Belgeler Başarıyla Listelenmiştir.\r\n";
-            this.lbl_alinanbelge_bilgi.Click += new System.EventHandler(this.label15_Click_2);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox8.Location = new System.Drawing.Point(-220, -58);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(1645, 965);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
             // 
             // page_yilsonunot
             // 
@@ -1298,7 +1385,28 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(478, 469);
             this.tableLayoutPanel5.TabIndex = 0;
             this.tableLayoutPanel5.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel5_CellPaint);
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
+            // 
+            // ort8_lbl
+            // 
+            this.ort8_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort8_lbl.AutoSize = true;
+            this.ort8_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ort8_lbl.Location = new System.Drawing.Point(389, 419);
+            this.ort8_lbl.Name = "ort8_lbl";
+            this.ort8_lbl.Size = new System.Drawing.Size(18, 20);
+            this.ort8_lbl.TabIndex = 17;
+            this.ort8_lbl.Text = "0";
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label31.Location = new System.Drawing.Point(195, 419);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(86, 20);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "2019-2020";
             // 
             // lbl_sinif8
             // 
@@ -1311,6 +1419,28 @@
             this.lbl_sinif8.TabIndex = 15;
             this.lbl_sinif8.Text = "8. Sınıf";
             // 
+            // ort7_lbl
+            // 
+            this.ort7_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort7_lbl.AutoSize = true;
+            this.ort7_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ort7_lbl.Location = new System.Drawing.Point(389, 341);
+            this.ort7_lbl.Name = "ort7_lbl";
+            this.ort7_lbl.Size = new System.Drawing.Size(18, 20);
+            this.ort7_lbl.TabIndex = 14;
+            this.ort7_lbl.Text = "0";
+            // 
+            // label28
+            // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(195, 341);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(86, 20);
+            this.label28.TabIndex = 13;
+            this.label28.Text = "2018-2019";
+            // 
             // lbl_sinif7
             // 
             this.lbl_sinif7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1321,6 +1451,28 @@
             this.lbl_sinif7.Size = new System.Drawing.Size(57, 20);
             this.lbl_sinif7.TabIndex = 12;
             this.lbl_sinif7.Text = "7. Sınıf";
+            // 
+            // ort6_lbl
+            // 
+            this.ort6_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort6_lbl.AutoSize = true;
+            this.ort6_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ort6_lbl.Location = new System.Drawing.Point(389, 263);
+            this.ort6_lbl.Name = "ort6_lbl";
+            this.ort6_lbl.Size = new System.Drawing.Size(18, 20);
+            this.ort6_lbl.TabIndex = 11;
+            this.ort6_lbl.Text = "0";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(195, 263);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(86, 20);
+            this.label25.TabIndex = 10;
+            this.label25.Text = "2017-2018";
             // 
             // lbl_sinif6
             // 
@@ -1333,6 +1485,28 @@
             this.lbl_sinif6.TabIndex = 9;
             this.lbl_sinif6.Text = "6. Sınıf\t";
             // 
+            // ort5_lbl
+            // 
+            this.ort5_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort5_lbl.AutoSize = true;
+            this.ort5_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ort5_lbl.Location = new System.Drawing.Point(389, 185);
+            this.ort5_lbl.Name = "ort5_lbl";
+            this.ort5_lbl.Size = new System.Drawing.Size(18, 20);
+            this.ort5_lbl.TabIndex = 8;
+            this.ort5_lbl.Text = "0";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label22.Location = new System.Drawing.Point(195, 185);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(86, 20);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "2016-2017";
+            // 
             // lbl_sinif5
             // 
             this.lbl_sinif5.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1343,6 +1517,28 @@
             this.lbl_sinif5.Size = new System.Drawing.Size(57, 20);
             this.lbl_sinif5.TabIndex = 6;
             this.lbl_sinif5.Text = "5. Sınıf\t";
+            // 
+            // ort4_lbl
+            // 
+            this.ort4_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ort4_lbl.AutoSize = true;
+            this.ort4_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ort4_lbl.Location = new System.Drawing.Point(389, 107);
+            this.ort4_lbl.Name = "ort4_lbl";
+            this.ort4_lbl.Size = new System.Drawing.Size(18, 20);
+            this.ort4_lbl.TabIndex = 5;
+            this.ort4_lbl.Text = "0";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label19.Location = new System.Drawing.Point(195, 107);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 20);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "2015-2016";
             // 
             // lbl_sinif4
             // 
@@ -1355,6 +1551,28 @@
             this.lbl_sinif4.TabIndex = 3;
             this.lbl_sinif4.Text = "4. Sınıf";
             // 
+            // lbl_yilsonuortalama
+            // 
+            this.lbl_yilsonuortalama.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_yilsonuortalama.AutoSize = true;
+            this.lbl_yilsonuortalama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_yilsonuortalama.Location = new System.Drawing.Point(321, 29);
+            this.lbl_yilsonuortalama.Name = "lbl_yilsonuortalama";
+            this.lbl_yilsonuortalama.Size = new System.Drawing.Size(154, 20);
+            this.lbl_yilsonuortalama.TabIndex = 2;
+            this.lbl_yilsonuortalama.Text = "Yıl Sonu Ortalama";
+            // 
+            // lbl_ogretimyil
+            // 
+            this.lbl_ogretimyil.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ogretimyil.AutoSize = true;
+            this.lbl_ogretimyil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ogretimyil.Location = new System.Drawing.Point(188, 29);
+            this.lbl_ogretimyil.Name = "lbl_ogretimyil";
+            this.lbl_ogretimyil.Size = new System.Drawing.Size(101, 20);
+            this.lbl_ogretimyil.TabIndex = 1;
+            this.lbl_ogretimyil.Text = "Öğretim Yılı";
+            // 
             // lbl_sinif
             // 
             this.lbl_sinif.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1365,7 +1583,16 @@
             this.lbl_sinif.Size = new System.Drawing.Size(45, 20);
             this.lbl_sinif.TabIndex = 0;
             this.lbl_sinif.Text = "Sınıf";
-            this.lbl_sinif.Click += new System.EventHandler(this.label15_Click_3);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox9.Location = new System.Drawing.Point(-69, -86);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(1620, 1140);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
             // 
             // page_subeortalama
             // 
@@ -1378,7 +1605,6 @@
             this.page_subeortalama.TabIndex = 6;
             this.page_subeortalama.Text = "Şube Ortalaması";
             this.page_subeortalama.UseVisualStyleBackColor = true;
-//            this.page_subeortalama.Click += new System.EventHandler(this.page_subeortalama_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -1451,7 +1677,6 @@
             this.lbl_sınıfort_gorselprog.Size = new System.Drawing.Size(31, 16);
             this.lbl_sınıfort_gorselprog.TabIndex = 18;
             this.lbl_sınıfort_gorselprog.Text = "72,2";
-            this.lbl_sınıfort_gorselprog.Click += new System.EventHandler(this.label50_Click);
             // 
             // lbl_sınıfort_beden
             // 
@@ -1492,7 +1717,6 @@
             this.lbl_sınıfort_kimya.Size = new System.Drawing.Size(31, 16);
             this.lbl_sınıfort_kimya.TabIndex = 14;
             this.lbl_sınıfort_kimya.Text = "59,8";
-            this.lbl_sınıfort_kimya.Click += new System.EventHandler(this.lbl_sınıfort_kimya_Click);
             // 
             // lbl_sınıfort_biyo
             // 
@@ -1635,6 +1859,16 @@
             this.lbl_sınıfort_turkdili.TabIndex = 12;
             this.lbl_sınıfort_turkdili.Text = "69,7";
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Login_Ekranı.Properties.Resources._32543171;
+            this.pictureBox10.Location = new System.Drawing.Point(-149, -53);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(1577, 1087);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
             // duyurular
             // 
             this.duyurular.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("duyurular.ImageStream")));
@@ -1651,158 +1885,6 @@
             this.butonlar.Images.SetKeyName(3, "information.png");
             this.butonlar.Images.SetKeyName(4, "lock.png");
             this.butonlar.Images.SetKeyName(5, "right-arrow.png");
-            // 
-            // lbl_ogretimyil
-            // 
-            this.lbl_ogretimyil.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_ogretimyil.AutoSize = true;
-            this.lbl_ogretimyil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ogretimyil.Location = new System.Drawing.Point(188, 29);
-            this.lbl_ogretimyil.Name = "lbl_ogretimyil";
-            this.lbl_ogretimyil.Size = new System.Drawing.Size(101, 20);
-            this.lbl_ogretimyil.TabIndex = 1;
-            this.lbl_ogretimyil.Text = "Öğretim Yılı";
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(195, 107);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 20);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "2015-2016";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(195, 185);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(86, 20);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "2016-2017";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(195, 263);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(86, 20);
-            this.label25.TabIndex = 10;
-            this.label25.Text = "2017-2018";
-            // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label28.Location = new System.Drawing.Point(195, 341);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(86, 20);
-            this.label28.TabIndex = 13;
-            this.label28.Text = "2018-2019";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label31.Location = new System.Drawing.Point(195, 419);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 20);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "2019-2020";
-            // 
-            // lbl_yilsonuortalama
-            // 
-            this.lbl_yilsonuortalama.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_yilsonuortalama.AutoSize = true;
-            this.lbl_yilsonuortalama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_yilsonuortalama.Location = new System.Drawing.Point(321, 29);
-            this.lbl_yilsonuortalama.Name = "lbl_yilsonuortalama";
-            this.lbl_yilsonuortalama.Size = new System.Drawing.Size(154, 20);
-            this.lbl_yilsonuortalama.TabIndex = 2;
-            this.lbl_yilsonuortalama.Text = "Yıl Sonu Ortalama";
-            // 
-            // ort4_lbl
-            // 
-            this.ort4_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ort4_lbl.AutoSize = true;
-            this.ort4_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ort4_lbl.Location = new System.Drawing.Point(389, 107);
-            this.ort4_lbl.Name = "ort4_lbl";
-            this.ort4_lbl.Size = new System.Drawing.Size(18, 20);
-            this.ort4_lbl.TabIndex = 5;
-            this.ort4_lbl.Text = "0";
-            // 
-            // ort5_lbl
-            // 
-            this.ort5_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ort5_lbl.AutoSize = true;
-            this.ort5_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ort5_lbl.Location = new System.Drawing.Point(389, 185);
-            this.ort5_lbl.Name = "ort5_lbl";
-            this.ort5_lbl.Size = new System.Drawing.Size(18, 20);
-            this.ort5_lbl.TabIndex = 8;
-            this.ort5_lbl.Text = "0";
-            // 
-            // ort6_lbl
-            // 
-            this.ort6_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ort6_lbl.AutoSize = true;
-            this.ort6_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ort6_lbl.Location = new System.Drawing.Point(389, 263);
-            this.ort6_lbl.Name = "ort6_lbl";
-            this.ort6_lbl.Size = new System.Drawing.Size(18, 20);
-            this.ort6_lbl.TabIndex = 11;
-            this.ort6_lbl.Text = "0";
-            // 
-            // ort7_lbl
-            // 
-            this.ort7_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ort7_lbl.AutoSize = true;
-            this.ort7_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ort7_lbl.Location = new System.Drawing.Point(389, 341);
-            this.ort7_lbl.Name = "ort7_lbl";
-            this.ort7_lbl.Size = new System.Drawing.Size(18, 20);
-            this.ort7_lbl.TabIndex = 14;
-            this.ort7_lbl.Text = "0";
-            // 
-            // ort8_lbl
-            // 
-            this.ort8_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ort8_lbl.AutoSize = true;
-            this.ort8_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ort8_lbl.Location = new System.Drawing.Point(389, 419);
-            this.ort8_lbl.Name = "ort8_lbl";
-            this.ort8_lbl.Size = new System.Drawing.Size(18, 20);
-            this.ort8_lbl.TabIndex = 17;
-            this.ort8_lbl.Text = "0";
-            // 
-            // btn_sifreguncelle
-            // 
-            this.btn_sifreguncelle.BackColor = System.Drawing.Color.MediumBlue;
-            this.btn_sifreguncelle.BackgroundColor = System.Drawing.Color.MediumBlue;
-            this.btn_sifreguncelle.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_sifreguncelle.BorderRadius = 15;
-            this.btn_sifreguncelle.BorderSize = 0;
-            this.btn_sifreguncelle.FlatAppearance.BorderSize = 0;
-            this.btn_sifreguncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sifreguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_sifreguncelle.ForeColor = System.Drawing.Color.White;
-            this.btn_sifreguncelle.Location = new System.Drawing.Point(111, 372);
-            this.btn_sifreguncelle.Name = "btn_sifreguncelle";
-            this.btn_sifreguncelle.Size = new System.Drawing.Size(164, 40);
-            this.btn_sifreguncelle.TabIndex = 5;
-            this.btn_sifreguncelle.Text = "Güncelle";
-            this.btn_sifreguncelle.TextColor = System.Drawing.Color.White;
-            this.btn_sifreguncelle.UseVisualStyleBackColor = false;
-            this.btn_sifreguncelle.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // pictureBox1
             // 
@@ -1903,99 +1985,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(1330, 117);
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox2.Image = global::Login_Ekranı.Properties.Resources.duyuru_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(29, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox4.Location = new System.Drawing.Point(-150, -39);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1660, 969);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox5.Location = new System.Drawing.Point(-162, -55);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1588, 887);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox6.Location = new System.Drawing.Point(-93, -39);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1488, 990);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox7.Location = new System.Drawing.Point(-91, -129);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1326, 1026);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox8.Location = new System.Drawing.Point(-220, -58);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(1645, 965);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox9.Location = new System.Drawing.Point(-69, -86);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1620, 1140);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox10.Location = new System.Drawing.Point(-149, -53);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(1577, 1087);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Login_Ekranı.Properties.Resources._32543171;
-            this.pictureBox11.Location = new System.Drawing.Point(-914, -80);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(1588, 887);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 5;
-            this.pictureBox11.TabStop = false;
             // 
             // ogrencibilgiekran
             // 
@@ -2010,6 +1999,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ogrencibilgiekran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -2017,39 +2007,39 @@
             this.tabControl1.ResumeLayout(false);
             this.page_duyurular.ResumeLayout(false);
             this.page_duyurular.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.page_notbilgi.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.page_devamsizlik.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.page_dersprogram.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.page_alinanbelgeler.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.page_yilsonunot.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.page_subeortalama.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }

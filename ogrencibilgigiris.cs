@@ -48,16 +48,6 @@ namespace Login_Ekranı
             txt_sifre.UseSystemPasswordChar = true;
         }
 
-        private void ogrencibilgigiris_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void rjButton1_Click(object sender, EventArgs e)
         {
             this.Close();

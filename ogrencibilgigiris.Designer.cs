@@ -42,6 +42,7 @@
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.mtxtbox_giris = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +117,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ust_butonlar
             // 
@@ -195,11 +195,23 @@
             this.mtxtbox_giris.TabIndex = 19;
             this.mtxtbox_giris.ValidatingType = typeof(int);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(130)))), ((int)(((byte)(190)))));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(274, 510);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(310, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Bu Uygulamanın Telif Hakları Mevlana42© Yazılım Şirketine Aittir";
+            // 
             // ogrencibilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 526);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.mtxtbox_giris);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rjButton2);
@@ -211,10 +223,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ogrencibilgigiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   ";
-            this.Load += new System.EventHandler(this.ogrencibilgigiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -235,5 +247,6 @@
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton button1;
         private System.Windows.Forms.MaskedTextBox mtxtbox_giris;
+        private System.Windows.Forms.Label label4;
     }
 }

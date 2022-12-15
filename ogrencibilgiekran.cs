@@ -57,12 +57,21 @@ namespace Login_Ekranı
 
 
         }
-
-
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e)//şifre güncelleme işlemi
         {
-
+            if (txt_yenisifre1.Text == txt_yenisifre2.Text)
+            {
+                var deger = db.TblOgrenci.Find(ogrid);
+                deger.OgrSifre = txt_yenisifre1.Text;
+                db.SaveChanges();
+                MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
+            }
+            else
+            {
+                MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
+            }
         }
+
         private void tabControl1_DrawItem(Object sender, System.Windows.Forms.DrawItemEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -97,15 +106,7 @@ namespace Login_Ekranı
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
         }
 
-        private void page_duyurular_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label15_Click_2(object sender, EventArgs e)
-        {
-
-        }
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -121,6 +122,8 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid); 
             }
         }
+
+
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel2_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -136,6 +139,8 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
         }
+
+
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel4_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -151,11 +156,8 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
         }
-        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
-        private void label15_Click_3(object sender, EventArgs e)
-        {
 
-        }
+
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel5_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -172,15 +174,7 @@ namespace Login_Ekranı
             }
         }
 
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void label50_Click(object sender, EventArgs e)
-        {
-
-        }
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel6_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -197,10 +191,8 @@ namespace Login_Ekranı
             }
         }
 
-        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
+
+
         //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel7_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -215,13 +207,6 @@ namespace Login_Ekranı
 
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
-        }
-
-        
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_kapat_Click(object sender, EventArgs e)
@@ -251,29 +236,7 @@ namespace Login_Ekranı
             
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)//şifre güncelleme işlemi
-        {
-            if (txt_yenisifre1.Text == txt_yenisifre2.Text)
-            {
-                var deger = db.TblOgrenci.Find(ogrid);
-                deger.OgrSifre = txt_yenisifre1.Text;
-                db.SaveChanges();
-                MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
-            }
-            else
-            {
-                MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
-            }
-        }
+       
 
-        private void lbl_sınıfort_kimya_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

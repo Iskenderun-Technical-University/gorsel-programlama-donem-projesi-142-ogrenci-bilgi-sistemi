@@ -42,6 +42,7 @@
             this.button1 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +58,6 @@
             this.label2.Size = new System.Drawing.Size(433, 39);
             this.label2.TabIndex = 0;
             this.label2.Text = "Yönetim Bilgi Giriş Paneli";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -70,7 +70,6 @@
             this.label1.Size = new System.Drawing.Size(100, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numara :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -83,7 +82,6 @@
             this.label3.Size = new System.Drawing.Size(70, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Şifre :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txt_id
             // 
@@ -92,7 +90,6 @@
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(166, 20);
             this.txt_id.TabIndex = 1;
-            this.txt_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txt_sifre
             // 
@@ -128,7 +125,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ust_butonlar2
             // 
@@ -198,12 +194,24 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(288, 511);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(310, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Bu Uygulamanın Telif Hakları Mevlana42© Yazılım Şirketine Aittir";
+            // 
             // yonetimbilgigiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(606, 529);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
@@ -215,6 +223,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "yonetimbilgigiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yönetim Modu";
@@ -240,5 +249,6 @@
         private System.Windows.Forms.ImageList ust_butonlar2;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton button1;
+        private System.Windows.Forms.Label label4;
     }
 }

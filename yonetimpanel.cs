@@ -45,9 +45,8 @@ namespace Login_Ekranı
                            };
             dataGridView1.DataSource = degerler.Where(x=>x.OgrDurum==true).ToList();
         }
-        //Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True
         SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
-        //SqlConnection baglanti = new SqlConnection("Data Source=25.42.111.49,1433;Network Library=DBMSSOCN;Initial Catalog=OgrenciSinav;User Id = ADMIN; Password=1;");
+       
 
         private void yonetimpanel_Load(object sender, EventArgs e)
         {
@@ -108,36 +107,7 @@ namespace Login_Ekranı
             }
             listele();
         }
-        private void guncel_Click_1(object sender, EventArgs e)// öğrenci bilgilerini güncelliyor
-        {
 
-
-        }
-        private void btn_sil_Click_1(object sender, EventArgs e)//Öğrenci Siliyor.
-        {
-           
-        }
-        
-        private void btn_ekle_Click(object sender, EventArgs e)// öğrenci notları ekleme ıd e göre yapıyoruz
-        {
-        }
-        private void btn_hesapla_Click(object sender, EventArgs e)//ortalamayı hesaplıyor
-        {
-           
-        }
-        private void btn_listele_Click(object sender, EventArgs e)//öğrencileri listeliyor
-        {
-         
-            
-        }
-        private void btn_list_Click(object sender, EventArgs e)// tüm notları listeliyor
-        {
-            
-        }
-        private void btn_ara_Click(object sender, EventArgs e)// numaraya göre öğrenci bulup tüm notları getiriyor.
-        {
-           
-        }
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)//seçilen derse göre tüm notlar getiriliyor
         {
             var degerler = from x in db.TblNotlar
@@ -161,11 +131,6 @@ namespace Login_Ekranı
 
         }
 
-        private void btn_guncel_Click(object sender, EventArgs e)//öğrenci sınavları güncelleme.çift tık yap txt ıd ye al 
-        {
-            
-
-        }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)//data griwden txtboxlara bilgileri çekiyoruz.
         {
@@ -211,10 +176,6 @@ namespace Login_Ekranı
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void tableLayoutPanel2_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
@@ -231,38 +192,6 @@ namespace Login_Ekranı
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void page_girisekran_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void btnderslistele_Click(object sender, EventArgs e)// dersleri listeliyoruz.
-        {
-            
-        }
 
         private void btn_kapat_Click(object sender, EventArgs e)
         {
@@ -291,10 +220,6 @@ namespace Login_Ekranı
             yonetiminfo.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void rjButton1_Click(object sender, EventArgs e) //dersleri listeleme 
         {
@@ -353,10 +278,7 @@ namespace Login_Ekranı
             listele();
         }
 
-        private void btn_ogrencibul_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void rjButton2_Click_1(object sender, EventArgs e) //öğrenci not EKleme işlemi
         {

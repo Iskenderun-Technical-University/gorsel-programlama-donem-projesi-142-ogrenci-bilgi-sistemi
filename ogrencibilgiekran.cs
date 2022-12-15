@@ -48,7 +48,8 @@ namespace Login_Ekranı
                                     x.Performans,
                                     x.Proje,
                                     x.Ortalama,
-                                    x.Ogrenci
+                                    x.Ogrenci,
+                                    
 
                                 }).Where(y => y.Ogrenci == ogrid).ToList();
             dataGridView1.DataSource = sinavnotlari;

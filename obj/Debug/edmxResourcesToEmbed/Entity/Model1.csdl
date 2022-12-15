@@ -28,6 +28,7 @@
     <Property Name="Ort11" Type="Int32" />
     <Property Name="Ort12" Type="Int32" />
     <Property Name="Ort13" Type="Int32" />
+    <Property Name="OgrDevam" Type="Int32" />
   </EntityType>
   <EntityType Name="TblOgretmen">
     <Key>
@@ -95,6 +96,7 @@
     <Property Name="Performans" Type="Byte" />
     <Property Name="Proje" Type="Byte" />
     <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="OgrDevam" Type="Int32" />
   </EntityType>
   <ComplexType Name="Notlar_Result">
     <Property Type="Int32" Name="Not_ID" Nullable="false" />

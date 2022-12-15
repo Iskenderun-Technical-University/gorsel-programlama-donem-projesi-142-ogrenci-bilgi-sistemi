@@ -12,6 +12,7 @@
     <EntitySetMapping Name="TblOgrenci">
       <EntityTypeMapping TypeName="OgrenciSinavModel.TblOgrenci">
         <MappingFragment StoreEntitySet="TblOgrenci">
+          <ScalarProperty Name="OgrDevam" ColumnName="OgrDevam" />
           <ScalarProperty Name="Ort13" ColumnName="Ort13" />
           <ScalarProperty Name="Ort12" ColumnName="Ort12" />
           <ScalarProperty Name="Ort11" ColumnName="Ort11" />
@@ -51,6 +52,7 @@
     <EntitySetMapping Name="View_1">
       <EntityTypeMapping TypeName="OgrenciSinavModel.View_1">
         <MappingFragment StoreEntitySet="View_1">
+          <ScalarProperty Name="OgrDevam" ColumnName="OgrDevam" />
           <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
           <ScalarProperty Name="Proje" ColumnName="Proje" />
           <ScalarProperty Name="Performans" ColumnName="Performans" />

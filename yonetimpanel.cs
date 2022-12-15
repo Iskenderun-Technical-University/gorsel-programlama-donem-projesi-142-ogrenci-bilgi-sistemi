@@ -39,7 +39,9 @@ namespace Login_Ekranı
                                x.OgrSifre,
                                x.OgrSinif,
                                x.TblSinif.SinifAd,
+                               x.OgrDevamsizlik,
                                x.OgrDurum
+
                            };
             dataGridView1.DataSource = degerler.Where(x=>x.OgrDurum==true).ToList();
         }
@@ -82,6 +84,7 @@ namespace Login_Ekranı
             mtxtbox_numara.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txt_sifre1.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             comboBox2.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -339,6 +342,7 @@ namespace Login_Ekranı
             x.OgrNumara = mtxtbox_numara.Text;
             x.OgrSifre = txt_sifre1.Text;
             x.OgrSinif = int.Parse(comboBox2.SelectedValue.ToString());
+            x.OgrDevamsizlik = int.Parse(txt_devamsizlik.Text.ToString());
             db.SaveChanges();
             MessageBox.Show("Öğrenci başarılı bir şekilde güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             listele();

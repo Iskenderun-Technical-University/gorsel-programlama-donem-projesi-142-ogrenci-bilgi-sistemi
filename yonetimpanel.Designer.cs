@@ -118,6 +118,7 @@
             this.page_ogrenci_kayıt = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.masked_numara = new System.Windows.Forms.TextBox();
             this.sinif = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.sifre2 = new System.Windows.Forms.TextBox();
@@ -136,18 +137,18 @@
             this.btn_kilit = new CustomControls.RJControls.RJButton();
             this.btn_anaekran = new CustomControls.RJControls.RJButton();
             this.btn_kapat = new CustomControls.RJControls.RJButton();
+            this.btn_ara = new CustomControls.RJControls.RJButton();
+            this.btn_list = new CustomControls.RJControls.RJButton();
+            this.btn_ogrencibul = new CustomControls.RJControls.RJButton();
+            this.btn_guncel = new CustomControls.RJControls.RJButton();
+            this.btn_hesapla = new CustomControls.RJControls.RJButton();
+            this.btn_ekle = new CustomControls.RJControls.RJButton();
             this.btnderslistele = new CustomControls.RJControls.RJButton();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.guncel = new CustomControls.RJControls.RJButton();
             this.btn_listele = new CustomControls.RJControls.RJButton();
             this.btn_sil = new CustomControls.RJControls.RJButton();
-            this.btn_ekle = new CustomControls.RJControls.RJButton();
-            this.btn_hesapla = new CustomControls.RJControls.RJButton();
-            this.btn_guncel = new CustomControls.RJControls.RJButton();
-            this.btn_list = new CustomControls.RJControls.RJButton();
-            this.btn_ara = new CustomControls.RJControls.RJButton();
-            this.btn_ogrencibul = new CustomControls.RJControls.RJButton();
-            this.masked_numara = new System.Windows.Forms.TextBox();
+            this.guncel = new CustomControls.RJControls.RJButton();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.txt_devamsizlik = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -988,6 +989,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_devamsizlik);
             this.groupBox1.Controls.Add(this.btn_listele);
             this.groupBox1.Controls.Add(this.btn_sil);
             this.groupBox1.Controls.Add(this.guncel);
@@ -1152,6 +1154,14 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " ";
+            // 
+            // masked_numara
+            // 
+            this.masked_numara.Location = new System.Drawing.Point(113, 142);
+            this.masked_numara.Multiline = true;
+            this.masked_numara.Name = "masked_numara";
+            this.masked_numara.Size = new System.Drawing.Size(233, 27);
+            this.masked_numara.TabIndex = 3;
             // 
             // sinif
             // 
@@ -1365,6 +1375,125 @@
             this.btn_kapat.UseVisualStyleBackColor = false;
             this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
             // 
+            // btn_ara
+            // 
+            this.btn_ara.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ara.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ara.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ara.BorderRadius = 10;
+            this.btn_ara.BorderSize = 0;
+            this.btn_ara.FlatAppearance.BorderSize = 0;
+            this.btn_ara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ara.ForeColor = System.Drawing.Color.White;
+            this.btn_ara.Location = new System.Drawing.Point(572, 29);
+            this.btn_ara.Name = "btn_ara";
+            this.btn_ara.Size = new System.Drawing.Size(106, 31);
+            this.btn_ara.TabIndex = 24;
+            this.btn_ara.Text = "Ara";
+            this.btn_ara.TextColor = System.Drawing.Color.White;
+            this.btn_ara.UseVisualStyleBackColor = false;
+            this.btn_ara.Click += new System.EventHandler(this.rjButton6_Click);
+            // 
+            // btn_list
+            // 
+            this.btn_list.BackColor = System.Drawing.Color.Maroon;
+            this.btn_list.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_list.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_list.BorderRadius = 12;
+            this.btn_list.BorderSize = 0;
+            this.btn_list.FlatAppearance.BorderSize = 0;
+            this.btn_list.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_list.ForeColor = System.Drawing.Color.White;
+            this.btn_list.Location = new System.Drawing.Point(109, 453);
+            this.btn_list.Name = "btn_list";
+            this.btn_list.Size = new System.Drawing.Size(164, 40);
+            this.btn_list.TabIndex = 24;
+            this.btn_list.Text = "Listele";
+            this.btn_list.TextColor = System.Drawing.Color.White;
+            this.btn_list.UseVisualStyleBackColor = false;
+            this.btn_list.Click += new System.EventHandler(this.rjButton5_Click);
+            // 
+            // btn_ogrencibul
+            // 
+            this.btn_ogrencibul.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ogrencibul.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ogrencibul.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ogrencibul.BorderRadius = 10;
+            this.btn_ogrencibul.BorderSize = 0;
+            this.btn_ogrencibul.FlatAppearance.BorderSize = 0;
+            this.btn_ogrencibul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ogrencibul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ogrencibul.ForeColor = System.Drawing.Color.White;
+            this.btn_ogrencibul.Location = new System.Drawing.Point(277, 253);
+            this.btn_ogrencibul.Name = "btn_ogrencibul";
+            this.btn_ogrencibul.Size = new System.Drawing.Size(39, 21);
+            this.btn_ogrencibul.TabIndex = 24;
+            this.btn_ogrencibul.Text = "...";
+            this.btn_ogrencibul.TextColor = System.Drawing.Color.White;
+            this.btn_ogrencibul.UseVisualStyleBackColor = false;
+            // 
+            // btn_guncel
+            // 
+            this.btn_guncel.BackColor = System.Drawing.Color.Maroon;
+            this.btn_guncel.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_guncel.BorderRadius = 12;
+            this.btn_guncel.BorderSize = 0;
+            this.btn_guncel.FlatAppearance.BorderSize = 0;
+            this.btn_guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guncel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_guncel.ForeColor = System.Drawing.Color.White;
+            this.btn_guncel.Location = new System.Drawing.Point(109, 407);
+            this.btn_guncel.Name = "btn_guncel";
+            this.btn_guncel.Size = new System.Drawing.Size(164, 40);
+            this.btn_guncel.TabIndex = 24;
+            this.btn_guncel.Text = "Güncelle";
+            this.btn_guncel.TextColor = System.Drawing.Color.White;
+            this.btn_guncel.UseVisualStyleBackColor = false;
+            this.btn_guncel.Click += new System.EventHandler(this.rjButton4_Click_1);
+            // 
+            // btn_hesapla
+            // 
+            this.btn_hesapla.BackColor = System.Drawing.Color.Maroon;
+            this.btn_hesapla.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_hesapla.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_hesapla.BorderRadius = 12;
+            this.btn_hesapla.BorderSize = 0;
+            this.btn_hesapla.FlatAppearance.BorderSize = 0;
+            this.btn_hesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_hesapla.ForeColor = System.Drawing.Color.White;
+            this.btn_hesapla.Location = new System.Drawing.Point(109, 361);
+            this.btn_hesapla.Name = "btn_hesapla";
+            this.btn_hesapla.Size = new System.Drawing.Size(165, 40);
+            this.btn_hesapla.TabIndex = 24;
+            this.btn_hesapla.Text = "Hesapla";
+            this.btn_hesapla.TextColor = System.Drawing.Color.White;
+            this.btn_hesapla.UseVisualStyleBackColor = false;
+            this.btn_hesapla.Click += new System.EventHandler(this.rjButton3_Click_1);
+            // 
+            // btn_ekle
+            // 
+            this.btn_ekle.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ekle.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_ekle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_ekle.BorderRadius = 12;
+            this.btn_ekle.BorderSize = 0;
+            this.btn_ekle.FlatAppearance.BorderSize = 0;
+            this.btn_ekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ekle.ForeColor = System.Drawing.Color.White;
+            this.btn_ekle.Location = new System.Drawing.Point(109, 315);
+            this.btn_ekle.Name = "btn_ekle";
+            this.btn_ekle.Size = new System.Drawing.Size(164, 40);
+            this.btn_ekle.TabIndex = 24;
+            this.btn_ekle.Text = "Ekle";
+            this.btn_ekle.TextColor = System.Drawing.Color.White;
+            this.btn_ekle.UseVisualStyleBackColor = false;
+            this.btn_ekle.Click += new System.EventHandler(this.rjButton2_Click_1);
+            // 
             // btnderslistele
             // 
             this.btnderslistele.BackColor = System.Drawing.Color.Maroon;
@@ -1384,45 +1513,6 @@
             this.btnderslistele.TextColor = System.Drawing.Color.White;
             this.btnderslistele.UseVisualStyleBackColor = false;
             this.btnderslistele.Click += new System.EventHandler(this.rjButton1_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjButton1.BorderRadius = 15;
-            this.rjButton1.BorderSize = 1;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(114, 337);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(155, 46);
-            this.rjButton1.TabIndex = 16;
-            this.rjButton1.Text = "Kayıt";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
-            // 
-            // guncel
-            // 
-            this.guncel.BackColor = System.Drawing.Color.Maroon;
-            this.guncel.BackgroundColor = System.Drawing.Color.Maroon;
-            this.guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.guncel.BorderRadius = 20;
-            this.guncel.BorderSize = 0;
-            this.guncel.FlatAppearance.BorderSize = 0;
-            this.guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.guncel.ForeColor = System.Drawing.Color.White;
-            this.guncel.Location = new System.Drawing.Point(113, 305);
-            this.guncel.Name = "guncel";
-            this.guncel.Size = new System.Drawing.Size(163, 40);
-            this.guncel.TabIndex = 20;
-            this.guncel.Text = "Güncelle";
-            this.guncel.TextColor = System.Drawing.Color.White;
-            this.guncel.UseVisualStyleBackColor = false;
-            this.guncel.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // btn_listele
             // 
@@ -1462,132 +1552,51 @@
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.rjButton4_Click);
             // 
-            // btn_ekle
+            // guncel
             // 
-            this.btn_ekle.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ekle.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ekle.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ekle.BorderRadius = 12;
-            this.btn_ekle.BorderSize = 0;
-            this.btn_ekle.FlatAppearance.BorderSize = 0;
-            this.btn_ekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ekle.ForeColor = System.Drawing.Color.White;
-            this.btn_ekle.Location = new System.Drawing.Point(109, 315);
-            this.btn_ekle.Name = "btn_ekle";
-            this.btn_ekle.Size = new System.Drawing.Size(164, 40);
-            this.btn_ekle.TabIndex = 24;
-            this.btn_ekle.Text = "Ekle";
-            this.btn_ekle.TextColor = System.Drawing.Color.White;
-            this.btn_ekle.UseVisualStyleBackColor = false;
-            this.btn_ekle.Click += new System.EventHandler(this.rjButton2_Click_1);
+            this.guncel.BackColor = System.Drawing.Color.Maroon;
+            this.guncel.BackgroundColor = System.Drawing.Color.Maroon;
+            this.guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.guncel.BorderRadius = 20;
+            this.guncel.BorderSize = 0;
+            this.guncel.FlatAppearance.BorderSize = 0;
+            this.guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncel.ForeColor = System.Drawing.Color.White;
+            this.guncel.Location = new System.Drawing.Point(113, 305);
+            this.guncel.Name = "guncel";
+            this.guncel.Size = new System.Drawing.Size(163, 40);
+            this.guncel.TabIndex = 20;
+            this.guncel.Text = "Güncelle";
+            this.guncel.TextColor = System.Drawing.Color.White;
+            this.guncel.UseVisualStyleBackColor = false;
+            this.guncel.Click += new System.EventHandler(this.rjButton2_Click);
             // 
-            // btn_hesapla
+            // rjButton1
             // 
-            this.btn_hesapla.BackColor = System.Drawing.Color.Maroon;
-            this.btn_hesapla.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_hesapla.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_hesapla.BorderRadius = 12;
-            this.btn_hesapla.BorderSize = 0;
-            this.btn_hesapla.FlatAppearance.BorderSize = 0;
-            this.btn_hesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_hesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_hesapla.ForeColor = System.Drawing.Color.White;
-            this.btn_hesapla.Location = new System.Drawing.Point(109, 361);
-            this.btn_hesapla.Name = "btn_hesapla";
-            this.btn_hesapla.Size = new System.Drawing.Size(165, 40);
-            this.btn_hesapla.TabIndex = 24;
-            this.btn_hesapla.Text = "Hesapla";
-            this.btn_hesapla.TextColor = System.Drawing.Color.White;
-            this.btn_hesapla.UseVisualStyleBackColor = false;
-            this.btn_hesapla.Click += new System.EventHandler(this.rjButton3_Click_1);
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjButton1.BorderRadius = 15;
+            this.rjButton1.BorderSize = 1;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(114, 337);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(155, 46);
+            this.rjButton1.TabIndex = 16;
+            this.rjButton1.Text = "Kayıt";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
-            // btn_guncel
+            // txt_devamsizlik
             // 
-            this.btn_guncel.BackColor = System.Drawing.Color.Maroon;
-            this.btn_guncel.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_guncel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_guncel.BorderRadius = 12;
-            this.btn_guncel.BorderSize = 0;
-            this.btn_guncel.FlatAppearance.BorderSize = 0;
-            this.btn_guncel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guncel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_guncel.ForeColor = System.Drawing.Color.White;
-            this.btn_guncel.Location = new System.Drawing.Point(109, 407);
-            this.btn_guncel.Name = "btn_guncel";
-            this.btn_guncel.Size = new System.Drawing.Size(164, 40);
-            this.btn_guncel.TabIndex = 24;
-            this.btn_guncel.Text = "Güncelle";
-            this.btn_guncel.TextColor = System.Drawing.Color.White;
-            this.btn_guncel.UseVisualStyleBackColor = false;
-            this.btn_guncel.Click += new System.EventHandler(this.rjButton4_Click_1);
-            // 
-            // btn_list
-            // 
-            this.btn_list.BackColor = System.Drawing.Color.Maroon;
-            this.btn_list.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_list.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_list.BorderRadius = 12;
-            this.btn_list.BorderSize = 0;
-            this.btn_list.FlatAppearance.BorderSize = 0;
-            this.btn_list.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_list.ForeColor = System.Drawing.Color.White;
-            this.btn_list.Location = new System.Drawing.Point(109, 453);
-            this.btn_list.Name = "btn_list";
-            this.btn_list.Size = new System.Drawing.Size(164, 40);
-            this.btn_list.TabIndex = 24;
-            this.btn_list.Text = "Listele";
-            this.btn_list.TextColor = System.Drawing.Color.White;
-            this.btn_list.UseVisualStyleBackColor = false;
-            this.btn_list.Click += new System.EventHandler(this.rjButton5_Click);
-            // 
-            // btn_ara
-            // 
-            this.btn_ara.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ara.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ara.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ara.BorderRadius = 10;
-            this.btn_ara.BorderSize = 0;
-            this.btn_ara.FlatAppearance.BorderSize = 0;
-            this.btn_ara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ara.ForeColor = System.Drawing.Color.White;
-            this.btn_ara.Location = new System.Drawing.Point(572, 29);
-            this.btn_ara.Name = "btn_ara";
-            this.btn_ara.Size = new System.Drawing.Size(106, 31);
-            this.btn_ara.TabIndex = 24;
-            this.btn_ara.Text = "Ara";
-            this.btn_ara.TextColor = System.Drawing.Color.White;
-            this.btn_ara.UseVisualStyleBackColor = false;
-            this.btn_ara.Click += new System.EventHandler(this.rjButton6_Click);
-            // 
-            // btn_ogrencibul
-            // 
-            this.btn_ogrencibul.BackColor = System.Drawing.Color.Maroon;
-            this.btn_ogrencibul.BackgroundColor = System.Drawing.Color.Maroon;
-            this.btn_ogrencibul.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_ogrencibul.BorderRadius = 10;
-            this.btn_ogrencibul.BorderSize = 0;
-            this.btn_ogrencibul.FlatAppearance.BorderSize = 0;
-            this.btn_ogrencibul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ogrencibul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_ogrencibul.ForeColor = System.Drawing.Color.White;
-            this.btn_ogrencibul.Location = new System.Drawing.Point(277, 253);
-            this.btn_ogrencibul.Name = "btn_ogrencibul";
-            this.btn_ogrencibul.Size = new System.Drawing.Size(39, 21);
-            this.btn_ogrencibul.TabIndex = 24;
-            this.btn_ogrencibul.Text = "...";
-            this.btn_ogrencibul.TextColor = System.Drawing.Color.White;
-            this.btn_ogrencibul.UseVisualStyleBackColor = false;
-            // 
-            // masked_numara
-            // 
-            this.masked_numara.Location = new System.Drawing.Point(113, 142);
-            this.masked_numara.Multiline = true;
-            this.masked_numara.Name = "masked_numara";
-            this.masked_numara.Size = new System.Drawing.Size(233, 27);
-            this.masked_numara.TabIndex = 3;
+            this.txt_devamsizlik.Location = new System.Drawing.Point(115, 183);
+            this.txt_devamsizlik.Name = "txt_devamsizlik";
+            this.txt_devamsizlik.Size = new System.Drawing.Size(163, 26);
+            this.txt_devamsizlik.TabIndex = 23;
             // 
             // yonetimpanel
             // 
@@ -1757,5 +1766,6 @@
         private CustomControls.RJControls.RJButton btn_hesapla;
         private CustomControls.RJControls.RJButton btn_ekle;
         private System.Windows.Forms.TextBox masked_numara;
+        private System.Windows.Forms.TextBox txt_devamsizlik;
     }
 }

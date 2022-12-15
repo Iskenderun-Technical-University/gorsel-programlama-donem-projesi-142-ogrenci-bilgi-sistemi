@@ -23,5 +23,6 @@ namespace Login_Ekranı.Entity
         public Nullable<byte> Performans { get; set; }
         public Nullable<byte> Proje { get; set; }
         public Nullable<decimal> Ortalama { get; set; }
+        public Nullable<int> OgrDevam { get; set; }
     }
 }

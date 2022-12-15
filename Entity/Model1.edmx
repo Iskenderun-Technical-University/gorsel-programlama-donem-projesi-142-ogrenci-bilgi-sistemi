@@ -36,13 +36,14 @@
           <Property Name="OgrNumara" Type="char" MaxLength="5" />
           <Property Name="OgrSinif" Type="int" />
           <Property Name="OgrDurum" Type="bit" />
-          <Property Name="OgrDevamsizlik" Type="int" />
-          <Property Name="OgrOrtalama" Type="int" />
           <Property Name="Ort9" Type="int" />
           <Property Name="Ort10" Type="int" />
           <Property Name="Ort11" Type="int" />
           <Property Name="Ort12" Type="int" />
           <Property Name="Ort13" Type="int" />
+          <Property Name="OgrDevam" Type="int" />
+          <Property Name="OgrDevamsizlik" Type="int" />
+          <Property Name="OgrOrtalama" Type="int" />
         </EntityType>
         <EntityType Name="TblOgretmen">
           <Key>
@@ -71,13 +72,14 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
           <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
           <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
           <Property Name="DersAdi" Type="nvarchar" MaxLength="50" />
-          <Property Name="Yazili1" Type="tinyint" />
-          <Property Name="Yazili2" Type="tinyint" />
-          <Property Name="Performans" Type="tinyint" />
-          <Property Name="Proje" Type="tinyint" />
+          <Property Name="Yazili1" Type="int" />
+          <Property Name="Yazili2" Type="int" />
+          <Property Name="Performans" Type="int" />
+          <Property Name="Proje" Type="int" />
           <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OgrDevam" Type="int" />
         </EntityType>
-        <Association Name="FK_TblNotlar_TblDersler">
+        <Association Name="FK_TblNotlar_TblDersler1">
           <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
           <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
           <ReferentialConstraint>
@@ -89,7 +91,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TblNotlar_TblOgrenci">
+        <Association Name="FK_TblNotlar_TblOgrenci1">
           <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="0..1" />
           <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
           <ReferentialConstraint>
@@ -101,7 +103,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TblOgrenci_TblSinif">
+        <Association Name="FK_TblOgrenci_TblSinif1">
           <End Role="TblSinif" Type="Self.TblSinif" Multiplicity="0..1" />
           <End Role="TblOgrenci" Type="Self.TblOgrenci" Multiplicity="*" />
           <ReferentialConstraint>
@@ -132,18 +134,19 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
     [View_1].[Yazili2] AS [Yazili2], 
     [View_1].[Performans] AS [Performans], 
     [View_1].[Proje] AS [Proje], 
-    [View_1].[Ortalama] AS [Ortalama]
+    [View_1].[Ortalama] AS [Ortalama], 
+    [View_1].[OgrDevam] AS [OgrDevam]
     FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
+          <AssociationSet Name="FK_TblNotlar_TblDersler1" Association="Self.FK_TblNotlar_TblDersler1">
             <End Role="TblDersler" EntitySet="TblDersler" />
             <End Role="TblNotlar" EntitySet="TblNotlar" />
           </AssociationSet>
-          <AssociationSet Name="FK_TblNotlar_TblOgrenci" Association="Self.FK_TblNotlar_TblOgrenci">
+          <AssociationSet Name="FK_TblNotlar_TblOgrenci1" Association="Self.FK_TblNotlar_TblOgrenci1">
             <End Role="TblOgrenci" EntitySet="TblOgrenci" />
             <End Role="TblNotlar" EntitySet="TblNotlar" />
           </AssociationSet>
-          <AssociationSet Name="FK_TblOgrenci_TblSinif" Association="Self.FK_TblOgrenci_TblSinif">
+          <AssociationSet Name="FK_TblOgrenci_TblSinif1" Association="Self.FK_TblOgrenci_TblSinif1">
             <End Role="TblSinif" EntitySet="TblSinif" />
             <End Role="TblOgrenci" EntitySet="TblOgrenci" />
           </AssociationSet>
@@ -180,6 +183,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
           <Property Name="Ort11" Type="Int32" />
           <Property Name="Ort12" Type="Int32" />
           <Property Name="Ort13" Type="Int32" />
+          <Property Name="OgrDevam" Type="Int32" />
         </EntityType>
         <EntityType Name="TblOgretmen">
           <Key>
@@ -247,6 +251,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
           <Property Name="Performans" Type="Byte" />
           <Property Name="Proje" Type="Byte" />
           <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="OgrDevam" Type="Int32" />
         </EntityType>
         <ComplexType Name="Notlar_Result">
           <Property Type="Int32" Name="Not_ID" Nullable="false" />
@@ -334,6 +339,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
           <EntitySetMapping Name="TblOgrenci">
             <EntityTypeMapping TypeName="OgrenciSinavModel.TblOgrenci">
               <MappingFragment StoreEntitySet="TblOgrenci">
+                <ScalarProperty Name="OgrDevam" ColumnName="OgrDevam" />
                 <ScalarProperty Name="Ort13" ColumnName="Ort13" />
                 <ScalarProperty Name="Ort12" ColumnName="Ort12" />
                 <ScalarProperty Name="Ort11" ColumnName="Ort11" />
@@ -373,6 +379,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
           <EntitySetMapping Name="View_1">
             <EntityTypeMapping TypeName="OgrenciSinavModel.View_1">
               <MappingFragment StoreEntitySet="View_1">
+                <ScalarProperty Name="OgrDevam" ColumnName="OgrDevam" />
                 <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
                 <ScalarProperty Name="Proje" ColumnName="Proje" />
                 <ScalarProperty Name="Performans" ColumnName="Performans" />

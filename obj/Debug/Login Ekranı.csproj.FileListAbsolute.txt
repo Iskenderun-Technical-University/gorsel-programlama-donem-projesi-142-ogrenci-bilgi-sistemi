@@ -153,3 +153,4 @@ C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.xml
 C:\Users\Ramazan\Desktop\proje\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.YonetimInfo.resources
 C:\Users\Ramazan\Desktop\proje\obj\Debug\Login Ekranı.csproj.CopyComplete
+C:\Users\YAKUP\Desktop\Yeni klasör\obj\Debug\Login_Ekranı.YonetimInfo.resources

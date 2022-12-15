@@ -1053,56 +1053,56 @@
             // 
             this.lbl_ders5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders5.AutoSize = true;
-            this.lbl_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders5.Location = new System.Drawing.Point(28, 392);
+            this.lbl_ders5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders5.Location = new System.Drawing.Point(3, 394);
             this.lbl_ders5.Name = "lbl_ders5";
-            this.lbl_ders5.Size = new System.Drawing.Size(89, 29);
+            this.lbl_ders5.Size = new System.Drawing.Size(138, 25);
             this.lbl_ders5.TabIndex = 30;
-            this.lbl_ders5.Text = "Ders 5";
+            this.lbl_ders5.Text = "12.00-12.40";
             // 
             // lbl_ders4
             // 
             this.lbl_ders4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders4.AutoSize = true;
-            this.lbl_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders4.Location = new System.Drawing.Point(28, 318);
+            this.lbl_ders4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders4.Location = new System.Drawing.Point(3, 320);
             this.lbl_ders4.Name = "lbl_ders4";
-            this.lbl_ders4.Size = new System.Drawing.Size(89, 29);
+            this.lbl_ders4.Size = new System.Drawing.Size(138, 25);
             this.lbl_ders4.TabIndex = 29;
-            this.lbl_ders4.Text = "Ders 4";
+            this.lbl_ders4.Text = "11.00-11.40";
             // 
             // lbl_ders3
             // 
             this.lbl_ders3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders3.AutoSize = true;
-            this.lbl_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders3.Location = new System.Drawing.Point(28, 244);
+            this.lbl_ders3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders3.Location = new System.Drawing.Point(3, 246);
             this.lbl_ders3.Name = "lbl_ders3";
-            this.lbl_ders3.Size = new System.Drawing.Size(89, 29);
+            this.lbl_ders3.Size = new System.Drawing.Size(138, 25);
             this.lbl_ders3.TabIndex = 28;
-            this.lbl_ders3.Text = "Ders 3";
+            this.lbl_ders3.Text = "10.00-10.40";
             // 
             // lbl_ders2
             // 
             this.lbl_ders2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders2.AutoSize = true;
-            this.lbl_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders2.Location = new System.Drawing.Point(28, 170);
+            this.lbl_ders2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders2.Location = new System.Drawing.Point(16, 172);
             this.lbl_ders2.Name = "lbl_ders2";
-            this.lbl_ders2.Size = new System.Drawing.Size(89, 29);
+            this.lbl_ders2.Size = new System.Drawing.Size(112, 25);
             this.lbl_ders2.TabIndex = 27;
-            this.lbl_ders2.Text = "Ders 2";
+            this.lbl_ders2.Text = "9.00-9.40";
             // 
             // lbl_ders1
             // 
             this.lbl_ders1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ders1.AutoSize = true;
-            this.lbl_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_ders1.Location = new System.Drawing.Point(28, 96);
+            this.lbl_ders1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ders1.Location = new System.Drawing.Point(16, 98);
             this.lbl_ders1.Name = "lbl_ders1";
-            this.lbl_ders1.Size = new System.Drawing.Size(89, 29);
+            this.lbl_ders1.Size = new System.Drawing.Size(112, 25);
             this.lbl_ders1.TabIndex = 26;
-            this.lbl_ders1.Text = "Ders 1";
+            this.lbl_ders1.Text = "8.00-8.40";
             // 
             // lbl_pzt_ders1
             // 

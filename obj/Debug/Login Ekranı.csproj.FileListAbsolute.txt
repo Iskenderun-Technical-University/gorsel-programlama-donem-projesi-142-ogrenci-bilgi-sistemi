@@ -239,3 +239,4 @@ C:\Users\Ramazan\source\repos\gorsel-programlama-donem-projesi-142-ogrenci-bilgi
 C:\Users\Ramazan\source\repos\gorsel-programlama-donem-projesi-142-ogrenci-bilgi-sistemi\son gün son proje\obj\Debug\Login Ekranı.exe
 C:\Users\Ramazan\source\repos\gorsel-programlama-donem-projesi-142-ogrenci-bilgi-sistemi\son gün son proje\obj\Debug\Login Ekranı.pdb
 C:\Users\Ramazan\source\repos\gorsel-programlama-donem-projesi-142-ogrenci-bilgi-sistemi\son gün son proje\obj\Debug\Login_Ekranı.Ogrencibilgi.resources
+C:\Users\Ramazan\Desktop\proje\obj\Debug\Login_Ekranı.Ogrencibilgi.resources

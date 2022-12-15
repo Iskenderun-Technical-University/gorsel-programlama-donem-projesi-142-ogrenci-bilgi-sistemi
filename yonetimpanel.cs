@@ -296,7 +296,7 @@ namespace Login_Ekranı
 
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e) //dersleri listeleme 
         {
             var derslistesi = from x in db.TblDersler
                               select new
@@ -307,7 +307,7 @@ namespace Login_Ekranı
             dataGridView3.DataSource = derslistesi.ToList();
         }
 
-        private void rjButton1_Click_1(object sender, EventArgs e)
+        private void rjButton1_Click_1(object sender, EventArgs e)// öğrenci kaydı oluşturma işlemi
         {
             TblOgrenci t = new TblOgrenci();
             t.OgrAd = ad.Text;
@@ -321,7 +321,7 @@ namespace Login_Ekranı
             MessageBox.Show("Öğrenci bilgileri sisteme başarılı bir şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void rjButton4_Click(object sender, EventArgs e)
+        private void rjButton4_Click(object sender, EventArgs e)// öğrenci silme işlemi
         {
             int id = int.Parse(txt_ıd.Text);
             var x = db.TblOgrenci.Find(id);
@@ -332,7 +332,7 @@ namespace Login_Ekranı
             listele();
         }
 
-        private void rjButton2_Click(object sender, EventArgs e)
+        private void rjButton2_Click(object sender, EventArgs e)// öğrenci güncelleme-değişiklik yapma 
         {
 
             int id = int.Parse(txt_ıd.Text);
@@ -348,7 +348,7 @@ namespace Login_Ekranı
             listele();
         }
 
-        private void rjButton3_Click(object sender, EventArgs e)
+        private void rjButton3_Click(object sender, EventArgs e)//öğrencileri listeleme işlemi
         {
             listele();
         }
@@ -358,7 +358,7 @@ namespace Login_Ekranı
 
         }
 
-        private void rjButton2_Click_1(object sender, EventArgs e)
+        private void rjButton2_Click_1(object sender, EventArgs e) //öğrenci not EKleme işlemi
         {
 
             TblNotlar t = new TblNotlar();
@@ -374,7 +374,7 @@ namespace Login_Ekranı
             MessageBox.Show("Öğrenci not bilgisi için sisteme kayıt edildi");
         }
 
-        private void rjButton3_Click_1(object sender, EventArgs e)
+        private void rjButton3_Click_1(object sender, EventArgs e) //ortalamayı hesaplama butonu
         {
             byte y1, y2, per, pro;
             double ort;
@@ -387,7 +387,7 @@ namespace Login_Ekranı
             txt_ortalama.Text = ort.ToString();
         }
 
-        private void rjButton4_Click_1(object sender, EventArgs e)
+        private void rjButton4_Click_1(object sender, EventArgs e)//notları güncelleme işlemi 
         {
             int id = int.Parse(txtID.Text);
             var x = db.TblNotlar.Find(id);
@@ -406,7 +406,7 @@ namespace Login_Ekranı
             txt_ortalama.Text = null;
         }
 
-        private void rjButton5_Click(object sender, EventArgs e)
+        private void rjButton5_Click(object sender, EventArgs e)//tüm notları listeleme 
         {
             //dataGridView2.DataSource = db.View_1.ToList();
             dataGridView2.DataSource = db.Notlar3();

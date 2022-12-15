@@ -103,6 +103,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_devamsizlik = new System.Windows.Forms.TextBox();
             this.txt_ıd = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.mtxtbox_numara = new System.Windows.Forms.MaskedTextBox();
@@ -148,7 +149,6 @@
             this.btn_sil = new CustomControls.RJControls.RJButton();
             this.guncel = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.txt_devamsizlik = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.page_girisekran.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -444,9 +444,9 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label19.Location = new System.Drawing.Point(28, 253);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 16);
+            this.label19.Size = new System.Drawing.Size(76, 16);
             this.label19.TabIndex = 2;
-            this.label19.Text = "Öğrenci :";
+            this.label19.Text = "Öğrenci ID :";
             // 
             // txt_yazili2
             // 
@@ -1011,6 +1011,13 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
+            // 
+            // txt_devamsizlik
+            // 
+            this.txt_devamsizlik.Location = new System.Drawing.Point(115, 183);
+            this.txt_devamsizlik.Name = "txt_devamsizlik";
+            this.txt_devamsizlik.Size = new System.Drawing.Size(163, 26);
+            this.txt_devamsizlik.TabIndex = 23;
             // 
             // txt_ıd
             // 
@@ -1590,13 +1597,6 @@
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
-            // 
-            // txt_devamsizlik
-            // 
-            this.txt_devamsizlik.Location = new System.Drawing.Point(115, 183);
-            this.txt_devamsizlik.Name = "txt_devamsizlik";
-            this.txt_devamsizlik.Size = new System.Drawing.Size(163, 26);
-            this.txt_devamsizlik.TabIndex = 23;
             // 
             // yonetimpanel
             // 

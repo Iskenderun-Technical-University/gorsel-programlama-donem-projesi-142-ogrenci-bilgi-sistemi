@@ -264,7 +264,7 @@ namespace Login_Ekranı
             
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e)//şifre güncelleme işlemi
         {
             if (txt_yenisifre1.Text == txt_yenisifre2.Text)
             {

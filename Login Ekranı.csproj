@@ -147,6 +147,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ogrencibilgi.resx">
+      <DependentUpon>Ogrencibilgi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ogrencibilgiekran.resx">
       <DependentUpon>ogrencibilgiekran.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +228,13 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\question1.png" />
+    <None Include="Resources\information1.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\32543171.jpg" />
+    <None Include="Resources\4858794.jpg" />
+    <None Include="Resources\3254317.jpg" />
     <None Include="Resources\dfhdjmhmxhfj1.png" />
     <None Include="Resources\dfhdjmhmxhfj.png" />
   </ItemGroup>

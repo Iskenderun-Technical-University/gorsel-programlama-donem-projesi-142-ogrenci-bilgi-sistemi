@@ -63,6 +63,36 @@ namespace Login_Ekranı.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3254317 {
+            get {
+                object obj = ResourceManager.GetObject("3254317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _32543171 {
+            get {
+                object obj = ResourceManager.GetObject("32543171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4858794 {
+            get {
+                object obj = ResourceManager.GetObject("4858794", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap awdaswsdawd {
             get {
                 object obj = ResourceManager.GetObject("awdaswsdawd", resourceCulture);
@@ -133,6 +163,26 @@ namespace Login_Ekranı.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap information {
+            get {
+                object obj = ResourceManager.GetObject("information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information1 {
+            get {
+                object obj = ResourceManager.GetObject("information1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap instrwdwductor {
             get {
                 object obj = ResourceManager.GetObject("instrwdwductor", resourceCulture);
@@ -146,6 +196,26 @@ namespace Login_Ekranı.Properties {
         internal static System.Drawing.Bitmap ogrenci_giriş {
             get {
                 object obj = ResourceManager.GetObject("ogrenci giriş", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question {
+            get {
+                object obj = ResourceManager.GetObject("question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question1 {
+            get {
+                object obj = ResourceManager.GetObject("question1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

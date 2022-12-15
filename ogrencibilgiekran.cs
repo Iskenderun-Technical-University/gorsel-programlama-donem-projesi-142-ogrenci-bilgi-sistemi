@@ -57,11 +57,6 @@ namespace Login_Ekranı
 
 
         }
-        private void btn_sifreguncelle_Click(object sender, EventArgs e)// öğrenci formuna ait şifre değiştirme işlemi yapıldı
-        {
-            
-
-        }
 
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -73,16 +68,16 @@ namespace Login_Ekranı
             Graphics g = e.Graphics;
             Brush _textBrush;
 
-            // Get the item from the collection.
+            // Öğeyi koleksiyondan alın.
             TabPage _tabPage = tabControl1.TabPages[e.Index];
 
-            // Get the real bounds for the tab rectangle.
+            // Sekme dikdörtgeni için gerçek sınırları alın.
             Rectangle _tabBounds = tabControl1.GetTabRect(e.Index);
 
             if (e.State == DrawItemState.Selected)
             {
 
-                // Draw a different background color, and don't paint a focus rectangle.
+                // Farklı bir arka plan rengi çizin ve odak dikdörtgeni çizmeyin.
                 _textBrush = new SolidBrush(Color.Black);
                 g.FillRectangle(Brushes.Gray, e.Bounds);
             }
@@ -92,10 +87,10 @@ namespace Login_Ekranı
                 e.DrawBackground();
             }
 
-            // Use our own font.
+            // Kendi yazı tipimizi kullanın.
             Font _tabFont = new Font("Arial", 15.0f, FontStyle.Bold, GraphicsUnit.Pixel);
 
-            // Draw string. Center the text.
+            //Dize çizin. Metni ortalayın.
             StringFormat _stringFlags = new StringFormat();
             _stringFlags.Alignment = StringAlignment.Center;
             _stringFlags.LineAlignment = StringAlignment.Center;
@@ -126,7 +121,7 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid); 
             }
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel2_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if ((e.Row) % 2 == 0)
@@ -141,7 +136,7 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel4_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if ((e.Row) % 2 == 0)
@@ -156,12 +151,12 @@ namespace Login_Ekranı
                 ControlPaint.DrawBorder(e.Graphics, rectangle, Color.Gray, ButtonBorderStyle.Solid);
             }
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void label15_Click_3(object sender, EventArgs e)
         {
 
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel5_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if ((e.Row) % 2 == 0)
@@ -186,7 +181,7 @@ namespace Login_Ekranı
         {
 
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel6_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if ((e.Row) % 2 == 0)
@@ -206,7 +201,7 @@ namespace Login_Ekranı
         {
             
         }
-
+        //panel çerçevelerini ve arka plan rengini değiştirme bölümü
         private void tableLayoutPanel7_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if ((e.Row) % 2 == 0)
@@ -222,15 +217,7 @@ namespace Login_Ekranı
             }
         }
 
-        private void page_subeortalama_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -277,6 +264,16 @@ namespace Login_Ekranı
             {
                 MessageBox.Show("Girdiğiniz yeni şifreler birbiriyle uyuşmuyor!");
             }
+        }
+
+        private void lbl_sınıfort_kimya_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

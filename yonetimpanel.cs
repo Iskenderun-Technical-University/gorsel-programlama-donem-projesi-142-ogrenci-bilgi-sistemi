@@ -412,7 +412,7 @@ namespace Login_Ekranı
             dataGridView2.DataSource = db.Notlar3();
         }
 
-        private void rjButton6_Click(object sender, EventArgs e)
+        private void rjButton6_Click(object sender, EventArgs e)//öğrenci numarasına göre arama yapıp notları getiriyoruz.
         {
             string no = mtxt_numara.Text;
 

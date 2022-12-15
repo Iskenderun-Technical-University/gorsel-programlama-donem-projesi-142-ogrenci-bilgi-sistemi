@@ -577,7 +577,7 @@
             this.dataGridView3.GridColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView3.Location = new System.Drawing.Point(89, 43);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(298, 466);
+            this.dataGridView3.Size = new System.Drawing.Size(270, 289);
             this.dataGridView3.TabIndex = 0;
             // 
             // pictureBox8
